@@ -1,10 +1,13 @@
 body {
   font-size: .28rem;
 }
+
 .page-home {
   background: #f6f6f6;
   position: relative;
   padding-top: 5.4rem;
+  padding-bottom: 1rem;
+  overflow-x: hidden;
   z-index: 1;
   .home-head {
     height: 3.2rem;
@@ -33,6 +36,9 @@ body {
     top: .9rem;
     left: 50%;
     margin-left: -3.6rem;
+    .am-control-nav {
+      display: none;
+    }
   }
   .main-bar {
     height: 1.8rem;
@@ -96,6 +102,317 @@ body {
       width: 3.4rem;
       overflow: hidden;
       z-index: 1;
+    }
+  }
+
+
+  .bottom-bar {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 1rem;
+    width: 100%;
+    z-index: 99;
+    .item {
+      float: left;
+      padding-top: .15rem;
+      width: 33.33%;
+      display: block;
+      color: #333;
+      text-align: center;
+      .icon {
+        width: .42rem;
+        height: .36rem;
+        display: block;
+        background-position: 50% 50%;
+        background-size: contain;
+        margin: 0 auto;
+        &.icon-home {
+          background-image: url(../i/home/ic-h-u.png);
+        }
+
+        &.icon-find {
+          background-image: url(../i/home/ic-f-u.png);
+        }
+        &.icon-my {
+          background-image: url(../i/home/ic-m-u.png);
+        }
+      }
+      &.active {
+        color: #F43444;
+        .icon {
+          &.icon-home {
+            background-image: url(../i/home/ic-h.png);
+          }
+          &.icon-find {
+            background-image: url(../i/home/ic-h.png);
+          }
+          &.icon-my {
+            background-image: url(../i/home/ic-h.png);
+          }
+        }
+      }
+    }
+  }
+
+  .section-type-1 {
+    width: 6.9rem;
+    margin: 0 auto .3rem;
+    .hd {
+      position: relative;
+      z-index: 1;
+      .m {
+        height: .45rem;
+        .i {
+          display: inline-block;
+          height: .45rem;
+          width: .45rem;
+          background-image: url(../i/home/t-1.png);
+          background-size: contain;
+        }
+        .w {
+          display: inline-block;
+          height: .29rem;
+          width: 1.19rem;
+          background-image: url(../i/home/t-w-1.png);
+          background-size: contain;
+        }
+      }
+      .s {
+        color:#888;
+        font-size: .24rem;
+      }
+      .o {
+        position: absolute;
+        right: 0; bottom: .1rem;
+        height: .23rem;
+        width: .74rem;
+        background-image: url(../i/home/more.png);
+        background-size: contain;
+        display: block;
+      }
+    }
+    .con-wrap {
+      overflow-x: auto;
+      padding-top: .15rem;
+      width: 6.9rem;
+      .con {
+        width: 16.7rem;
+        .item {
+          color: #333;
+          display: inline-block;
+          width: 5.4rem;
+          margin-right: .1rem;
+          .tt {
+            display: block;
+            line-height: .3rem;
+            height: .3rem;
+            overflow: hidden;
+          }
+          .price {
+            display: block;
+            line-height: .3rem;
+            height: .3rem;
+            overflow: hidden;
+            color: #F9595C;
+          }
+        }
+      }
+    }
+  }
+
+  .section-type-2 {
+    width: 6.9rem;
+    margin: 0 auto .3rem;
+    .hd {
+      position: relative;
+      z-index: 1;
+      .m {
+        height: .45rem;
+        .i {
+          display: inline-block;
+          height: .45rem;
+          width: .45rem;
+          background-image: url(../i/home/t-2.png);
+          background-size: contain;
+        }
+        .w {
+          display: inline-block;
+          height: .29rem;
+          width: 1.16rem;
+          background-image: url(../i/home/t-w-2.png);
+          background-size: contain;
+        }
+      }
+      .s {
+        color:#888;
+        font-size: .24rem;
+      }
+      .o {
+        position: absolute;
+        right: 0; bottom: .1rem;
+        height: .23rem;
+        width: .74rem;
+        background-image: url(../i/home/more-2.png);
+        background-size: contain;
+        display: block;
+      }
+    }
+    .con {
+      padding-top: .2rem;
+      .left {
+        float: left;
+        height: 4.8rem;
+        width: 3.4rem;
+      }
+      .right {
+        float: left;
+        height: 4.8rem;
+        width: 3.5rem;
+        padding: .2rem 0;
+        .inner {
+          font-size: .24rem;
+          background-color: #fff;
+          padding: .4rem 0 .6rem;
+          .img {
+            width: 2.9rem;
+            margin: 0 auto;
+            display: block;
+            height: 1.88rem;
+          }
+          .price {
+            color: #F9595C;
+            padding-left: .5rem;
+          }
+          .line {
+            padding-left: .5rem;
+          }
+          .am-control-paging {
+            position: absolute;
+            padding-top: .15rem;
+            left: 50%;
+            margin-left: .7rem;
+            width: 14rem;
+            li a {
+              border-radius: .05rem;
+              display: block;
+              text-align: left;
+              text-indent: -99em;
+              height: .5em;
+              margin: 0 .05rem;
+              width: .4rem;
+              background-color: #FCC098;
+              &.am-active {
+                background-color: #FC4E6F;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .section-white {
+    background-color: #fff;
+    padding: .1rem 0;
+  }
+  .section-type-3 {
+    width: 6.9rem;
+    margin: 0 auto .3rem;
+    .hd {
+      position: relative;
+      z-index: 1;
+      .m {
+        height: .45rem;
+        .i {
+          display: inline-block;
+          height: .45rem;
+          width: .45rem;
+          background-image: url(../i/home/t-3.png);
+          background-size: contain;
+        }
+        .w {
+          display: inline-block;
+          height: .29rem;
+          width: 1.76rem;
+          background-image: url(../i/home/t-w-3.png);
+          background-size: contain;
+        }
+      }
+      .s {
+        color:#888;
+        font-size: .24rem;
+      }
+      .o {
+        position: absolute;
+        right: 0; bottom: .1rem;
+        height: .23rem;
+        width: .74rem;
+        background-image: url(../i/home/more.png);
+        background-size: contain;
+        display: block;
+      }
+    }
+    .con {
+      .item {
+        color: #333;
+        padding: .2rem 0;
+        border-bottom: 2px solid #ddd;
+        display: block;
+        height: .2.5rem;
+        .left {
+          float: left;
+          width: 4.8rem;
+          height: 2.1rem;
+          position: relative;
+          padding: .2rem .3rem .2rem .1rem;
+          z-index: 1;
+          .tt {
+            display: block;
+            margin-bottom: .3rem;
+            line-height: .3rem;
+            height: .3rem;
+            overflow: hidden;
+          }
+          .desc {
+            font-size: .24rem;
+            display: block;
+            line-height: .28rem;
+            height: .56rem;
+            overflow: hidden;
+          }
+          .date {
+            position: absolute;
+            left: .1rem;
+            bottom: .1rem;
+          }
+          .view {
+            position: absolute;
+            right: .3rem;
+            bottom: .1rem;
+            .m {
+              display: inline-block;
+              height: .24rem;
+              width: .33rem;
+              background-image: url(../i/home/ic-1.png);
+              background-size: cover;
+            }
+            .v {
+              display: inline-block;
+              height: .24rem;
+              width: .37rem;
+              background-image: url(../i/home/ic-2.png);
+              background-size: cover;
+            }
+          }
+        }
+        .right {
+          float: left;
+          height: 2.1rem;
+          width: 2.1rem;
+        }
+      }
     }
   }
 }
