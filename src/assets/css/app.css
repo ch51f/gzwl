@@ -25,11 +25,19 @@ ul {
 * + ul {
   margin-top: .1rem;
 }
+input:focus,
+textarea:focus {
+  outline: 0 none;
+}
 .box {
   display: flex;
 }
 .flex-1 {
   flex: 1;
+}
+.price,
+.important {
+  color: #F9595C;
 }
 .am-active.am-dimmer {
   display: block;
@@ -917,4 +925,529 @@ ul {
   width: 100%;
   color: #fff;
   font-size: .32rem;
+}
+.page-order {
+  background: #f6f6f6;
+  position: relative;
+  padding-top: 4.5rem;
+  overflow-x: hidden;
+  z-index: 1;
+}
+.page-order .home-head {
+  height: 3.2rem;
+  width: 100%;
+  background-image: url(../i/home/head.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.page-order .home-head .title {
+  padding: .2rem;
+  line-height: .5rem;
+  text-align: center;
+  color: #fff;
+  font-size: .36rem;
+}
+.page-order .home-head .left {
+  height: .34rem;
+  width: .34rem;
+  position: absolute;
+  top: .3rem;
+  left: .2rem;
+}
+.page-order .home-head .right {
+  height: .34rem;
+  width: .34rem;
+  position: absolute;
+  top: .3rem;
+  right: .2rem;
+}
+.page-order .home-head .right-1 {
+  height: .34rem;
+  width: .34rem;
+  position: absolute;
+  top: .3rem;
+  right: .7rem;
+}
+.page-order .home-head .icon-back {
+  background-image: url(../i/lyd/back.png);
+  background-size: contain;
+  height: .34rem;
+  width: .34rem;
+  display: block;
+}
+.page-order .section-order-info {
+  background: #fff;
+  width: 6.9rem;
+  box-shadow: 0px 2px 20px #F9A6AC;
+  position: absolute;
+  margin-left: -3.45rem;
+  left: 50%;
+  top: .9rem;
+  padding: .3rem .2rem;
+  border-radius: .2rem;
+  z-index: 2;
+}
+.page-order .section-order-info .hd {
+  position: relative;
+  z-index: 1;
+  height: 1rem;
+  padding: 0 .1rem 0 1.2rem;
+  margin-bottom: .2rem;
+}
+.page-order .section-order-info .hd .img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1rem;
+  width: 1rem;
+  background: #ddd;
+  border-radius: .1rem;
+}
+.page-order .section-order-info .hd .tt {
+  font-size: .34rem;
+  line-height: .5rem;
+  margin-bottom: .1rem;
+}
+.page-order .section-order-info .hd .desc {
+  line-height: .3rem;
+}
+.page-order .section-order-info .hd .price {
+  font-size: .3rem;
+  font-weight: 600;
+  position: absolute;
+  right: .5rem;
+  top: .5rem;
+  z-index: 2;
+}
+.page-order .section-order-info .con {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: .3rem 0;
+  position: relative;
+  z-index: 1;
+  margin: .2rem;
+}
+.page-order .section-order-info .con .begin-box,
+.page-order .section-order-info .con .end-box {
+  text-align: center;
+}
+.page-order .section-order-info .con .begin-box .tt,
+.page-order .section-order-info .con .end-box .tt {
+  font-size: .24rem;
+  margin-bottom: .15rem;
+}
+.page-order .section-order-info .con .begin-box .date,
+.page-order .section-order-info .con .end-box .date {
+  font-size: .34rem;
+  margin-bottom: .05rem;
+}
+.page-order .section-order-info .con .begin-box .sub-date,
+.page-order .section-order-info .con .end-box .sub-date {
+  margin-top: .05rem;
+}
+.page-order .section-order-info .con .day-wrap {
+  padding: .1rem;
+  width: 2.2rem;
+}
+.page-order .section-order-info .con .day-wrap .days {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  color: #555;
+  margin-left: -0.6rem;
+  line-height: .6rem;
+  z-index: 1;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.page-order .section-order-info .con .day-wrap .days .important {
+  font-size: .34rem;
+}
+.page-order .section-order-info .con .day-wrap .days:before {
+  content: ".";
+  text-indent: -99rem;
+  border-top: 1px solid #ddd;
+  height: 1px;
+  width: .45rem;
+  position: absolute;
+  top: 50%;
+  left: -0.45rem;
+  z-index: 2;
+}
+.page-order .section-order-info .con .day-wrap .days:after {
+  content: ".";
+  text-indent: -99rem;
+  border-top: 1px solid #ddd;
+  height: 1px;
+  width: .45rem;
+  position: absolute;
+  top: 50%;
+  right: -0.45rem;
+  z-index: 2;
+}
+.page-order .section-order-info .ft .tips {
+  color: #76B5F4;
+}
+.page-order .section-order-contact {
+  background: #fff;
+  margin-bottom: .2rem;
+  padding: 2rem .3rem 0;
+}
+.page-order .section-order-contact .line {
+  padding: 0 .2rem;
+  line-height: .9rem;
+  display: flex;
+}
+.page-order .section-order-contact .line + .line {
+  border-top: 1px solid #ddd;
+}
+.page-order .section-order-contact .line .label {
+  font-weight: 400;
+  text-align: right;
+  display: block;
+  width: 1.4rem;
+}
+.page-order .section-order-contact .line .label .icon-must {
+  padding-right: .05rem;
+}
+.page-order .section-order-contact .line .input input {
+  border: 0 none;
+  line-height: .9rem;
+  width: 100%;
+}
+.page-order .section-order-other {
+  background-color: #fff;
+  padding: .3rem 0;
+  margin-bottom: .2rem;
+}
+.page-order .section-order-other .tt {
+  border-left: 3px solid #FD4E79;
+  height: .3rem;
+  line-height: .3rem;
+  padding-left: .2rem;
+  padding-right: .2rem;
+  margin-left: .2rem;
+  margin-bottom: .2rem;
+}
+.page-order .section-order-other .item {
+  color: #888;
+  border-bottom: 1px solid #ddd;
+  padding: .2rem .2rem .2rem 1rem;
+  position: relative;
+  z-index: 1;
+}
+.page-order .section-order-other .item.item-1 {
+  padding-left: .2rem;
+}
+.page-order .section-order-other .item .hd {
+  line-height: .6rem;
+  margin-bottom: .2rem;
+}
+.page-order .section-order-other .item .hd .t {
+  color: #333;
+}
+.page-order .section-order-other .item .hd .label {
+  text-align: right;
+  height: .6rem;
+  width: 3rem;
+}
+.page-order .section-order-other .item .hd .label .num-box {
+  display: flex;
+  text-align: center;
+  height: .6rem;
+  line-height: .6rem;
+  margin-left: .2rem;
+  width: 1.8rem;
+}
+.page-order .section-order-other .item .hd .label .num-box .sub,
+.page-order .section-order-other .item .hd .label .num-box .add {
+  flex: 1;
+  background: #EEEEEE;
+  display: block;
+  height: .6rem;
+  color: #333;
+}
+.page-order .section-order-other .item .hd .label .num-box input {
+  border: 1px solid #E5E5E5;
+  height: .6rem;
+  width: .6rem;
+  text-align: center;
+}
+.page-order .section-order-other .item .con {
+  margin-bottom: .2rem;
+}
+.page-order .section-order-other .item .con .memo {
+  border: 1px solid #ddd;
+  width: 100%;
+  height: 2rem;
+}
+.page-order .section-order-btns {
+  background: #fff;
+}
+.page-order .section-order-btns .top {
+  background: #f6f6f6;
+  padding: .2rem .2rem .4rem .7rem;
+}
+.page-order .section-order-btns .top label {
+  font-weight: 400;
+}
+.page-order .section-order-btns .con .btn {
+  background-image: url(../i/home/head.jpg);
+  background-size: cover;
+  display: block;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  color: #fff;
+  width: 2.8rem;
+}
+.page-order .section-order-btns .con .info {
+  padding-left: .3rem;
+  line-height: 1rem;
+}
+.page-datepick {
+  background: #f6f6f6;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  z-index: 1;
+}
+.page-datepick .home-head {
+  height: 1rem;
+  width: 100%;
+  background-image: url(../i/home/head.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.page-datepick .home-head .title {
+  padding: .2rem;
+  line-height: .5rem;
+  text-align: center;
+  color: #fff;
+  font-size: .36rem;
+}
+.page-datepick .home-head .left {
+  height: .34rem;
+  width: .34rem;
+  position: absolute;
+  top: .3rem;
+  left: .2rem;
+}
+.page-datepick .home-head .right {
+  height: .34rem;
+  width: .34rem;
+  position: absolute;
+  top: .3rem;
+  right: .2rem;
+}
+.page-datepick .home-head .icon-back {
+  background-image: url(../i/lyd/back.png);
+  background-size: contain;
+  height: .34rem;
+  width: .34rem;
+  display: block;
+}
+.page-datepick .date-hd {
+  height: .9rem;
+  line-height: .9rem;
+  padding: 0 .2rem;
+  background: #fff;
+  text-align: center;
+}
+.page-datepick .date-con {
+  text-align: center;
+}
+.page-datepick .date-con .month-box .hd {
+  line-height: .8rem;
+}
+.page-datepick .date-con .month-box .con {
+  background: #fff;
+}
+.page-datepick .date-con .month-box .con .item {
+  height: 1.1rem;
+  padding: .25rem 0;
+  line-height: 1;
+}
+.page-datepick .date-con .month-box .con .item.disable {
+  background: #f4f4f4;
+}
+.page-datepick .date-con .month-box .con .item.active {
+  background: #FD4E79;
+  color: #fff;
+}
+.page-datepick .date-con .month-box .con .item.active .p {
+  color: #fff;
+}
+.page-datepick .date-con .month-box .con .item .d {
+  margin-bottom: .05rem;
+}
+.page-datepick .date-con .month-box .con .item .p {
+  color: #F9595C;
+  font-size: .24rem;
+}
+.page-datepick .date-btn {
+  background-color: #fff;
+  z-index: 2;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 1.6rem;
+  border-top: 1px solid #ddd;
+  padding: .2rem;
+  width: 100%;
+}
+.page-datepick .date-btn .btn {
+  background-image: url(../i/home/head.jpg);
+  background-size: cover;
+  display: block;
+  height: .9rem;
+  line-height: .9rem;
+  text-align: center;
+  color: #fff;
+}
+.page-datepick .date-btn .tips-box .left {
+  text-align: left;
+}
+.page-datepick .date-btn .tips-box .right {
+  text-align: right;
+}
+.page-datepick .date-btn .tips-box .icon-default {
+  background: #DEDEDE;
+  border-radius: 50%;
+  display: inline-block;
+  height: .24rem;
+  width: .24rem;
+  margin: 0 .05rem;
+}
+.page-datepick .date-btn .tips-box .icon-active {
+  background: #FD4E79;
+  border-radius: 50%;
+  display: inline-block;
+  height: .24rem;
+  width: .24rem;
+  margin: 0 .05rem;
+}
+.page-pay {
+  background: #f6f6f6;
+  position: relative;
+  padding-top: 1rem;
+  z-index: 1;
+}
+.page-pay .home-head {
+  height: 1rem;
+  width: 100%;
+  background-image: url(../i/home/head.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.page-pay .home-head .title {
+  padding: .2rem;
+  line-height: .5rem;
+  text-align: center;
+  color: #fff;
+  font-size: .36rem;
+}
+.page-pay .home-head .left {
+  height: .34rem;
+  width: .34rem;
+  position: absolute;
+  top: .3rem;
+  left: .2rem;
+}
+.page-pay .home-head .right {
+  height: .34rem;
+  width: .34rem;
+  position: absolute;
+  top: .3rem;
+  right: .2rem;
+}
+.page-pay .home-head .icon-back {
+  background-image: url(../i/lyd/back.png);
+  background-size: contain;
+  height: .34rem;
+  width: .34rem;
+  display: block;
+}
+.page-pay .pay-box {
+  background-color: #fff;
+  padding: .2rem;
+  margin-bottom: .2rem;
+}
+.page-pay .pay-box .hd {
+  padding-top: .4rem;
+  margin-bottom: .2rem;
+}
+.page-pay .pay-box .hd .icon-success {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  background: #09BA07;
+  border-radius: 50%;
+  margin: 0 auto .3rem;
+}
+.page-pay .pay-box .hd p {
+  font-size: .34rem;
+  text-align: center;
+}
+.page-pay .pay-box .con {
+  width: 5.6rem;
+  margin: 0 auto .4rem;
+}
+.page-pay .pay-box .con .flex-1 {
+  padding: 0 .2rem;
+}
+.page-pay .pay-box .con .flex-1 a {
+  color: #555;
+  display: block;
+  border: 1px solid #bbb;
+  line-height: .8rem;
+  text-align: center;
+}
+.page-pay .pay-box .ft {
+  margin-bottom: .2rem;
+}
+.page-pay .pay-box .ft .icon-qrcode {
+  background: #444;
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  margin: 0 auto;
+}
+.page-pay .pay-box .ft p {
+  color: #999;
+  text-align: center;
+}
+.page-pay .recommend-box {
+  padding: .2rem;
+  background: #fff;
+  margin-bottom: .2rem;
+}
+.page-pay .recommend-box .hd {
+  padding: 0 0 .2rem .4rem;
+  line-height: .6rem;
+  border-bottom: 1px solid #ddd;
+}
+.page-pay .recommend-box .con {
+  padding: .4rem 0;
+}
+.page-pay .recommend-box .con .flex-1 {
+  text-align: center;
+}
+.page-pay .recommend-box .con .flex-1 .icon {
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  background-color: #888;
+  margin: 0 auto;
 }
