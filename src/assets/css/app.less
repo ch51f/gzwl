@@ -2,6 +2,24 @@ body {
   font-size: .28rem;
 }
 
+address, blockquote, dl, fieldset, figure, hr, ol, p, pre, ul {
+  margin-bottom: .1rem;
+}
+*+address, *+blockquote, *+dl, *+fieldset, *+figure, *+hr, *+ol, *+p, *+pre, *+ul {
+  margin-top: .1rem;
+}
+
+.box {
+  display: flex;
+}
+.flex-1 {
+  flex: 1;
+}
+
+.am-active.am-dimmer {
+  display: block;
+}
+
 .page-home {
   background: #f6f6f6;
   position: relative;
@@ -412,6 +430,504 @@ body {
           height: 2.1rem;
           width: 2.1rem;
         }
+      }
+    }
+  }
+}
+
+.page-lyd {
+  background: #f6f6f6;
+  position: relative;
+  padding-top: 5rem;
+  overflow-x: hidden;
+  z-index: 1;
+  .home-head {
+    height: 3.2rem;
+    width: 100%;
+    background-image: url(../i/home/head.jpg);
+    background-size: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    .title {
+      padding: .2rem;
+      line-height: .5rem;
+      text-align: center;;
+      color:#fff;
+      font-size: .36rem;
+    }
+
+    .left {
+      height: .34rem;
+      width: .34rem;
+      position: absolute;
+      top: .3rem;
+      left: .2rem;
+    }
+    .right {
+      height: .34rem;
+      width: .34rem;
+      position: absolute;
+      top: .3rem;
+      right: .2rem;
+    }
+    .icon-back {
+      background-image: url(../i/lyd/back.png);
+      background-size: contain;
+      height: .34rem;
+      width: .34rem;
+
+      display: block;
+    }
+  }
+
+  .slide-wrapper {
+    height: 3.6rem;
+    width: 7.2rem;
+    position: absolute;
+    z-index: 2;
+    top: .9rem;
+    left: 50%;
+    margin-left: -3.6rem;
+    .am-control-nav {
+      display: none;
+    }
+  }
+
+  .good-filter {
+    background-color: #fff;
+    border-radius: .2rem;
+    width: 6.9rem;
+    margin: 0 auto .3rem;
+    padding: .2rem .2rem;
+    .item {
+      float: left;
+      width: 33.3%;
+      &.active {
+        color: #FC3649;
+      }
+    }
+  }
+
+  .good-list {
+    width: 6.9rem;
+    margin: 0 auto;
+    .item {
+      background-color: #fff;
+      box-shadow: 0px 1px 1px #ddd;
+      margin-bottom: .4rem;
+      display: block;
+      color: #333;
+      .hd {
+        display: block;
+        width: 100%;
+        height: 3.rem;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .con {
+        display: block;
+        padding: .1rem;
+        .tt {
+          font-size: .32rem;
+          line-height: .6rem;
+          display: block;
+        }
+        .price {
+          display: block;
+          line-height: .6rem;
+          color: #F9595C;
+        }
+        .info {
+          font-size: .24rem;
+          line-height: .44rem;
+          display: block;
+          .user {
+            display: inline-block;
+            height: .44rem;
+            width: .44rem;
+            background-image: url(../i/lyd/user.png);
+            background-size: contain;
+            vertical-align: middle;
+            margin-right: .1rem;
+          }
+          .icon-rz {
+            display: inline-block;
+            height: .25rem;
+            width: .35rem;
+            background-image: url(../i/lyd/icon-rz.png);
+            background-size: contain;
+            vertical-align: middle;
+            margin-left: .1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .model-filter {
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%;
+    z-index: 1200;
+    display: none;
+    &.active {
+      display: block;
+    }
+    .good-filter {
+      border-bottom: 1px solid #ddd;
+      width: 100%;
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .good-filter-list {
+      background-color: #fff;
+      padding: 0 .2rem;
+      display: none;
+      &.active {
+        display: block;
+      }
+      .item {
+        color: #333;
+        border-bottom: 1px solid #eee;
+        display: block;
+        line-height: .8rem;
+        position: relative;
+        &.active {
+          color: #FC3659;
+        }
+      }
+    }
+  }
+}
+
+.page-search {
+  background: #f6f6f6;
+  position: relative;
+  padding-top: 1.2rem;
+  overflow-x: hidden;
+  z-index: 1;
+  .home-head {
+    height: 1rem;
+    width: 100%;
+    background-image: url(../i/home/head.jpg);
+    background-size: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    .title {
+      padding: .2rem;
+      line-height: .5rem;
+      text-align: center;;
+      color:#fff;
+      font-size: .36rem;
+    }
+
+    .left {
+      height: .34rem;
+      width: .34rem;
+      position: absolute;
+      top: .3rem;
+      left: .2rem;
+    }
+    .right {
+      height: .34rem;
+      width: .34rem;
+      position: absolute;
+      top: .3rem;
+      right: .2rem;
+    }
+    .icon-back {
+      background-image: url(../i/lyd/back.png);
+      background-size: contain;
+      height: .34rem;
+      width: .34rem;
+
+      display: block;
+    }
+  }
+
+  .search-box {
+    background-color: #fff;
+    padding: .2rem .7rem;
+    height: 1rem;
+    position: relative;
+    z-index: 1;
+    .icon-search {
+      height: .4rem;
+      width: .4rem;
+      position: absolute;
+      left: .2rem;
+      top: .3rem;
+      background: #ff0;
+      z-index: 2;
+    }
+    .icon-close {
+      height: .4rem;
+      width: .4rem;
+      position: absolute;
+      top: .3rem;
+      right: .2rem;
+      background: #f0f;
+      z-index: 2;
+    }
+    .search-input {
+      height: .6rem;
+      line-height: .6rem;
+      width: 100%;
+      border: 0 none;
+      outline: 0 none;
+      &:focus {
+        border: 0 none;
+        outline: 0 none;
+      }
+    }
+  }
+}
+
+.page-detail {
+  background: #f6f6f6;
+  position: relative;
+  padding-top: 4.5rem;
+  padding-bottom: 1.4rem;
+  overflow-x: hidden;
+  z-index: 1;
+  .home-head {
+    height: 3.2rem;
+    width: 100%;
+    background-image: url(../i/home/head.jpg);
+    background-size: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    .title {
+      padding: .2rem;
+      line-height: .5rem;
+      text-align: center;;
+      color:#fff;
+      font-size: .36rem;
+    }
+
+    .left {
+      height: .34rem;
+      width: .34rem;
+      position: absolute;
+      top: .3rem;
+      left: .2rem;
+    }
+    .right {
+      height: .34rem;
+      width: .34rem;
+      position: absolute;
+      top: .3rem;
+      right: .2rem;
+    }
+    .right-1 {
+      height: .34rem;
+      width: .34rem;
+      position: absolute;
+      top: .3rem;
+      right: .7rem;
+    }
+    .icon-back {
+      background-image: url(../i/lyd/back.png);
+      background-size: contain;
+      height: .34rem;
+      width: .34rem;
+
+      display: block;
+    }
+  }
+
+  .slide-wrapper {
+    height: 3.6rem;
+    width: 7.2rem;
+    position: absolute;
+    z-index: 2;
+    top: .9rem;
+    left: 50%;
+    margin-left: -3.6rem;
+    .am-control-nav {
+      display: none;
+    }
+  }
+
+  .detail-hd {
+    background: #fff;
+    border-radius: 0 0 .3rem .3rem;
+    width: 6.9rem;
+    margin: 0 auto .3rem;
+    padding: .3rem .2rem 0;
+    .tt {
+      font-size: .32rem;
+    }
+    .price {
+      color: #F9595C;
+    }
+    .tags {
+      padding: .2rem 0;
+      height: .9rem;
+      width: 100%;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+      z-index: 1;
+      .item {
+        float: left;
+        width: 33.3%;
+        height: .5rem;
+        line-height: .5rem;
+        text-align: center;
+      }
+      .icon-bottom {
+
+      }
+    }
+    .addr {
+      color:#333;
+      display: block;
+      padding: .2rem .4rem;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .detail-con {
+    background-color: #fff;
+    border-radius: .3rem;
+    padding: .3rem 0;
+    width: 6.9rem;
+    margin: 0 auto;
+    overflow: hidden;
+    .section-ydtg {
+      padding: 0 .2rem;
+      .hd {
+        font-size: .32rem;
+      }
+      .con {
+        padding: .2rem 0;
+        height: 1.4rem;
+        .item {
+          float: left;
+          width: 31.3%;
+          margin: 0 1%;
+          img {
+            background: #f1f1f1;
+            width: 100%;
+            height: 1rem;
+          }
+        }
+      }
+    }
+    .section-shop {
+      padding: 0 .2rem;
+      .hd {
+        background: #F5FAFE;
+        padding: .2rem .2rem .2rem 1.2rem;
+        height: 1.2rem;
+        position: relative;
+        z-index: 1;
+        line-height: .8rem;
+        .img-show {
+          display: block;
+          position: absolute;
+          left: .2rem;
+          top: .2rem;
+          background: #ddd;
+          border-radius: 50%;
+          height: .8rem;
+          width: .8rem;
+        }
+        .icon-rz {
+          display: inline-block;
+          height: .25rem;
+          width: .35rem;
+          background-image: url(../i/lyd/icon-rz.png);
+          background-size: contain;
+          vertical-align: middle;
+          margin-left: .1rem;
+        }
+      }
+      .con {
+        padding: 0 .2rem;
+        .shop-nav {
+          height: .62rem;
+          line-height: .6rem;
+          ul {
+            background-color: #fff;
+            height: .62rem;
+            list-style: none;
+            padding: 0;
+            overflow: hidden;
+            li {
+              float: left;
+              padding: 0 .3rem;
+              border-bottom: 1px solid #ddd;
+              a {
+                color: #333;
+                display: block;
+                border-bottom: 2px solid transparent;
+                &.am-active {
+                  border-bottom: 2px solid #FD4E79;
+                }
+              }
+            }
+          }
+        }
+        .am-panel-default {
+          border: 0 none;
+        }
+      }
+    }
+  }
+
+  .detail-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.2rem;
+    z-index: 1;
+    border: 1px solid #ddd;
+    background: #fff;
+    text-align: center;
+    .btn {
+      width: 1.4rem;
+      &.btn-b-l {
+        border-left: 1px solid #ddd;
+      }
+      a {
+        display: block;
+        color: #555;
+        line-height: .4rem;
+        .icon-phone {
+          display: block;
+          height: .7rem;
+        }
+        .icon-kefu {
+          display: block;
+          height: .7rem;
+        }
+      }
+    }
+    .btn-1 {
+      height: 1.2rem;
+      a {
+        background-image: url(../i/home/head.jpg);
+        background-size: cover;
+        display: block;
+        height: 1.2rem;
+        line-height: 1.2rem;
+        width: 100%;
+        color: #fff;
+        font-size: .32rem;
       }
     }
   }

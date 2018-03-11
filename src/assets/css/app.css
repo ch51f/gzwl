@@ -1,6 +1,39 @@
 body {
   font-size: .28rem;
 }
+address,
+blockquote,
+dl,
+fieldset,
+figure,
+hr,
+ol,
+p,
+pre,
+ul {
+  margin-bottom: .1rem;
+}
+* + address,
+* + blockquote,
+* + dl,
+* + fieldset,
+* + figure,
+* + hr,
+* + ol,
+* + p,
+* + pre,
+* + ul {
+  margin-top: .1rem;
+}
+.box {
+  display: flex;
+}
+.flex-1 {
+  flex: 1;
+}
+.am-active.am-dimmer {
+  display: block;
+}
 .page-home {
   background: #f6f6f6;
   position: relative;
@@ -409,4 +442,479 @@ body {
   float: left;
   height: 2.1rem;
   width: 2.1rem;
+}
+.page-lyd {
+  background: #f6f6f6;
+  position: relative;
+  padding-top: 5rem;
+  overflow-x: hidden;
+  z-index: 1;
+}
+.page-lyd .home-head {
+  height: 3.2rem;
+  width: 100%;
+  background-image: url(../i/home/head.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.page-lyd .home-head .title {
+  padding: .2rem;
+  line-height: .5rem;
+  text-align: center;
+  color: #fff;
+  font-size: .36rem;
+}
+.page-lyd .home-head .left {
+  height: .34rem;
+  width: .34rem;
+  position: absolute;
+  top: .3rem;
+  left: .2rem;
+}
+.page-lyd .home-head .right {
+  height: .34rem;
+  width: .34rem;
+  position: absolute;
+  top: .3rem;
+  right: .2rem;
+}
+.page-lyd .home-head .icon-back {
+  background-image: url(../i/lyd/back.png);
+  background-size: contain;
+  height: .34rem;
+  width: .34rem;
+  display: block;
+}
+.page-lyd .slide-wrapper {
+  height: 3.6rem;
+  width: 7.2rem;
+  position: absolute;
+  z-index: 2;
+  top: .9rem;
+  left: 50%;
+  margin-left: -3.6rem;
+}
+.page-lyd .slide-wrapper .am-control-nav {
+  display: none;
+}
+.page-lyd .good-filter {
+  background-color: #fff;
+  border-radius: .2rem;
+  width: 6.9rem;
+  margin: 0 auto .3rem;
+  padding: .2rem .2rem;
+}
+.page-lyd .good-filter .item {
+  float: left;
+  width: 33.3%;
+}
+.page-lyd .good-filter .item.active {
+  color: #FC3649;
+}
+.page-lyd .good-list {
+  width: 6.9rem;
+  margin: 0 auto;
+}
+.page-lyd .good-list .item {
+  background-color: #fff;
+  box-shadow: 0px 1px 1px #ddd;
+  margin-bottom: .4rem;
+  display: block;
+  color: #333;
+}
+.page-lyd .good-list .item .hd {
+  display: block;
+  width: 100%;
+  height: 3.rem;
+}
+.page-lyd .good-list .item .hd img {
+  height: 100%;
+  width: 100%;
+}
+.page-lyd .good-list .item .con {
+  display: block;
+  padding: .1rem;
+}
+.page-lyd .good-list .item .con .tt {
+  font-size: .32rem;
+  line-height: .6rem;
+  display: block;
+}
+.page-lyd .good-list .item .con .price {
+  display: block;
+  line-height: .6rem;
+  color: #F9595C;
+}
+.page-lyd .good-list .item .con .info {
+  font-size: .24rem;
+  line-height: .44rem;
+  display: block;
+}
+.page-lyd .good-list .item .con .info .user {
+  display: inline-block;
+  height: .44rem;
+  width: .44rem;
+  background-image: url(../i/lyd/user.png);
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: .1rem;
+}
+.page-lyd .good-list .item .con .info .icon-rz {
+  display: inline-block;
+  height: .25rem;
+  width: .35rem;
+  background-image: url(../i/lyd/icon-rz.png);
+  background-size: contain;
+  vertical-align: middle;
+  margin-left: .1rem;
+}
+.page-lyd .model-filter {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1200;
+  display: none;
+}
+.page-lyd .model-filter.active {
+  display: block;
+}
+.page-lyd .model-filter .good-filter {
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.page-lyd .model-filter .good-filter-list {
+  background-color: #fff;
+  padding: 0 .2rem;
+  display: none;
+}
+.page-lyd .model-filter .good-filter-list.active {
+  display: block;
+}
+.page-lyd .model-filter .good-filter-list .item {
+  color: #333;
+  border-bottom: 1px solid #eee;
+  display: block;
+  line-height: .8rem;
+  position: relative;
+}
+.page-lyd .model-filter .good-filter-list .item.active {
+  color: #FC3659;
+}
+.page-search {
+  background: #f6f6f6;
+  position: relative;
+  padding-top: 1.2rem;
+  overflow-x: hidden;
+  z-index: 1;
+}
+.page-search .home-head {
+  height: 1rem;
+  width: 100%;
+  background-image: url(../i/home/head.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.page-search .home-head .title {
+  padding: .2rem;
+  line-height: .5rem;
+  text-align: center;
+  color: #fff;
+  font-size: .36rem;
+}
+.page-search .home-head .left {
+  height: .34rem;
+  width: .34rem;
+  position: absolute;
+  top: .3rem;
+  left: .2rem;
+}
+.page-search .home-head .right {
+  height: .34rem;
+  width: .34rem;
+  position: absolute;
+  top: .3rem;
+  right: .2rem;
+}
+.page-search .home-head .icon-back {
+  background-image: url(../i/lyd/back.png);
+  background-size: contain;
+  height: .34rem;
+  width: .34rem;
+  display: block;
+}
+.page-search .search-box {
+  background-color: #fff;
+  padding: .2rem .7rem;
+  height: 1rem;
+  position: relative;
+  z-index: 1;
+}
+.page-search .search-box .icon-search {
+  height: .4rem;
+  width: .4rem;
+  position: absolute;
+  left: .2rem;
+  top: .3rem;
+  background: #ff0;
+  z-index: 2;
+}
+.page-search .search-box .icon-close {
+  height: .4rem;
+  width: .4rem;
+  position: absolute;
+  top: .3rem;
+  right: .2rem;
+  background: #f0f;
+  z-index: 2;
+}
+.page-search .search-box .search-input {
+  height: .6rem;
+  line-height: .6rem;
+  width: 100%;
+  border: 0 none;
+  outline: 0 none;
+}
+.page-search .search-box .search-input:focus {
+  border: 0 none;
+  outline: 0 none;
+}
+.page-detail {
+  background: #f6f6f6;
+  position: relative;
+  padding-top: 4.5rem;
+  padding-bottom: 1.4rem;
+  overflow-x: hidden;
+  z-index: 1;
+}
+.page-detail .home-head {
+  height: 3.2rem;
+  width: 100%;
+  background-image: url(../i/home/head.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.page-detail .home-head .title {
+  padding: .2rem;
+  line-height: .5rem;
+  text-align: center;
+  color: #fff;
+  font-size: .36rem;
+}
+.page-detail .home-head .left {
+  height: .34rem;
+  width: .34rem;
+  position: absolute;
+  top: .3rem;
+  left: .2rem;
+}
+.page-detail .home-head .right {
+  height: .34rem;
+  width: .34rem;
+  position: absolute;
+  top: .3rem;
+  right: .2rem;
+}
+.page-detail .home-head .right-1 {
+  height: .34rem;
+  width: .34rem;
+  position: absolute;
+  top: .3rem;
+  right: .7rem;
+}
+.page-detail .home-head .icon-back {
+  background-image: url(../i/lyd/back.png);
+  background-size: contain;
+  height: .34rem;
+  width: .34rem;
+  display: block;
+}
+.page-detail .slide-wrapper {
+  height: 3.6rem;
+  width: 7.2rem;
+  position: absolute;
+  z-index: 2;
+  top: .9rem;
+  left: 50%;
+  margin-left: -3.6rem;
+}
+.page-detail .slide-wrapper .am-control-nav {
+  display: none;
+}
+.page-detail .detail-hd {
+  background: #fff;
+  border-radius: 0 0 .3rem .3rem;
+  width: 6.9rem;
+  margin: 0 auto .3rem;
+  padding: .3rem .2rem 0;
+}
+.page-detail .detail-hd .tt {
+  font-size: .32rem;
+}
+.page-detail .detail-hd .price {
+  color: #F9595C;
+}
+.page-detail .detail-hd .tags {
+  padding: .2rem 0;
+  height: .9rem;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  z-index: 1;
+}
+.page-detail .detail-hd .tags .item {
+  float: left;
+  width: 33.3%;
+  height: .5rem;
+  line-height: .5rem;
+  text-align: center;
+}
+.page-detail .detail-hd .addr {
+  color: #333;
+  display: block;
+  padding: .2rem .4rem;
+  position: relative;
+  z-index: 1;
+}
+.page-detail .detail-con {
+  background-color: #fff;
+  border-radius: .3rem;
+  padding: .3rem 0;
+  width: 6.9rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.page-detail .detail-con .section-ydtg {
+  padding: 0 .2rem;
+}
+.page-detail .detail-con .section-ydtg .hd {
+  font-size: .32rem;
+}
+.page-detail .detail-con .section-ydtg .con {
+  padding: .2rem 0;
+  height: 1.4rem;
+}
+.page-detail .detail-con .section-ydtg .con .item {
+  float: left;
+  width: 31.3%;
+  margin: 0 1%;
+}
+.page-detail .detail-con .section-ydtg .con .item img {
+  background: #f1f1f1;
+  width: 100%;
+  height: 1rem;
+}
+.page-detail .detail-con .section-shop {
+  padding: 0 .2rem;
+}
+.page-detail .detail-con .section-shop .hd {
+  background: #F5FAFE;
+  padding: .2rem .2rem .2rem 1.2rem;
+  height: 1.2rem;
+  position: relative;
+  z-index: 1;
+  line-height: .8rem;
+}
+.page-detail .detail-con .section-shop .hd .img-show {
+  display: block;
+  position: absolute;
+  left: .2rem;
+  top: .2rem;
+  background: #ddd;
+  border-radius: 50%;
+  height: .8rem;
+  width: .8rem;
+}
+.page-detail .detail-con .section-shop .hd .icon-rz {
+  display: inline-block;
+  height: .25rem;
+  width: .35rem;
+  background-image: url(../i/lyd/icon-rz.png);
+  background-size: contain;
+  vertical-align: middle;
+  margin-left: .1rem;
+}
+.page-detail .detail-con .section-shop .con {
+  padding: 0 .2rem;
+}
+.page-detail .detail-con .section-shop .con .shop-nav {
+  height: .62rem;
+  line-height: .6rem;
+}
+.page-detail .detail-con .section-shop .con .shop-nav ul {
+  background-color: #fff;
+  height: .62rem;
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
+}
+.page-detail .detail-con .section-shop .con .shop-nav ul li {
+  float: left;
+  padding: 0 .3rem;
+  border-bottom: 1px solid #ddd;
+}
+.page-detail .detail-con .section-shop .con .shop-nav ul li a {
+  color: #333;
+  display: block;
+  border-bottom: 2px solid transparent;
+}
+.page-detail .detail-con .section-shop .con .shop-nav ul li a.am-active {
+  border-bottom: 2px solid #FD4E79;
+}
+.page-detail .detail-con .section-shop .con .am-panel-default {
+  border: 0 none;
+}
+.page-detail .detail-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.2rem;
+  z-index: 1;
+  border: 1px solid #ddd;
+  background: #fff;
+  text-align: center;
+}
+.page-detail .detail-bottom .btn {
+  width: 1.4rem;
+}
+.page-detail .detail-bottom .btn.btn-b-l {
+  border-left: 1px solid #ddd;
+}
+.page-detail .detail-bottom .btn a {
+  display: block;
+  color: #555;
+  line-height: .4rem;
+}
+.page-detail .detail-bottom .btn a .icon-phone {
+  display: block;
+  height: .7rem;
+}
+.page-detail .detail-bottom .btn a .icon-kefu {
+  display: block;
+  height: .7rem;
+}
+.page-detail .detail-bottom .btn-1 {
+  height: 1.2rem;
+}
+.page-detail .detail-bottom .btn-1 a {
+  background-image: url(../i/home/head.jpg);
+  background-size: cover;
+  display: block;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  width: 100%;
+  color: #fff;
+  font-size: .32rem;
 }
