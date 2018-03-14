@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="assets/css/amazeui.min.css">
   <link rel="stylesheet" href="assets/css/app.css">
 </head>
-<body class="page-evaluate">
+<body class="page page-evaluate">
   <div class="home-head">
     <div class="title">评价</div>
     <a class="left" href="javascript:;"><i class="icon-back"></i></a>
@@ -35,28 +35,43 @@
       <p><textarea placeholder="请输入你的评价"></textarea></p>
     </div>
     <div class="img-box">
-      <div class="empty">
-        <i class="icon-phone"></i>
-        <span>添加照片</span>
-      </div>
+      <div class="empty"></div>
     </div>
     <div class="con">
       <div class="line box">
         <div class="label">用车满意度</div>
-        <div class="flex-1">
-          <div class="start-box"></div>
+        <div class="input">
+          <div class="start-box">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
         </div>
       </div>
       <div class="line box">
         <div class="label">车辆清洁度</div>
-        <div class="flex-1">
-          <div class="start-box"></div>
+        <div class="input">
+          <div class="start-box">
+            <div class="item active"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
         </div>
       </div>
       <div class="line box">
         <div class="label">管家服务</div>
-        <div class="flex-1">
-          <div class="start-box"></div>
+        <div class="input">
+          <div class="start-box">
+            <div class="item active"></div>
+            <div class="item active"></div>
+            <div class="item active"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -66,7 +81,7 @@
       </div>
     </div>
     <div class="ft">
-      <a href="javascript:;" class="btn">提交</a>
+      <a href="javascript:;" class="btn-color">提交</a>
     </div>
   </div>
 <!--[if (gte IE 9)|!(IE)]><!-->
@@ -81,6 +96,9 @@
 <script src="assets/js/amazeui.min.js"></script>
 <script>
   $(function() {
+    $(".switch-box").on('click', function() {
+      $(this).toggleClass("active");
+    })
   })
 </script>
 </body>

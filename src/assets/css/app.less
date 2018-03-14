@@ -32,14 +32,35 @@ input:focus, textarea:focus {
   display: block;
 }
 
+.btn-color {
+  text-align: center; 
+  background-image: url(../i/base/head.jpg); 
+  background-size: cover; 
+  border-radius: .1rem; 
+  display: block; 
+  height: 1rem; 
+  line-height: 1rem; 
+  width: 100%; 
+  color: #fff; 
+  font-size: .28rem; 
+  &:active,
+  &:focus,
+  &:hover {
+    color: #fff;
+  }
+}
+
 .page {
+  background: #f6f6f6;
   padding-top: 1rem;
   position: relative;
   z-index: 1;
-  .h.home-head {
+  .home-head {
+    .txt-c;
+    color:#fff;
     height: 1rem;
     width: 100%;
-    background-image: url(../i/home/head.jpg);
+    background-image: url(../i/base/head.jpg);
     background-size: cover;
 
     position: absolute;
@@ -48,9 +69,7 @@ input:focus, textarea:focus {
     z-index: 1;
     .title {
       padding: .2rem;
-      line-height: .5rem;
-      text-align: center;;
-      color:#fff;
+      line-height: .6rem;
       font-size: .36rem;
     }
 
@@ -60,6 +79,7 @@ input:focus, textarea:focus {
       position: absolute;
       top: .3rem;
       left: .2rem;
+      z-index: 2;
     }
     .right {
       height: .34rem;
@@ -67,42 +87,24 @@ input:focus, textarea:focus {
       position: absolute;
       top: .3rem;
       right: .2rem;
+      z-index: 2;
     }
     .icon-back {
-      background-image: url(../i/lyd/back.png);
+      background-image: url(../i/base/back.png);
       background-size: contain;
       height: .34rem;
       width: .34rem;
-
       display: block;
     }
   }
 }
 
 .page-home {
-  background: #f6f6f6;
-  position: relative;
   padding-top: 5.4rem;
   padding-bottom: 1rem;
   overflow-x: hidden;
-  z-index: 1;
   .home-head {
     height: 3.2rem;
-    width: 100%;
-    background-image: url(../i/home/head.jpg);
-    background-size: cover;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    .title {
-      padding: .2rem;
-      line-height: .5rem;
-      text-align: center;;
-      color:#fff;
-      font-size: .36rem;
-    }
   }
 
   .slide-wrapper {
@@ -117,6 +119,7 @@ input:focus, textarea:focus {
       display: none;
     }
   }
+
   .main-bar {
     height: 1.8rem;
     widows: 6.9rem;
@@ -130,26 +133,27 @@ input:focus, textarea:focus {
       text-align: center;
       .m {
         display: block;
-        height: 1.22rem;
-        width: 1.22rem;
+        height: 1.24rem;
+        width: 1.24rem;
         margin: 0 auto;
         background-position: 50% 50%;
         background-repeat: no-repeat;
         &.m-1 {
-          background-image: url(../i/home/m-1.png);
+          background-image: url(../i/base/m-1.png);
         }
         &.m-2 {
-          background-image: url(../i/home/m-2.png);
+          background-image: url(../i/base/m-2.png);
         }
         &.m-3 {
-          background-image: url(../i/home/m-3.png);
+          background-image: url(../i/base/m-3.png);
         }
         &.m-4 {
-          background-image: url(../i/home/m-4.png);
+          background-image: url(../i/base/m-4.png);
         }
       }
     }
   }
+
   .banner {
     margin: 0 auto .2rem;
     width: 6.9rem;
@@ -182,52 +186,52 @@ input:focus, textarea:focus {
     }
   }
 
-
   .bottom-bar {
     background-color: #fff;
     border-top: 1px solid #ddd;
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 1rem;
+    height: 1.1rem;
     width: 100%;
     z-index: 99;
     .item {
       float: left;
-      padding-top: .15rem;
+      padding-top: .05rem;
+      line-height: .4rem;
       width: 33.33%;
       display: block;
       color: #333;
       text-align: center;
       .icon {
-        width: .42rem;
-        height: .36rem;
+        width: .6rem;
+        height: .6rem;
         display: block;
         background-position: 50% 50%;
-        background-size: contain;
+        background-size: cover;
         margin: 0 auto;
         &.icon-home {
-          background-image: url(../i/home/ic-h-u.png);
+          background-image: url(../i/base/icon-home.png);
         }
 
         &.icon-find {
-          background-image: url(../i/home/ic-f-u.png);
+          background-image: url(../i/base/icon-find.png);
         }
         &.icon-my {
-          background-image: url(../i/home/ic-m-u.png);
+          background-image: url(../i/base/icon-user.png);
         }
       }
       &.active {
         color: #F43444;
         .icon {
           &.icon-home {
-            background-image: url(../i/home/ic-h.png);
+            background-image: url(../i/base/icon-home-active.png);
           }
           &.icon-find {
-            background-image: url(../i/home/ic-h.png);
+            background-image: url(../i/base/icon-find-active.png);
           }
           &.icon-my {
-            background-image: url(../i/home/ic-h.png);
+            background-image: url(../i/base/icon-user-active.png);
           }
         }
       }
@@ -241,21 +245,8 @@ input:focus, textarea:focus {
       position: relative;
       z-index: 1;
       .m {
-        height: .45rem;
-        .i {
-          display: inline-block;
-          height: .45rem;
-          width: .45rem;
-          background-image: url(../i/home/t-1.png);
-          background-size: contain;
-        }
-        .w {
-          display: inline-block;
-          height: .29rem;
-          width: 1.19rem;
-          background-image: url(../i/home/t-w-1.png);
-          background-size: contain;
-        }
+        height: .55rem;
+        background-image: url(../i/base/tt-1.png);
       }
       .s {
         color:#888;
@@ -264,9 +255,9 @@ input:focus, textarea:focus {
       .o {
         position: absolute;
         right: 0; bottom: .1rem;
-        height: .23rem;
-        width: .74rem;
-        background-image: url(../i/home/more.png);
+        height: .24rem;
+        width: .80rem;
+        background-image: url(../i/base/more-1.png);
         background-size: contain;
         display: block;
       }
@@ -307,21 +298,8 @@ input:focus, textarea:focus {
       position: relative;
       z-index: 1;
       .m {
-        height: .45rem;
-        .i {
-          display: inline-block;
-          height: .45rem;
-          width: .45rem;
-          background-image: url(../i/home/t-2.png);
-          background-size: contain;
-        }
-        .w {
-          display: inline-block;
-          height: .29rem;
-          width: 1.16rem;
-          background-image: url(../i/home/t-w-2.png);
-          background-size: contain;
-        }
+        height: .55rem;
+        background-image: url(../i/base/tt-2.png);
       }
       .s {
         color:#888;
@@ -330,9 +308,9 @@ input:focus, textarea:focus {
       .o {
         position: absolute;
         right: 0; bottom: .1rem;
-        height: .23rem;
-        width: .74rem;
-        background-image: url(../i/home/more-2.png);
+        height: .24rem;
+        width: .8rem;
+        background-image: url(../i/base/more-2.png);
         background-size: contain;
         display: block;
       }
@@ -390,10 +368,12 @@ input:focus, textarea:focus {
       }
     }
   }
+
   .section-white {
     background-color: #fff;
     padding: .1rem 0;
   }
+
   .section-type-3 {
     width: 6.9rem;
     margin: 0 auto .3rem;
@@ -401,21 +381,8 @@ input:focus, textarea:focus {
       position: relative;
       z-index: 1;
       .m {
-        height: .45rem;
-        .i {
-          display: inline-block;
-          height: .45rem;
-          width: .45rem;
-          background-image: url(../i/home/t-3.png);
-          background-size: contain;
-        }
-        .w {
-          display: inline-block;
-          height: .29rem;
-          width: 1.76rem;
-          background-image: url(../i/home/t-w-3.png);
-          background-size: contain;
-        }
+        height: .55rem;
+        background-image: url(../i/base/tt-3.png);
       }
       .s {
         color:#888;
@@ -465,22 +432,26 @@ input:focus, textarea:focus {
             bottom: .1rem;
           }
           .view {
+            height: .4rem;
+            line-height: .4rem;
             position: absolute;
             right: .3rem;
             bottom: .1rem;
             .m {
               display: inline-block;
-              height: .24rem;
-              width: .33rem;
-              background-image: url(../i/home/ic-1.png);
+              height: .28rem;
+              width: .4rem;
+              background-image: url(../i/base/icon-msg.png);
               background-size: cover;
+              vertical-align: middle;
             }
             .v {
               display: inline-block;
-              height: .24rem;
-              width: .37rem;
-              background-image: url(../i/home/ic-2.png);
+              height: .28rem;
+              width: .4rem;
+              background-image: url(../i/base/icon-eye.png);
               background-size: cover;
+              vertical-align: middle;
             }
           }
         }
@@ -1534,53 +1505,6 @@ input:focus, textarea:focus {
 }
 
 .page-evaluate {
-  background: #f6f6f6;
-  position: relative;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  z-index: 1;
-  .home-head {
-    height: 1rem;
-    width: 100%;
-    background-image: url(../i/home/head.jpg);
-    background-size: cover;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    .title {
-      padding: .2rem;
-      line-height: .5rem;
-      text-align: center;;
-      color:#fff;
-      font-size: .36rem;
-    }
-
-    .left {
-      height: .34rem;
-      width: .34rem;
-      position: absolute;
-      top: .3rem;
-      left: .2rem;
-    }
-    .right {
-      height: .34rem;
-      width: .34rem;
-      position: absolute;
-      top: .3rem;
-      right: .2rem;
-    }
-    .icon-back {
-      background-image: url(../i/lyd/back.png);
-      background-size: contain;
-      height: .34rem;
-      width: .34rem;
-
-      display: block;
-    }
-  }
-
   .evaluate-box {
     .hd {
       background-color: #fff;
@@ -1601,15 +1525,12 @@ input:focus, textarea:focus {
       padding: .2rem;
       text-align: center;
       .empty {
-        margin: 0 auto;
-        height: 1.9rem;
-        width: 1.5rem;
-        .icon-phone {
-          background-color: #ddd;
-          display: block;
-          height: 1.5rem;
-          width: 1.5rem;
-        }
+        height: 1.6rem;
+        background-image: url(../i/base/icon-addimg.png);
+        background-size: 1.2rem 1.2rem;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        padding: .2rem 0;
       }
     }
     .con {
@@ -1619,93 +1540,61 @@ input:focus, textarea:focus {
         height: .9rem;
         line-height: .9rem;
         .label {
-            width: 2rem;
+          width: 2rem;
+        }
+        .input {
+          padding: .2rem 0;
+        }
+
+        .start-box {
+          height: .5rem;
+          width: 3rem;
+          .box;
+          .item {
+            .flex-1;
+            height: .5rem;
+            background-image: url(../i/base/star.png);
+            background-size: .44rem .44rem;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            &.active {
+              background-image: url(../i/base/star-active.png);
+            }
+          }
         }
       }
     }
     .other {
+      padding: .3rem;
       .switch-box {
-        padding: .3rem .2rem;
+        height: .8rem;
+        line-height: .8rem;
+        &.active {
+          .icon {
+            background-image: url(../i/base/switch-on.png);
+          }
+        }
         .icon {
+          background-image: url(../i/base/switch-off.png);
+          background-size: cover;
           display: inline-block;
-          width: 1.6rem;
-          height: .6rem;
-          padding-right: .3rem;
+          height: .8rem;
+          width: 1.1rem;
+          margin-right: .4rem;
+          vertical-align: middle;
         }
       }
     }
     .ft {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      z-index: 1;
-      height: 1rem;
-      width: 100%;
-      .btn {
-        text-align: center;
-        background-image: url(../i/home/head.jpg);
-        background-size: cover;
-        display: block;
-        height: 1rem;
-        line-height: 1rem;
-        width: 100%;
-        color: #fff;
-        font-size: .28rem;
-      }
+      padding: .2rem;
     }
   }
 }
 
 .page-apply {
-  background: #f6f6f6;
-  position: relative;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  z-index: 1;
-  .home-head {
-    height: 1rem;
-    width: 100%;
-    background-image: url(../i/home/head.jpg);
-    background-size: cover;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    .title {
-      padding: .2rem;
-      line-height: .5rem;
-      text-align: center;;
-      color:#fff;
-      font-size: .36rem;
-    }
-
-    .left {
-      height: .34rem;
-      width: .34rem;
-      position: absolute;
-      top: .3rem;
-      left: .2rem;
-    }
-    .right {
-      height: .34rem;
-      width: .34rem;
-      position: absolute;
-      top: .3rem;
-      right: .2rem;
-    }
-    .icon-back {
-      background-image: url(../i/lyd/back.png);
-      background-size: contain;
-      height: .34rem;
-      width: .34rem;
-
-      display: block;
-    }
-  }
-
   .apply-box {
     .hd {
+      .txt-c;
       height: .9rem;
       line-height: .9rem;
       text-align: center;
@@ -1715,31 +1604,90 @@ input:focus, textarea:focus {
         background: #fff;
         margin-bottom: .2rem;
         .line {
-          line-height: .9rem;
-          padding: 0 .2rem;
+          .box;
+          line-height: 1.1rem;
+          padding: 0 .3rem;
           border-bottom: 1px solid #ddd;
+          .label {
+            width: 2rem;
+          }
+          .input {
+            .flex-1;
+            position: relative;
+            z-index: 1;
+            input {
+              .txt-r;
+              border: 0 none;
+              padding: 0 .3rem;
+              width: 100%;
+            }
+            i.icon-right {
+              background-image: url(../i/base/arrow-r.png);
+              background-size: cover;
+              position: absolute;
+              right: 0;
+              top: 50%;
+              height: .25rem;
+              width: .25rem;
+              margin-top: -.08rem;
+            }
+          }
         }
       }
       .icon-box {
-        padding: .2rem;
+        background-color: #fff;
+        padding: .3rem;
         margin-bottom: .2rem;
         .icon-line {
           .tt {
             line-height: .5rem;
           }
           .sub {
-            margin-bottom: .2rem;
+            padding: .3rem 0;
             .box;
             .item {
               text-align: center;
               .flex-1;
+              &.active {
+                .icon {
+                  background-color: #fff;
+                  border: 1px solid #444;
+                }
+              }
               .icon {
                 display: block;
                 margin: .1rem auto;
-                height: 1rem;
-                width: 1rem;
-                background-color: #ddd;
+                height: 1.1rem;
+                width: 1.1rem;
+                background-color: #eee;
+                background-position: 50% 50%;
+                background-size: 1.1rem 1.1rem;
+                background-repeat: no-repeat;
                 border-radius: 50%;
+                &.icon-water {
+                  background-image: url(../i/base/icon-divice-5.png);
+                }
+                &.icon-electricity {
+                  background-image: url(../i/base/icon-divice-6.png);
+                }
+                &.icon-toilet {
+                  background-image: url(../i/base/icon-divice-7.png);
+                }
+                &.icon-bath {
+                  background-image: url(../i/base/icon-divice-8.png);
+                }
+                &.icon-dining {
+                  background-image: url(../i/base/icon-divice-1.png);
+                }
+                &.icon-shopping {
+                  background-image: url(../i/base/icon-divice-2.png);
+                }
+                &.icon-bar {
+                  background-image: url(../i/base/icon-divice-3.png);
+                }
+                &.icon-barbecue {
+                  background-image: url(../i/base/icon-divice-4.png);
+                }
               }
             }
           }
@@ -1748,21 +1696,20 @@ input:focus, textarea:focus {
       .pic-box {
         background-color: #fff;
         margin-bottom: .2rem;
-        padding: .2rem;
+        padding: .3rem;
         .empty {
-          text-align: center;
-          .icon-pic {
-            display: block;
-            height: 1.5rem;
-            width: 1.5rem;
-            margin: .2rem 0;
-          }
+          height: 1.6rem;
+          background-image: url(../i/base/icon-addimg.png);
+          background-size: 1.2rem 1.2rem;
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          padding: .2rem 0;
         }
       }
       .textarea-box {
         background-color: #fff;
         margin-bottom: .2rem;
-        padding: .2rem;
+        padding: .3rem;
         textarea {
           border: 0 none;
           height: 2rem;
@@ -1771,23 +1718,7 @@ input:focus, textarea:focus {
       }
     }
     .ft {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      z-index: 1;
-      height: 1rem;
-      width: 100%;
-      .btn {
-        text-align: center;
-        background-image: url(../i/home/head.jpg);
-        background-size: cover;
-        display: block;
-        height: 1rem;
-        line-height: 1rem;
-        width: 100%;
-        color: #fff;
-        font-size: .28rem;
-      }
+      padding: .2rem;
     }
   }
 }
