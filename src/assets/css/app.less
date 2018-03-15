@@ -89,8 +89,36 @@ input:focus, textarea:focus {
       right: .2rem;
       z-index: 2;
     }
+    .right-1 {
+      height: .34rem;
+      width: .34rem;
+      position: absolute;
+      top: .3rem;
+      right: .8rem;
+    }
     .icon-back {
       background-image: url(../i/base/back.png);
+      background-size: contain;
+      height: .34rem;
+      width: .34rem;
+      display: block;
+    }
+    .icon-search {
+      background-image: url(../i/base/icon-search-w.png);
+      background-size: contain;
+      height: .34rem;
+      width: .34rem;
+      display: block;
+    }
+    .icon-share {
+      background-image: url(../i/base/icon-share.png);
+      background-size: contain;
+      height: .34rem;
+      width: .34rem;
+      display: block;
+    }
+    .icon-coll {
+      background-image: url(../i/base/icon-coll.png);
       background-size: contain;
       height: .34rem;
       width: .34rem;
@@ -466,51 +494,9 @@ input:focus, textarea:focus {
 }
 
 .page-lyd {
-  background: #f6f6f6;
-  position: relative;
   padding-top: 5rem;
-  overflow-x: hidden;
-  z-index: 1;
   .home-head {
     height: 3.2rem;
-    width: 100%;
-    background-image: url(../i/home/head.jpg);
-    background-size: cover;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    .title {
-      padding: .2rem;
-      line-height: .5rem;
-      text-align: center;;
-      color:#fff;
-      font-size: .36rem;
-    }
-
-    .left {
-      height: .34rem;
-      width: .34rem;
-      position: absolute;
-      top: .3rem;
-      left: .2rem;
-    }
-    .right {
-      height: .34rem;
-      width: .34rem;
-      position: absolute;
-      top: .3rem;
-      right: .2rem;
-    }
-    .icon-back {
-      background-image: url(../i/lyd/back.png);
-      background-size: contain;
-      height: .34rem;
-      width: .34rem;
-
-      display: block;
-    }
   }
 
   .slide-wrapper {
@@ -535,8 +521,23 @@ input:focus, textarea:focus {
     .item {
       float: left;
       width: 33.3%;
+      padding-right: .2rem;
+      .icon-down {
+        display: inline-block;
+        vertical-align: middle;
+        height: .07rem;
+        width: .14rem;
+        margin-left: .1rem;
+        background-image: url(../i/base/icon-tri-down.png);
+        background-repeat: no-repeat;
+        background-position: right 50%;
+        background-size: .14rem .07rem;
+      }
       &.active {
         color: #FC3649;
+        .icon-down {
+          background-image: url(../i/base/icon-tri-down-a.png);
+        }
       }
     }
   }
@@ -627,8 +628,13 @@ input:focus, textarea:focus {
         display: block;
         line-height: .8rem;
         position: relative;
+        padding-right: .5rem;
+        background-position: right 50%;
+        background-repeat: no-repeat;
+        background-size: .3rem .2rem;
         &.active {
           color: #FC3659;
+          background-image: url(../i/base/icon-checked.png);
         }
       }
     }
@@ -636,53 +642,6 @@ input:focus, textarea:focus {
 }
 
 .page-search {
-  background: #f6f6f6;
-  position: relative;
-  padding-top: 1.2rem;
-  overflow-x: hidden;
-  z-index: 1;
-  .home-head {
-    height: 1rem;
-    width: 100%;
-    background-image: url(../i/home/head.jpg);
-    background-size: cover;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    .title {
-      padding: .2rem;
-      line-height: .5rem;
-      text-align: center;;
-      color:#fff;
-      font-size: .36rem;
-    }
-
-    .left {
-      height: .34rem;
-      width: .34rem;
-      position: absolute;
-      top: .3rem;
-      left: .2rem;
-    }
-    .right {
-      height: .34rem;
-      width: .34rem;
-      position: absolute;
-      top: .3rem;
-      right: .2rem;
-    }
-    .icon-back {
-      background-image: url(../i/lyd/back.png);
-      background-size: contain;
-      height: .34rem;
-      width: .34rem;
-
-      display: block;
-    }
-  }
-
   .search-box {
     background-color: #fff;
     padding: .2rem .7rem;
@@ -695,16 +654,22 @@ input:focus, textarea:focus {
       position: absolute;
       left: .2rem;
       top: .3rem;
-      background: #ff0;
+      background-image: url(../i/base/icon-search.png);
+      background-position: 50% 50%;
+      background-size: .32rem .32rem;
+      background-repeat: no-repeat;
       z-index: 2;
     }
     .icon-close {
-      height: .4rem;
-      width: .4rem;
+      height: .42rem;
+      width: .42rem;
       position: absolute;
-      top: .3rem;
+      top: .28rem;
       right: .2rem;
-      background: #f0f;
+      background-image: url(../i/base/icon-close.png);
+      background-position: 50% 50%;
+      background-size: .32rem .32rem;
+      background-repeat: no-repeat;
       z-index: 2;
     }
     .search-input {
@@ -722,59 +687,9 @@ input:focus, textarea:focus {
 }
 
 .page-detail {
-  background: #f6f6f6;
-  position: relative;
   padding-top: 4.5rem;
-  padding-bottom: 1.4rem;
-  overflow-x: hidden;
-  z-index: 1;
   .home-head {
     height: 3.2rem;
-    width: 100%;
-    background-image: url(../i/home/head.jpg);
-    background-size: cover;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    .title {
-      padding: .2rem;
-      line-height: .5rem;
-      text-align: center;;
-      color:#fff;
-      font-size: .36rem;
-    }
-
-    .left {
-      height: .34rem;
-      width: .34rem;
-      position: absolute;
-      top: .3rem;
-      left: .2rem;
-    }
-    .right {
-      height: .34rem;
-      width: .34rem;
-      position: absolute;
-      top: .3rem;
-      right: .2rem;
-    }
-    .right-1 {
-      height: .34rem;
-      width: .34rem;
-      position: absolute;
-      top: .3rem;
-      right: .7rem;
-    }
-    .icon-back {
-      background-image: url(../i/lyd/back.png);
-      background-size: contain;
-      height: .34rem;
-      width: .34rem;
-
-      display: block;
-    }
   }
 
   .slide-wrapper {
@@ -815,6 +730,24 @@ input:focus, textarea:focus {
         height: .5rem;
         line-height: .5rem;
         text-align: center;
+        .icon-divice {
+          display: inline-block;
+          height: .45rem;
+          width: .45rem;
+          background-image: url(../i/base/icons-divice.png);
+          background-repeat: no-repeat;
+          vertical-align: middle;
+          margin-right: .15rem;
+          &.icon-1 {
+            background-position: 0 0;
+          }
+          &.icon-2 {
+            background-position: -.45rem 0;
+          }
+          &.icon-3 {
+            background-position: 0 -.45rem;
+          }
+        }
       }
       .icon-bottom {
 
@@ -1252,52 +1185,6 @@ input:focus, textarea:focus {
 }
 
 .page-datepick {
-  background: #f6f6f6;
-  position: relative;
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
-  z-index: 1;
-  .home-head {
-    height: 1rem;
-    width: 100%;
-    background-image: url(../i/home/head.jpg);
-    background-size: cover;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    .title {
-      padding: .2rem;
-      line-height: .5rem;
-      text-align: center;;
-      color:#fff;
-      font-size: .36rem;
-    }
-
-    .left {
-      height: .34rem;
-      width: .34rem;
-      position: absolute;
-      top: .3rem;
-      left: .2rem;
-    }
-    .right {
-      height: .34rem;
-      width: .34rem;
-      position: absolute;
-      top: .3rem;
-      right: .2rem;
-    }
-    .icon-back {
-      background-image: url(../i/lyd/back.png);
-      background-size: contain;
-      height: .34rem;
-      width: .34rem;
-
-      display: block;
-    }
-  }
   .date-hd {
     height: .9rem;
     line-height: .9rem;
@@ -1344,20 +1231,13 @@ input:focus, textarea:focus {
     position: fixed;
     left: 0;
     bottom: 0;
-    height: 1.6rem;
+    height: 2rem;
     border-top: 1px solid #ddd;
     padding: .2rem;
     width: 100%;
-    .btn {
-      background-image: url(../i/home/head.jpg);
-      background-size: cover;
-      display: block;
-      height: .9rem;
-      line-height: .9rem;
-      text-align: center;
-      color: #fff;
-    }
     .tips-box {
+      height: .6rem;
+      line-height: .6rem;
       .left {
         text-align: left;
       }
@@ -1385,51 +1265,6 @@ input:focus, textarea:focus {
 }
 
 .page-pay {
-  background: #f6f6f6;
-  position: relative;
-  padding-top: 1rem;
-  z-index: 1;
-  .home-head {
-    height: 1rem;
-    width: 100%;
-    background-image: url(../i/home/head.jpg);
-    background-size: cover;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    .title {
-      padding: .2rem;
-      line-height: .5rem;
-      text-align: center;;
-      color:#fff;
-      font-size: .36rem;
-    }
-
-    .left {
-      height: .34rem;
-      width: .34rem;
-      position: absolute;
-      top: .3rem;
-      left: .2rem;
-    }
-    .right {
-      height: .34rem;
-      width: .34rem;
-      position: absolute;
-      top: .3rem;
-      right: .2rem;
-    }
-    .icon-back {
-      background-image: url(../i/lyd/back.png);
-      background-size: contain;
-      height: .34rem;
-      width: .34rem;
-
-      display: block;
-    }
-  }
   .pay-box {
     background-color: #fff;
     padding: .2rem;
@@ -1439,15 +1274,16 @@ input:focus, textarea:focus {
       margin-bottom: .2rem;
       .icon-success {
         display: block;
-        height: 2rem;
-        width: 2rem;
-        background: #09BA07;
+        height: 1.68rem;
+        width: 1.68rem;
+        background-image: url(../i/base/icon-success.png);
+        background-size: cover;
         border-radius: 50%;
         margin: 0 auto .3rem;
       }
       p {
+        .txt-c;
         font-size: .34rem;
-        text-align: center;
       }
     }
     .con {
@@ -1456,11 +1292,11 @@ input:focus, textarea:focus {
       .flex-1 {
         padding: 0 .2rem;
         a {
+          .txt-c;
           color: #555;
           display: block;
           border: 1px solid #bbb;
           line-height: .8rem;
-          text-align: center;
         }
       }
     }
@@ -1469,8 +1305,11 @@ input:focus, textarea:focus {
       .icon-qrcode {
         background: #444;
         display: block;
-        height: 2rem;
-        width: 2rem;
+        height: 1.68rem;
+        width: 1.68rem;
+        background-image: url(../i/base/ewm.png);
+        background-size: cover;
+
         margin: 0 auto;
       }
       p {
@@ -1484,20 +1323,47 @@ input:focus, textarea:focus {
     background: #fff;
     margin-bottom: .2rem;
     .hd {
-      padding: 0 0 .2rem .4rem;
+      padding: 0 0 0 .6rem;
+      margin-bottom: .2rem;
       line-height: .6rem;
       border-bottom: 1px solid #ddd;
+      position: relative;
+      z-index: 1;
+      .icon-heart {
+        position: absolute;
+        left: .1rem;
+        top: 50%;
+        margin-top: -.16rem;
+        height: .32rem;
+        width: .32rem;
+        background-image: url(../i/base/icon-heart.png);
+        background-size: cover;
+      }
     }
     .con {
-      padding: .4rem 0;
+      padding: .3rem 0;
       .flex-1 {
         text-align: center;
         .icon {
           display: block;
-          height: 1rem;
-          width: 1rem;
-          background-color: #888;
-          margin: 0 auto;
+          height: 1.08rem;
+          width: 1.08rem;
+          border: 1px solid #eee;
+          border-radius: 50%;
+          margin: 0 auto .2rem;
+          background-size: cover;
+          &.icon-food {
+              background-image: url(../i/base/icon-chi.png);
+          }
+          &.icon-sleep {
+              background-image: url(../i/base/icon-zhu.png);
+          }
+          &.icon-find {
+              background-image: url(../i/base/icon-wan.png);
+          }
+          &.icon-buy {
+              background-image: url(../i/base/icon-wu.png);
+          }
         }
       }
     }
