@@ -710,15 +710,17 @@ input:focus, textarea:focus {
     border-radius: 0 0 .3rem .3rem;
     width: 6.9rem;
     margin: 0 auto .3rem;
-    padding: .3rem .2rem 0;
+    padding: .3rem 0 0;
     .tt {
       font-size: .32rem;
+      padding: 0 .2rem;
     }
     .price {
       color: #F9595C;
+      padding: 0 .2rem;
     }
     .tags {
-      padding: .2rem 0;
+      padding: .2rem .4rem;
       height: .9rem;
       width: 100%;
       border-bottom: 1px solid #ddd;
@@ -734,31 +736,63 @@ input:focus, textarea:focus {
           display: inline-block;
           height: .45rem;
           width: .45rem;
-          background-image: url(../i/base/icons-divice.png);
+          // background-image: url(../i/base/icons-divice.png);
           background-repeat: no-repeat;
           vertical-align: middle;
           margin-right: .15rem;
           &.icon-1 {
-            background-position: 0 0;
+            background-image: url(../i/base/icon-tag-1.png);
           }
           &.icon-2 {
-            background-position: -.45rem 0;
+            background-image: url(../i/base/icon-tag-2.png);
           }
           &.icon-3 {
-            background-position: 0 -.45rem;
+            background-image: url(../i/base/icon-tag-3.png);
           }
         }
       }
       .icon-bottom {
-
+        position: absolute;
+        right: .15rem;
+        top: 50%;
+        margin-top: -.07rem;
+        height: .14rem;
+        width: .24rem;
+        display: block;
+        background-image: url(../i/base/icon-arrow-bottom.png);
+        background-size: cover;
       }
     }
     .addr {
       color:#333;
       display: block;
-      padding: .2rem .4rem;
+      padding: .2rem .4rem .2rem .6rem;
       position: relative;
       z-index: 1;
+      .icon-addr {
+        position: absolute;
+        left: .2rem;
+        top: 50%;
+        margin-top: -.17rem;
+        width: .28rem;
+        height: .35rem;
+        display: block;
+        z-index: 1;
+        background-image: url(../i/base/icon-address.png);
+        background-size: cover;
+      }
+      .icon-right {
+        position: absolute;
+        right: .2rem;
+        top: 50%;
+        margin-top: -.12rem;
+        width: .14rem;
+        height: .24rem;
+        display: block;
+        z-index: 1;
+        background-image: url(../i/base/icon-arrow-right.png);
+        background-size: cover;
+      }
     }
   }
 
@@ -803,7 +837,8 @@ input:focus, textarea:focus {
           position: absolute;
           left: .2rem;
           top: .2rem;
-          background: #ddd;
+          background-image: url(../i/base/user.png);
+          background-size: cover;
           border-radius: 50%;
           height: .8rem;
           width: .8rem;
@@ -812,8 +847,8 @@ input:focus, textarea:focus {
           display: inline-block;
           height: .25rem;
           width: .35rem;
-          background-image: url(../i/lyd/icon-rz.png);
-          background-size: contain;
+          background-image: url(../i/base/icon-rz.png);
+          background-size: cover;
           vertical-align: middle;
           margin-left: .1rem;
         }
@@ -856,7 +891,7 @@ input:focus, textarea:focus {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 1.2rem;
+    height: 1rem;
     z-index: 1;
     border: 1px solid #ddd;
     background: #fff;
@@ -871,23 +906,31 @@ input:focus, textarea:focus {
         color: #555;
         line-height: .4rem;
         .icon-phone {
+          background-image: url(../i/base/icon-phone.png);
+          background-size: .44rem .44rem;
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
           display: block;
-          height: .7rem;
+          height: .55rem;
         }
         .icon-kefu {
+          background-image: url(../i/base/icon-kefu.png);
+          background-size: .44rem .44rem;
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
           display: block;
-          height: .7rem;
+          height: .55rem;
         }
       }
     }
     .btn-1 {
-      height: 1.2rem;
+      height: 1rem;
       a {
         background-image: url(../i/home/head.jpg);
         background-size: cover;
         display: block;
-        height: 1.2rem;
-        line-height: 1.2rem;
+        height: 1rem;
+        line-height: 1rem;
         width: 100%;
         color: #fff;
         font-size: .32rem;
@@ -897,58 +940,9 @@ input:focus, textarea:focus {
 }
 
 .page-order {
-  background: #f6f6f6;
-  position: relative;
   padding-top: 4.5rem;
-  overflow-x: hidden;
-  z-index: 1;
   .home-head {
     height: 3.2rem;
-    width: 100%;
-    background-image: url(../i/home/head.jpg);
-    background-size: cover;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    .title {
-      padding: .2rem;
-      line-height: .5rem;
-      text-align: center;;
-      color:#fff;
-      font-size: .36rem;
-    }
-
-    .left {
-      height: .34rem;
-      width: .34rem;
-      position: absolute;
-      top: .3rem;
-      left: .2rem;
-    }
-    .right {
-      height: .34rem;
-      width: .34rem;
-      position: absolute;
-      top: .3rem;
-      right: .2rem;
-    }
-    .right-1 {
-      height: .34rem;
-      width: .34rem;
-      position: absolute;
-      top: .3rem;
-      right: .7rem;
-    }
-    .icon-back {
-      background-image: url(../i/lyd/back.png);
-      background-size: contain;
-      height: .34rem;
-      width: .34rem;
-
-      display: block;
-    }
   }
   .section-order-info {
     background: #fff;
@@ -1024,12 +1018,13 @@ input:focus, textarea:focus {
           left: 50%;
           color: #555;
           margin-left: -.6rem;
-          line-height: .6rem;
+          line-height: .5rem;
+          padding: .1rem;
           z-index: 1;
           height: 1.2rem;
           width: 1.2rem;
           .important {
-            font-size: .34rem;
+            font-size: .38rem;
           }
           &:before {
             content: ".";
@@ -1104,15 +1099,28 @@ input:focus, textarea:focus {
     .item {
       color: #888;
       border-bottom: 1px solid #ddd;
-      padding: .2rem .2rem .2rem 1rem;
+      padding: .2rem .2rem .2rem .7rem;
       position: relative;
       z-index: 1;
       &.item-1 {
         padding-left: .2rem;
       }
+      .check {
+        position: absolute;
+        left: .2rem;
+        top: .35rem;
+        display: block;
+        background-image: url(../i/base/icon-checked-s.png);
+        background-size: cover;
+        height: .3rem;
+        width: .3rem;
+        &.active {
+          background-image: url(../i/base/icon-checked-s-a.png);
+        }
+      }
       .hd {
+        height: .6rem;
         line-height: .6rem;
-        margin-bottom: .2rem;
         .t {
           color: #333;
         }
@@ -1141,9 +1149,25 @@ input:focus, textarea:focus {
               text-align: center;
             }
           }
+          &.label-r {
+            padding-right: .3rem;
+            .icon-right {
+              position: absolute;
+              right: .2rem;
+              top: 50%;
+              margin-top: -.12rem;
+              width: .14rem;
+              height: .24rem;
+              display: block;
+              z-index: 1;
+              background-image: url(../i/base/icon-arrow-right.png);
+              background-size: cover;
+            }
+          }
         }
       }
       .con {
+        padding-top: .2rem;
         margin-bottom: .2rem;
         .memo {
           border: 1px solid #ddd;
@@ -1158,11 +1182,26 @@ input:focus, textarea:focus {
   }
   .section-order-btns {
     background: #fff;
+    position: relative;
+    z-index: 1;
     .top {
       background: #f6f6f6;
       padding: .2rem .2rem .4rem .7rem;
       label {
         font-weight: 400;
+      }
+      .check {
+        position: absolute;
+        left: .2rem;
+        top: .3rem;
+        display: block;
+        background-image: url(../i/base/icon-checked-s.png);
+        background-size: cover;
+        height: .3rem;
+        width: .3rem;
+        &.active {
+          background-image: url(../i/base/icon-checked-s-a.png);
+        }
       }
     }
     .con {
@@ -1585,6 +1624,231 @@ input:focus, textarea:focus {
     }
     .ft {
       padding: .2rem;
+    }
+  }
+}
+
+.page-find {
+  padding-top: 5rem;
+  .home-head {
+    height: 3.2rem;
+  }
+
+  .slide-wrapper {
+    height: 3.6rem;
+    width: 7.2rem;
+    position: absolute;
+    z-index: 2;
+    top: .9rem;
+    left: 50%;
+    margin-left: -3.6rem;
+    .am-control-nav {
+      display: none;
+    }
+  }
+
+  .find-tab {
+    .box;
+    border-bottom: 1px solid #ddd;
+    padding: 0 .2rem;
+    .item {
+      .txt-c;
+      .flex-1;
+      padding: 0 .2rem;
+      margin-bottom: -1px;
+      &.active {
+        a {
+          color: #333;
+          border-bottom: 1px solid #FB4E79;
+        }
+      }
+      a {
+        border-bottom: 1px solid transparent;
+        display: block;
+        color: #888;
+        height: .8rem;
+        line-height: .8rem;
+      }
+    }
+  }
+
+  .find-list {
+    .item {
+      .box;
+      color: #333;
+      padding: .2rem;
+      border-bottom: 2px solid #ddd;
+      height: .2.5rem;
+      .hd {
+        height: 2.1rem;
+        width: 2.1rem;
+      }
+      .con {
+        .flex-1;
+        height: 2.1rem;
+        position: relative;
+        padding: .2rem 0rem .2rem .2rem;
+        z-index: 1;
+        .tt {
+          display: block;
+          margin-bottom: .3rem;
+          line-height: .3rem;
+          height: .3rem;
+          overflow: hidden;
+        }
+        .desc {
+          font-size: .24rem;
+          display: block;
+          line-height: .28rem;
+          height: .56rem;
+          overflow: hidden;
+        }
+        .date {
+          position: absolute;
+          right: .1rem;
+          bottom: .1rem;
+        }
+        .view {
+          height: .4rem;
+          line-height: .4rem;
+          position: absolute;
+          left: .2rem;
+          bottom: .1rem;
+          .m {
+            display: inline-block;
+            height: .28rem;
+            width: .4rem;
+            background-image: url(../i/base/icon-msg.png);
+            background-size: cover;
+            vertical-align: middle;
+          }
+          .v {
+            display: inline-block;
+            height: .28rem;
+            width: .4rem;
+            background-image: url(../i/base/icon-eye.png);
+            background-size: cover;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-find-detail {
+  .head-bottom {
+    background-image: url(../i/base/head.jpg);
+    background-size: cover;
+    height: 1rem;
+    width: 100%;
+    z-index: 1;
+  }
+  .detail-box {
+    margin: -1rem .2rem .5rem;
+    background-color: #fff;
+    box-shadow: 0px 2px 20px #F9A6AC;
+    border-radius: .2rem;
+    padding: .2rem;
+    .hd {
+      padding: .1rem;
+      border-bottom: 2px solid #222;
+      .tt {
+        .txt-c;
+        font-size: .3rem;
+        margin-bottom: .15rem;
+      }
+      .sub {
+        .txt-r;
+      }
+    }
+    .con {
+      padding: .1rem;
+      border-bottom: 2px solid #222;
+    }
+    .ft {
+      height: .6rem;
+      padding: .1rem;
+      position: relative;z-index: 1;
+      .view {
+        height: .4rem;
+        line-height: .4rem;
+        position: absolute;
+        left: 0rem;
+        bottom: .1rem;
+        .m {
+          display: inline-block;
+          height: .28rem;
+          width: .4rem;
+          background-image: url(../i/base/icon-msg.png);
+          background-size: cover;
+          vertical-align: middle;
+        }
+        .v {
+          display: inline-block;
+          height: .28rem;
+          width: .4rem;
+          background-image: url(../i/base/icon-eye.png);
+          background-size: cover;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .detail-feedback {
+    padding: .2rem;
+    .hd {
+      height: .6rem;
+      position: relative;
+      z-index: 1;
+      .line {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        height: .01rem;
+        border-top: .01rem solid #222;
+        width: 100%;
+        z-index: 1;
+      }
+      .tt {
+        position: absolute;
+        left: 50%;
+        margin-left: -1rem;
+        top: 0;
+        width: 2rem;
+        height: .6rem;
+        line-height: .6rem;
+        background: #f6f6f6;
+        .txt-c;
+        z-index: 2;
+      }
+    }
+    .sub {
+      .txt-r;
+      padding: .15rem;
+    }
+    .list {
+      .item {
+        .box;
+        margin-bottom: .2rem;
+        .hd {
+          width: .8rem;
+          img {
+            height: .8rem;
+            width: .8rem;
+          }
+        }
+        .con {
+          .flex-1;
+          padding: 0 .3rem;
+          .tt {
+            color: #666;
+          }
+          .date {
+            color: #999;
+          }
+        }
+      }
     }
   }
 }
