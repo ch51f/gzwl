@@ -26,6 +26,7 @@ input:focus, textarea:focus {
 .flex-4 {flex: 4;}
 
 .txt-primary {color: #F43444;}
+.txt-info {color: #76B5F4;}
 .txt-default {color: #333;}
 .txt-muted {color:#999;}
 .txt-white {color: #fff;}
@@ -1039,42 +1040,43 @@ input:focus, textarea:focus {
         background-image: url(../i/base/icon-address.png);
       }
       .icon-right {
+        .block;
+        .img-cover;
         position: absolute;
         right: .2rem;
         top: 50%;
         margin-top: -.12rem;
         width: .14rem;
         height: .24rem;
-        display: block;
         z-index: 1;
         background-image: url(../i/base/icon-arrow-right.png);
-        background-size: cover;
       }
     }
   }
 
   .detail-con {
-    background-color: #fff;
+    .bg-white;
+
     border-radius: .3rem;
     padding: .3rem 0;
-    width: 6.9rem;
-    margin: 0 auto;
+    margin: 0 .2rem;
     overflow: hidden;
     .section-ydtg {
       padding: 0 .2rem;
       .hd {
-        font-size: .32rem;
+        .font-big;
       }
       .con {
+        .box;
+        .box-row;
         padding: .2rem 0;
         height: 1.4rem;
         .item {
-          float: left;
           width: 31.3%;
           margin: 0 1%;
           img {
             background: #f1f1f1;
-            width: 100%;
+            .width-full;
             height: 1rem;
           }
         }
@@ -1083,30 +1085,30 @@ input:focus, textarea:focus {
     .section-shop {
       padding: 0 .2rem;
       .hd {
+        .relative;
         background: #F5FAFE;
         padding: .2rem .2rem .2rem 1.2rem;
         height: 1.2rem;
-        position: relative;
-        z-index: 1;
         line-height: .8rem;
         .img-show {
-          display: block;
+          .block;
+          .img-cover;
           position: absolute;
           left: .2rem;
           top: .2rem;
           background-image: url(../i/base/user.png);
-          background-size: cover;
           border-radius: 50%;
           height: .8rem;
           width: .8rem;
         }
         .icon-rz {
+          .inline-block;
+          .img-cover;
+          .vertical-middle;
           display: inline-block;
           height: .25rem;
           width: .35rem;
           background-image: url(../i/base/icon-rz.png);
-          background-size: cover;
-          vertical-align: middle;
           margin-left: .1rem;
         }
       }
@@ -1116,18 +1118,18 @@ input:focus, textarea:focus {
           height: .62rem;
           line-height: .6rem;
           ul {
-            background-color: #fff;
+            .bg-white;
             height: .62rem;
             list-style: none;
             padding: 0;
             overflow: hidden;
             li {
+              .border-bottom;
               float: left;
               padding: 0 .3rem;
-              border-bottom: 1px solid #ddd;
               a {
-                color: #333;
-                display: block;
+                .txt-default;
+                .block;
                 border-bottom: 2px solid transparent;
                 &.am-active {
                   border-bottom: 2px solid #FD4E79;
@@ -1144,38 +1146,38 @@ input:focus, textarea:focus {
   }
 
   .detail-bottom {
+    .bg-white;
+    .width-full;
+    .txt-c;
+    .border-top;
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
     height: 1rem;
     z-index: 1;
-    border: 1px solid #ddd;
-    background: #fff;
-    text-align: center;
     .btn {
       width: 1.4rem;
       &.btn-b-l {
         border-left: 1px solid #ddd;
       }
       a {
-        display: block;
-        color: #555;
+        .block;
+        .txt-muted;
         line-height: .4rem;
         .icon-phone {
+          .block;
           background-image: url(../i/base/icon-phone.png);
           background-size: .44rem .44rem;
           background-position: 50% 50%;
           background-repeat: no-repeat;
-          display: block;
           height: .55rem;
         }
         .icon-kefu {
+          .block;
           background-image: url(../i/base/icon-kefu.png);
           background-size: .44rem .44rem;
           background-position: 50% 50%;
           background-repeat: no-repeat;
-          display: block;
           height: .55rem;
         }
       }
@@ -1183,38 +1185,33 @@ input:focus, textarea:focus {
     .btn-1 {
       height: 1rem;
       a {
+        .img-cover;
+        .block;
+        .txt-white;
+        .font-big;
+        .width-full;
         background-image: url(../i/home/head.jpg);
-        background-size: cover;
-        display: block;
         height: 1rem;
         line-height: 1rem;
-        width: 100%;
-        color: #fff;
-        font-size: .32rem;
       }
     }
   }
 }
 
 .page-order {
-  padding-top: 4.5rem;
   .home-head {
     height: 3.2rem;
   }
   .section-order-info {
-    background: #fff;
-    width: 6.9rem;
+    .bg-white;
+    margin: 0 .2rem .2rem;
+    position: relative;
+    z-index: 100;
     box-shadow: 0px 2px 20px #F9A6AC;
-    position: absolute;
-    margin-left: -3.45rem;
-    left: 50%;
-    top: .9rem;
     padding: .3rem .2rem;
     border-radius: .2rem;
-    z-index: 2;
     .hd {
-      position: relative;
-      z-index: 1;
+      .relative;
       height: 1rem;
       padding: 0 .1rem 0 1.2rem;
       margin-bottom: .2rem;
@@ -1227,7 +1224,7 @@ input:focus, textarea:focus {
         border-radius: .1rem;
       }
       .tt {
-        font-size: .34rem;
+        .font-big;
         line-height: .5rem;
         margin-bottom: .1rem;
       }
@@ -1235,7 +1232,6 @@ input:focus, textarea:focus {
         line-height: .3rem;
       }
       .price {
-        font-size: .3rem;
         font-weight: 600;
         position: absolute;
         right: .5rem;
@@ -1244,20 +1240,19 @@ input:focus, textarea:focus {
       }
     }
     .con {
-      border-top: 1px solid #ddd;
-      border-bottom: 1px solid #ddd;
+      .border-top;
+      .border-bottom;
+      .relative;
       padding: .3rem 0;
-      position: relative;
-      z-index: 1;
       margin: .2rem;
       .begin-box, .end-box {
-        text-align: center;
+        .txt-c;
         .tt {
-          font-size: .24rem;
+          .font-small;
           margin-bottom: .15rem;
         }
         .date {
-          font-size: .34rem;
+          .font-biger;
           margin-bottom: .05rem;
         }
         .sub-date {
@@ -1310,35 +1305,38 @@ input:focus, textarea:focus {
     }
     .ft {
       .tips {
-        color: #76B5F4;
+        .font-small;
+        .txt-info;
+        padding: 0 .2rem;
       }
     }
   }
   .section-order-contact {
-    background: #fff;
+    .bg-white;
+    margin-top: -2rem;
     margin-bottom: .2rem;
     padding: 2rem .3rem 0;
     .line {
       padding: 0 .2rem;
       line-height: .9rem;
       &+.line {
-        border-top: 1px solid #ddd;
+        .border-top;
       }
       .box;
       .label {
+        .block;
+        .txt-r;
         font-weight: 400;
         .icon-must {
           padding-right: .05rem;
         }
-        text-align: right;
-        display: block;
         width: 1.4rem;
       }
       .input {
         input {
+          .width-full;
           border: 0 none;
           line-height: .9rem;
-          width: 100%;
         }
       }
     }
@@ -1354,21 +1352,20 @@ input:focus, textarea:focus {
       margin-bottom: .2rem;
     }
     .item {
-      color: #888;
-      border-bottom: 1px solid #ddd;
+      .txt-muted;
+      .border-bottom;
+      .relative;
       padding: .2rem .2rem .2rem .7rem;
-      position: relative;
-      z-index: 1;
       &.item-1 {
         padding-left: .2rem;
       }
       .check {
+        .block;
+        .img-cover;
         position: absolute;
         left: .2rem;
         top: .35rem;
-        display: block;
         background-image: url(../i/base/icon-checked-s.png);
-        background-size: cover;
         height: .3rem;
         width: .3rem;
         &.active {
@@ -1379,27 +1376,28 @@ input:focus, textarea:focus {
         height: .6rem;
         line-height: .6rem;
         .t {
-          color: #333;
+          .txt-default;
         }
         .label {
-          text-align: right;
+          .txt-r;
           height: .6rem;
           width: 3rem;
           .num-box {
             .box;
-            text-align: center;
+            .txt-c;
             height: .6rem;
             line-height: .6rem;
             margin-left: .2rem;
             width: 1.8rem;
             .sub,.add {
               .flex-1;
-              background: #EEEEEE;
-              display: block;
+              .block;
+              .txt-default;
+              background: #EEE;
               height: .6rem;
-              color: #333;
             }
             input {
+              .txt-c;
               border: 1px solid #E5E5E5;
               height: .6rem;
               width: .6rem;
@@ -1409,16 +1407,16 @@ input:focus, textarea:focus {
           &.label-r {
             padding-right: .3rem;
             .icon-right {
+              .block;
+              .img-cover;
               position: absolute;
               right: .2rem;
               top: 50%;
               margin-top: -.12rem;
               width: .14rem;
               height: .24rem;
-              display: block;
               z-index: 1;
               background-image: url(../i/base/icon-arrow-right.png);
-              background-size: cover;
             }
           }
         }
@@ -1427,20 +1425,19 @@ input:focus, textarea:focus {
         padding-top: .2rem;
         margin-bottom: .2rem;
         .memo {
+          .width-full;
           border: 1px solid #ddd;
-          width: 100%;
           height: 2rem;
         }
       }
     }
-    background-color: #fff;
+    .bg-white;
     padding: .3rem 0;
     margin-bottom: .2rem;
   }
   .section-order-btns {
-    background: #fff;
-    position: relative;
-    z-index: 1;
+    .bg-white;
+    .relative;
     .top {
       background: #f6f6f6;
       padding: .2rem .2rem .4rem .7rem;
@@ -1448,12 +1445,12 @@ input:focus, textarea:focus {
         font-weight: 400;
       }
       .check {
+        .block;
+        .img-cover;
         position: absolute;
         left: .2rem;
         top: .3rem;
-        display: block;
         background-image: url(../i/base/icon-checked-s.png);
-        background-size: cover;
         height: .3rem;
         width: .3rem;
         &.active {
@@ -1463,13 +1460,13 @@ input:focus, textarea:focus {
     }
     .con {
       .btn {
+        .block;
+        .img-cover;
+        .txt-c;
+        .txt-white;
         background-image: url(../i/home/head.jpg);
-        background-size: cover;
-        display: block;
         height: 1rem;
         line-height: 1rem;
-        text-align: center;
-        color: #fff;
         width: 2.8rem;
       }
       .info {
@@ -1482,20 +1479,20 @@ input:focus, textarea:focus {
 
 .page-datepick {
   .date-hd {
+    .bg-white;
+    .txt-c;
     height: .9rem;
     line-height: .9rem;
     padding: 0 .2rem;
-    background: #fff;
-    text-align: center;
   }
   .date-con {
-    text-align: center;
+    .txt-c;
     .month-box {
       .hd {
         line-height: .8rem;
       }
       .con {
-        background: #fff;
+        .bg-white;
         .item {
           height: 1.1rem;
           padding: .25rem 0;
@@ -1504,10 +1501,10 @@ input:focus, textarea:focus {
             background: #f4f4f4;
           }
           &.active {
+            .txt-white;
             background: #FD4E79;
-            color: #fff;
             .p {
-              color: #fff;
+              .txt-white;
             }
           }
           .d {
@@ -1515,43 +1512,43 @@ input:focus, textarea:focus {
           }
           .p {
             .price;
-            font-size: .24rem;
+            .font-small;
           }
         }
       }
     }
   }
   .date-btn {
-    background-color: #fff;
+    .bg-white;
+    .border-top;
+    .width-full;
     z-index: 2;
     position: fixed;
     left: 0;
     bottom: 0;
     height: 2rem;
-    border-top: 1px solid #ddd;
     padding: .2rem;
-    width: 100%;
     .tips-box {
       height: .6rem;
       line-height: .6rem;
       .left {
-        text-align: left;
+        .txt-l;
       }
       .right {
-        text-align: right;
+        .txt-r;
       }
       .icon-default {
+        .inline-block;
         background: #DEDEDE;
         border-radius: 50%;
-        display: inline-block;
         height: .24rem;
         width: .24rem;
         margin: 0 .05rem;
       }
       .icon-active {
+        .inline-block;
         background: #FD4E79;
         border-radius: 50%;
-        display: inline-block;
         height: .24rem;
         width: .24rem;
         margin: 0 .05rem;
@@ -1562,24 +1559,24 @@ input:focus, textarea:focus {
 
 .page-pay {
   .pay-box {
-    background-color: #fff;
+    .bg-white;
     padding: .2rem;
     margin-bottom: .2rem;
     .hd {
       padding-top: .4rem;
       margin-bottom: .2rem;
       .icon-success {
-        display: block;
+        .block;
+        .img-cover;
         height: 1.68rem;
         width: 1.68rem;
         background-image: url(../i/base/icon-success.png);
-        background-size: cover;
         border-radius: 50%;
         margin: 0 auto .3rem;
       }
       p {
         .txt-c;
-        font-size: .34rem;
+        .font-big;
       }
     }
     .con {
@@ -1589,8 +1586,8 @@ input:focus, textarea:focus {
         padding: 0 .2rem;
         a {
           .txt-c;
-          color: #555;
-          display: block;
+          .txt-muted;
+          .block;
           border: 1px solid #bbb;
           line-height: .8rem;
         }
@@ -1599,33 +1596,33 @@ input:focus, textarea:focus {
     .ft {
       margin-bottom: .2rem;
       .icon-qrcode {
+        .block;
+        .img-cover;
         background: #444;
-        display: block;
         height: 1.68rem;
         width: 1.68rem;
         background-image: url(../i/base/ewm.png);
-        background-size: cover;
 
         margin: 0 auto;
       }
       p {
-        color: #999;
-        text-align: center;
+        .txt-c;
+        .txt-muted;
       }
     }
   }
   .recommend-box {
+    .bg-white;
     padding: .2rem;
-    background: #fff;
     margin-bottom: .2rem;
     .hd {
+      .border-bottom;
+      .relative;
       padding: 0 0 0 .6rem;
       margin-bottom: .2rem;
       line-height: .6rem;
-      border-bottom: 1px solid #ddd;
-      position: relative;
-      z-index: 1;
       .icon-heart {
+        .img-cover;
         position: absolute;
         left: .1rem;
         top: 50%;
@@ -1633,21 +1630,20 @@ input:focus, textarea:focus {
         height: .32rem;
         width: .32rem;
         background-image: url(../i/base/icon-heart.png);
-        background-size: cover;
       }
     }
     .con {
       padding: .3rem 0;
       .flex-1 {
-        text-align: center;
+        .txt-c;
         .icon {
-          display: block;
+          .block;
+          .img-cover;
           height: 1.08rem;
           width: 1.08rem;
           border: 1px solid #eee;
           border-radius: 50%;
           margin: 0 auto .2rem;
-          background-size: cover;
           &.icon-food {
               background-image: url(../i/base/icon-chi.png);
           }
@@ -1669,23 +1665,23 @@ input:focus, textarea:focus {
 .page-evaluate {
   .evaluate-box {
     .hd {
-      background-color: #fff;
-      border-bottom: 1px solid #ddd;
+      .bg-white;
+      .border-bottom;
       padding: .2rem;
       label {
         font-weight: 400;
       }
       textarea {
+        .width-full;
         border: 0 none;
         height: 2rem;
-        width: 100%;
       }
     }
     .img-box {
+      .bg-white;
+      .txt-c;
       margin-bottom: .2rem;
-      background-color: #fff;
       padding: .2rem;
-      text-align: center;
       .empty {
         height: 1.6rem;
         background-image: url(../i/base/icon-addimg.png);
@@ -1696,7 +1692,7 @@ input:focus, textarea:focus {
       }
     }
     .con {
-      background-color: #fff;
+      .bg-white;
       padding: .2rem;
       .line {
         height: .9rem;
@@ -1737,13 +1733,13 @@ input:focus, textarea:focus {
           }
         }
         .icon {
+          .inline-block;
+          .img-cover;
+          .vertical-middle;
           background-image: url(../i/base/switch-off.png);
-          background-size: cover;
-          display: inline-block;
           height: .8rem;
           width: 1.1rem;
           margin-right: .4rem;
-          vertical-align: middle;
         }
       }
     }
@@ -1754,27 +1750,27 @@ input:focus, textarea:focus {
 }
 
 .page-find {
-  padding-top: 5rem;
   .home-head {
     height: 3.2rem;
   }
 
   .slide-wrapper {
+    .relative;
+    border-radius: .3rem;
+    z-index: 99;
     height: 3.6rem;
-    width: 7.2rem;
-    position: absolute;
-    z-index: 2;
-    top: .9rem;
-    left: 50%;
-    margin-left: -3.6rem;
+    margin: 0 .2rem .4rem;
     .am-control-nav {
       display: none;
+    }
+    img {
+      border-radius: .3rem;
     }
   }
 
   .find-tab {
     .box;
-    border-bottom: 1px solid #ddd;
+    .border-bottom;
     padding: 0 .2rem;
     .item {
       .txt-c;
@@ -1783,14 +1779,14 @@ input:focus, textarea:focus {
       margin-bottom: -1px;
       &.active {
         a {
-          color: #333;
+          .txt-default;
           border-bottom: 1px solid #FB4E79;
         }
       }
       a {
+        .block;
+        .txt-muted;
         border-bottom: 1px solid transparent;
-        display: block;
-        color: #888;
         height: .8rem;
         line-height: .8rem;
       }
@@ -1863,19 +1859,18 @@ input:focus, textarea:focus {
 
 .page-find-detail {
   .head-bottom {
+    .img-cover;
+    .width-full;
     background-image: url(../i/base/head.jpg);
-    background-size: cover;
     height: 1rem;
-    width: 100%;
-    z-index: 1;
   }
   .message-form {
     .textarea {
-      display: block;
+      .bg-white;
+      .block;
+      .width-full;
       border: 0 none;
       height: 2.5rem;
-      width: 100%;
-      background: #fff;
       margin: .2rem 0;
       padding: .2rem;
     }
@@ -1884,8 +1879,8 @@ input:focus, textarea:focus {
     }
   }
   .detail-box {
+    .bg-white;
     margin: -1rem .2rem .5rem;
-    background-color: #fff;
     box-shadow: 0px 2px 20px #F9A6AC;
     border-radius: .2rem;
     padding: .2rem;
@@ -1894,7 +1889,7 @@ input:focus, textarea:focus {
       border-bottom: 2px solid #222;
       .tt {
         .txt-c;
-        font-size: .3rem;
+        .font-big;
         margin-bottom: .15rem;
       }
       .sub {
@@ -1906,9 +1901,9 @@ input:focus, textarea:focus {
       border-bottom: 2px solid #222;
     }
     .ft {
+      .relative;
       height: .6rem;
       padding: .1rem;
-      position: relative;z-index: 1;
       .view {
         height: .4rem;
         line-height: .4rem;
@@ -1916,20 +1911,20 @@ input:focus, textarea:focus {
         left: 0rem;
         bottom: .1rem;
         .m {
-          display: inline-block;
+          .inline-block;
+          .img-cover;
+          .vertical-middle;
           height: .28rem;
           width: .4rem;
           background-image: url(../i/base/icon-msg.png);
-          background-size: cover;
-          vertical-align: middle;
         }
         .v {
-          display: inline-block;
+          .inline-block;
+          .img-cover;
+          .vertical-middle;
           height: .28rem;
           width: .4rem;
           background-image: url(../i/base/icon-eye.png);
-          background-size: cover;
-          vertical-align: middle;
         }
       }
     }

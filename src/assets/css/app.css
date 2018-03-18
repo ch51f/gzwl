@@ -60,6 +60,9 @@ textarea:focus {
 .txt-primary {
   color: #F43444;
 }
+.txt-info {
+  color: #76B5F4;
+}
 .txt-default {
   color: #333;
 }
@@ -1082,23 +1085,22 @@ textarea:focus {
   background-image: url(../i/base/icon-address.png);
 }
 .page-detail .detail-hd .addr .icon-right {
+  display: block;
+  background-size: cover;
   position: absolute;
   right: .2rem;
   top: 50%;
   margin-top: -0.12rem;
   width: .14rem;
   height: .24rem;
-  display: block;
   z-index: 1;
   background-image: url(../i/base/icon-arrow-right.png);
-  background-size: cover;
 }
 .page-detail .detail-con {
   background-color: #fff;
   border-radius: .3rem;
   padding: .3rem 0;
-  width: 6.9rem;
-  margin: 0 auto;
+  margin: 0 .2rem;
   overflow: hidden;
 }
 .page-detail .detail-con .section-ydtg {
@@ -1108,11 +1110,12 @@ textarea:focus {
   font-size: .32rem;
 }
 .page-detail .detail-con .section-ydtg .con {
+  display: flex;
+  flex-flow: row wrap;
   padding: .2rem 0;
   height: 1.4rem;
 }
 .page-detail .detail-con .section-ydtg .con .item {
-  float: left;
   width: 31.3%;
   margin: 0 1%;
 }
@@ -1125,31 +1128,31 @@ textarea:focus {
   padding: 0 .2rem;
 }
 .page-detail .detail-con .section-shop .hd {
+  position: relative;
+  z-index: 1;
   background: #F5FAFE;
   padding: .2rem .2rem .2rem 1.2rem;
   height: 1.2rem;
-  position: relative;
-  z-index: 1;
   line-height: .8rem;
 }
 .page-detail .detail-con .section-shop .hd .img-show {
   display: block;
+  background-size: cover;
   position: absolute;
   left: .2rem;
   top: .2rem;
   background-image: url(../i/base/user.png);
-  background-size: cover;
   border-radius: 50%;
   height: .8rem;
   width: .8rem;
 }
 .page-detail .detail-con .section-shop .hd .icon-rz {
+  background-size: cover;
+  vertical-align: middle;
   display: inline-block;
   height: .25rem;
   width: .35rem;
   background-image: url(../i/base/icon-rz.png);
-  background-size: cover;
-  vertical-align: middle;
   margin-left: .1rem;
 }
 .page-detail .detail-con .section-shop .con {
@@ -1167,9 +1170,9 @@ textarea:focus {
   overflow: hidden;
 }
 .page-detail .detail-con .section-shop .con .shop-nav ul li {
+  border-bottom: 1px solid #ddd;
   float: left;
   padding: 0 .3rem;
-  border-bottom: 1px solid #ddd;
 }
 .page-detail .detail-con .section-shop .con .shop-nav ul li a {
   color: #333;
@@ -1183,15 +1186,15 @@ textarea:focus {
   border: 0 none;
 }
 .page-detail .detail-bottom {
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #ddd;
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
   height: 1rem;
   z-index: 1;
-  border: 1px solid #ddd;
-  background: #fff;
-  text-align: center;
 }
 .page-detail .detail-bottom .btn {
   width: 1.4rem;
@@ -1201,55 +1204,49 @@ textarea:focus {
 }
 .page-detail .detail-bottom .btn a {
   display: block;
-  color: #555;
+  color: #999;
   line-height: .4rem;
 }
 .page-detail .detail-bottom .btn a .icon-phone {
+  display: block;
   background-image: url(../i/base/icon-phone.png);
   background-size: .44rem .44rem;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  display: block;
   height: .55rem;
 }
 .page-detail .detail-bottom .btn a .icon-kefu {
+  display: block;
   background-image: url(../i/base/icon-kefu.png);
   background-size: .44rem .44rem;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  display: block;
   height: .55rem;
 }
 .page-detail .detail-bottom .btn-1 {
   height: 1rem;
 }
 .page-detail .detail-bottom .btn-1 a {
-  background-image: url(../i/home/head.jpg);
   background-size: cover;
   display: block;
-  height: 1rem;
-  line-height: 1rem;
-  width: 100%;
   color: #fff;
   font-size: .32rem;
-}
-.page-order {
-  padding-top: 4.5rem;
+  width: 100%;
+  background-image: url(../i/home/head.jpg);
+  height: 1rem;
+  line-height: 1rem;
 }
 .page-order .home-head {
   height: 3.2rem;
 }
 .page-order .section-order-info {
-  background: #fff;
-  width: 6.9rem;
+  background-color: #fff;
+  margin: 0 .2rem .2rem;
+  position: relative;
+  z-index: 100;
   box-shadow: 0px 2px 20px #F9A6AC;
-  position: absolute;
-  margin-left: -3.45rem;
-  left: 50%;
-  top: .9rem;
   padding: .3rem .2rem;
   border-radius: .2rem;
-  z-index: 2;
 }
 .page-order .section-order-info .hd {
   position: relative;
@@ -1268,7 +1265,7 @@ textarea:focus {
   border-radius: .1rem;
 }
 .page-order .section-order-info .hd .tt {
-  font-size: .34rem;
+  font-size: .32rem;
   line-height: .5rem;
   margin-bottom: .1rem;
 }
@@ -1276,7 +1273,6 @@ textarea:focus {
   line-height: .3rem;
 }
 .page-order .section-order-info .hd .price {
-  font-size: .3rem;
   font-weight: 600;
   position: absolute;
   right: .5rem;
@@ -1286,9 +1282,9 @@ textarea:focus {
 .page-order .section-order-info .con {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  padding: .3rem 0;
   position: relative;
   z-index: 1;
+  padding: .3rem 0;
   margin: .2rem;
 }
 .page-order .section-order-info .con .begin-box,
@@ -1302,7 +1298,7 @@ textarea:focus {
 }
 .page-order .section-order-info .con .begin-box .date,
 .page-order .section-order-info .con .end-box .date {
-  font-size: .34rem;
+  font-size: .36rem;
   margin-bottom: .05rem;
 }
 .page-order .section-order-info .con .begin-box .sub-date,
@@ -1353,10 +1349,13 @@ textarea:focus {
   z-index: 2;
 }
 .page-order .section-order-info .ft .tips {
+  font-size: .24rem;
   color: #76B5F4;
+  padding: 0 .2rem;
 }
 .page-order .section-order-contact {
-  background: #fff;
+  background-color: #fff;
+  margin-top: -2rem;
   margin-bottom: .2rem;
   padding: 2rem .3rem 0;
 }
@@ -1369,18 +1368,18 @@ textarea:focus {
   border-top: 1px solid #ddd;
 }
 .page-order .section-order-contact .line .label {
-  font-weight: 400;
-  text-align: right;
   display: block;
+  text-align: right;
+  font-weight: 400;
   width: 1.4rem;
 }
 .page-order .section-order-contact .line .label .icon-must {
   padding-right: .05rem;
 }
 .page-order .section-order-contact .line .input input {
+  width: 100%;
   border: 0 none;
   line-height: .9rem;
-  width: 100%;
 }
 .page-order .section-order-other {
   background-color: #fff;
@@ -1397,22 +1396,22 @@ textarea:focus {
   margin-bottom: .2rem;
 }
 .page-order .section-order-other .item {
-  color: #888;
+  color: #999;
   border-bottom: 1px solid #ddd;
-  padding: .2rem .2rem .2rem .7rem;
   position: relative;
   z-index: 1;
+  padding: .2rem .2rem .2rem .7rem;
 }
 .page-order .section-order-other .item.item-1 {
   padding-left: .2rem;
 }
 .page-order .section-order-other .item .check {
+  display: block;
+  background-size: cover;
   position: absolute;
   left: .2rem;
   top: .35rem;
-  display: block;
   background-image: url(../i/base/icon-checked-s.png);
-  background-size: cover;
   height: .3rem;
   width: .3rem;
 }
@@ -1442,10 +1441,10 @@ textarea:focus {
 .page-order .section-order-other .item .hd .label .num-box .sub,
 .page-order .section-order-other .item .hd .label .num-box .add {
   flex: 1;
-  background: #EEEEEE;
   display: block;
-  height: .6rem;
   color: #333;
+  background: #EEE;
+  height: .6rem;
 }
 .page-order .section-order-other .item .hd .label .num-box input {
   border: 1px solid #E5E5E5;
@@ -1457,28 +1456,28 @@ textarea:focus {
   padding-right: .3rem;
 }
 .page-order .section-order-other .item .hd .label.label-r .icon-right {
+  display: block;
+  background-size: cover;
   position: absolute;
   right: .2rem;
   top: 50%;
   margin-top: -0.12rem;
   width: .14rem;
   height: .24rem;
-  display: block;
   z-index: 1;
   background-image: url(../i/base/icon-arrow-right.png);
-  background-size: cover;
 }
 .page-order .section-order-other .item .con {
   padding-top: .2rem;
   margin-bottom: .2rem;
 }
 .page-order .section-order-other .item .con .memo {
-  border: 1px solid #ddd;
   width: 100%;
+  border: 1px solid #ddd;
   height: 2rem;
 }
 .page-order .section-order-btns {
-  background: #fff;
+  background-color: #fff;
   position: relative;
   z-index: 1;
 }
@@ -1490,12 +1489,12 @@ textarea:focus {
   font-weight: 400;
 }
 .page-order .section-order-btns .top .check {
+  display: block;
+  background-size: cover;
   position: absolute;
   left: .2rem;
   top: .3rem;
-  display: block;
   background-image: url(../i/base/icon-checked-s.png);
-  background-size: cover;
   height: .3rem;
   width: .3rem;
 }
@@ -1503,13 +1502,13 @@ textarea:focus {
   background-image: url(../i/base/icon-checked-s-a.png);
 }
 .page-order .section-order-btns .con .btn {
-  background-image: url(../i/home/head.jpg);
-  background-size: cover;
   display: block;
-  height: 1rem;
-  line-height: 1rem;
+  background-size: cover;
   text-align: center;
   color: #fff;
+  background-image: url(../i/home/head.jpg);
+  height: 1rem;
+  line-height: 1rem;
   width: 2.8rem;
 }
 .page-order .section-order-btns .con .info {
@@ -1517,11 +1516,11 @@ textarea:focus {
   line-height: 1rem;
 }
 .page-datepick .date-hd {
+  background-color: #fff;
+  text-align: center;
   height: .9rem;
   line-height: .9rem;
   padding: 0 .2rem;
-  background: #fff;
-  text-align: center;
 }
 .page-datepick .date-con {
   text-align: center;
@@ -1530,7 +1529,7 @@ textarea:focus {
   line-height: .8rem;
 }
 .page-datepick .date-con .month-box .con {
-  background: #fff;
+  background-color: #fff;
 }
 .page-datepick .date-con .month-box .con .item {
   height: 1.1rem;
@@ -1541,8 +1540,8 @@ textarea:focus {
   background: #f4f4f4;
 }
 .page-datepick .date-con .month-box .con .item.active {
-  background: #FD4E79;
   color: #fff;
+  background: #FD4E79;
 }
 .page-datepick .date-con .month-box .con .item.active .p {
   color: #fff;
@@ -1556,14 +1555,14 @@ textarea:focus {
 }
 .page-datepick .date-btn {
   background-color: #fff;
+  border-top: 1px solid #ddd;
+  width: 100%;
   z-index: 2;
   position: fixed;
   left: 0;
   bottom: 0;
   height: 2rem;
-  border-top: 1px solid #ddd;
   padding: .2rem;
-  width: 100%;
 }
 .page-datepick .date-btn .tips-box {
   height: .6rem;
@@ -1576,17 +1575,17 @@ textarea:focus {
   text-align: right;
 }
 .page-datepick .date-btn .tips-box .icon-default {
+  display: inline-block;
   background: #DEDEDE;
   border-radius: 50%;
-  display: inline-block;
   height: .24rem;
   width: .24rem;
   margin: 0 .05rem;
 }
 .page-datepick .date-btn .tips-box .icon-active {
+  display: inline-block;
   background: #FD4E79;
   border-radius: 50%;
-  display: inline-block;
   height: .24rem;
   width: .24rem;
   margin: 0 .05rem;
@@ -1602,16 +1601,16 @@ textarea:focus {
 }
 .page-pay .pay-box .hd .icon-success {
   display: block;
+  background-size: cover;
   height: 1.68rem;
   width: 1.68rem;
   background-image: url(../i/base/icon-success.png);
-  background-size: cover;
   border-radius: 50%;
   margin: 0 auto .3rem;
 }
 .page-pay .pay-box .hd p {
   text-align: center;
-  font-size: .34rem;
+  font-size: .32rem;
 }
 .page-pay .pay-box .con {
   width: 5.6rem;
@@ -1622,7 +1621,7 @@ textarea:focus {
 }
 .page-pay .pay-box .con .flex-1 a {
   text-align: center;
-  color: #555;
+  color: #999;
   display: block;
   border: 1px solid #bbb;
   line-height: .8rem;
@@ -1631,32 +1630,33 @@ textarea:focus {
   margin-bottom: .2rem;
 }
 .page-pay .pay-box .ft .icon-qrcode {
-  background: #444;
   display: block;
+  background-size: cover;
+  background: #444;
   height: 1.68rem;
   width: 1.68rem;
   background-image: url(../i/base/ewm.png);
-  background-size: cover;
   margin: 0 auto;
 }
 .page-pay .pay-box .ft p {
-  color: #999;
   text-align: center;
+  color: #999;
 }
 .page-pay .recommend-box {
+  background-color: #fff;
   padding: .2rem;
-  background: #fff;
   margin-bottom: .2rem;
 }
 .page-pay .recommend-box .hd {
-  padding: 0 0 0 .6rem;
-  margin-bottom: .2rem;
-  line-height: .6rem;
   border-bottom: 1px solid #ddd;
   position: relative;
   z-index: 1;
+  padding: 0 0 0 .6rem;
+  margin-bottom: .2rem;
+  line-height: .6rem;
 }
 .page-pay .recommend-box .hd .icon-heart {
+  background-size: cover;
   position: absolute;
   left: .1rem;
   top: 50%;
@@ -1664,7 +1664,6 @@ textarea:focus {
   height: .32rem;
   width: .32rem;
   background-image: url(../i/base/icon-heart.png);
-  background-size: cover;
 }
 .page-pay .recommend-box .con {
   padding: .3rem 0;
@@ -1674,12 +1673,12 @@ textarea:focus {
 }
 .page-pay .recommend-box .con .flex-1 .icon {
   display: block;
+  background-size: cover;
   height: 1.08rem;
   width: 1.08rem;
   border: 1px solid #eee;
   border-radius: 50%;
   margin: 0 auto .2rem;
-  background-size: cover;
 }
 .page-pay .recommend-box .con .flex-1 .icon.icon-food {
   background-image: url(../i/base/icon-chi.png);
@@ -1702,15 +1701,15 @@ textarea:focus {
   font-weight: 400;
 }
 .page-evaluate .evaluate-box .hd textarea {
+  width: 100%;
   border: 0 none;
   height: 2rem;
-  width: 100%;
 }
 .page-evaluate .evaluate-box .img-box {
-  margin-bottom: .2rem;
   background-color: #fff;
-  padding: .2rem;
   text-align: center;
+  margin-bottom: .2rem;
+  padding: .2rem;
 }
 .page-evaluate .evaluate-box .img-box .empty {
   height: 1.6rem;
@@ -1761,34 +1760,33 @@ textarea:focus {
   background-image: url(../i/base/switch-on.png);
 }
 .page-evaluate .evaluate-box .other .switch-box .icon {
-  background-image: url(../i/base/switch-off.png);
-  background-size: cover;
   display: inline-block;
+  background-size: cover;
+  vertical-align: middle;
+  background-image: url(../i/base/switch-off.png);
   height: .8rem;
   width: 1.1rem;
   margin-right: .4rem;
-  vertical-align: middle;
 }
 .page-evaluate .evaluate-box .ft {
   padding: .2rem;
-}
-.page-find {
-  padding-top: 5rem;
 }
 .page-find .home-head {
   height: 3.2rem;
 }
 .page-find .slide-wrapper {
+  position: relative;
+  z-index: 1;
+  border-radius: .3rem;
+  z-index: 99;
   height: 3.6rem;
-  width: 7.2rem;
-  position: absolute;
-  z-index: 2;
-  top: .9rem;
-  left: 50%;
-  margin-left: -3.6rem;
+  margin: 0 .2rem .4rem;
 }
 .page-find .slide-wrapper .am-control-nav {
   display: none;
+}
+.page-find .slide-wrapper img {
+  border-radius: .3rem;
 }
 .page-find .find-tab {
   display: flex;
@@ -1806,9 +1804,9 @@ textarea:focus {
   border-bottom: 1px solid #FB4E79;
 }
 .page-find .find-tab .item a {
-  border-bottom: 1px solid transparent;
   display: block;
-  color: #888;
+  color: #999;
+  border-bottom: 1px solid transparent;
   height: .8rem;
   line-height: .8rem;
 }
@@ -1873,18 +1871,17 @@ textarea:focus {
   vertical-align: middle;
 }
 .page-find-detail .head-bottom {
-  background-image: url(../i/base/head.jpg);
   background-size: cover;
-  height: 1rem;
   width: 100%;
-  z-index: 1;
+  background-image: url(../i/base/head.jpg);
+  height: 1rem;
 }
 .page-find-detail .message-form .textarea {
+  background-color: #fff;
   display: block;
+  width: 100%;
   border: 0 none;
   height: 2.5rem;
-  width: 100%;
-  background: #fff;
   margin: .2rem 0;
   padding: .2rem;
 }
@@ -1892,8 +1889,8 @@ textarea:focus {
   margin: .2rem;
 }
 .page-find-detail .detail-box {
-  margin: -1rem 0.2rem 0.5rem;
   background-color: #fff;
+  margin: -1rem 0.2rem 0.5rem;
   box-shadow: 0px 2px 20px #F9A6AC;
   border-radius: .2rem;
   padding: .2rem;
@@ -1904,7 +1901,7 @@ textarea:focus {
 }
 .page-find-detail .detail-box .hd .tt {
   text-align: center;
-  font-size: .3rem;
+  font-size: .32rem;
   margin-bottom: .15rem;
 }
 .page-find-detail .detail-box .hd .sub {
@@ -1915,10 +1912,10 @@ textarea:focus {
   border-bottom: 2px solid #222;
 }
 .page-find-detail .detail-box .ft {
-  height: .6rem;
-  padding: .1rem;
   position: relative;
   z-index: 1;
+  height: .6rem;
+  padding: .1rem;
 }
 .page-find-detail .detail-box .ft .view {
   height: .4rem;
@@ -1929,19 +1926,19 @@ textarea:focus {
 }
 .page-find-detail .detail-box .ft .view .m {
   display: inline-block;
+  background-size: cover;
+  vertical-align: middle;
   height: .28rem;
   width: .4rem;
   background-image: url(../i/base/icon-msg.png);
-  background-size: cover;
-  vertical-align: middle;
 }
 .page-find-detail .detail-box .ft .view .v {
   display: inline-block;
+  background-size: cover;
+  vertical-align: middle;
   height: .28rem;
   width: .4rem;
   background-image: url(../i/base/icon-eye.png);
-  background-size: cover;
-  vertical-align: middle;
 }
 .page-find-detail .detail-feedback {
   padding: .2rem;
