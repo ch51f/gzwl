@@ -86,6 +86,9 @@ input:focus, textarea:focus {
   .relative;
   background: #f6f6f6;
   padding-top: 1rem;
+  &.bg-white {
+    .bg-white;
+  }
   .home-head {
     .txt-c;
     .txt-white;
@@ -273,6 +276,26 @@ input:focus, textarea:focus {
       width: .4rem; 
       background-image: url(../i/base/icon-eye.png); 
     } 
+  }
+
+  .section-status {
+    background-repeat: no-repeat;
+    background-size: 6.9rem 6.6rem;
+    background-position: 50% bottom;
+    height: 6.6rem;
+    widows: 6.9rem;
+    &.status-1 {
+      background-image: url(../i/base/status-1.png);
+    }
+    &.status-2 {
+      background-image: url(../i/base/status-2.png);
+    }
+    &.status-3 {
+      background-image: url(../i/base/status-3.png);
+    }
+    &.status-4 {
+      background-image: url(../i/base/status-4.png);
+    }
   }
 }
 
@@ -1990,21 +2013,19 @@ input:focus, textarea:focus {
 .page-member {
   padding-bottom: 1rem;
   .head-bottom {
+    .width-full;
+    .img-cover;
     background-image: url(../i/base/head.jpg);
-    background-size: cover;
     height: 2rem;
-    width: 100%;
-    z-index: 1;
   }
   .user-info {
     .txt-c;
-    color: #777;
+    .txt-muted;
+    .relative;
+    .bg-white;
     margin: -.8rem .2rem .3rem;
-    position: relative;
     border-radius: .1rem;
-    background: #fff;
     box-shadow: 0px 2px 20px #F9A6AC;
-    z-index: 1;
     .box;
     .icon {
       height: 1.6rem;
@@ -2015,8 +2036,7 @@ input:focus, textarea:focus {
       top: -.8rem;
       margin-left: -.8rem;
       img {
-        height: 100%;
-        width: 100%;
+        .width-full;
       }
     }
     .center {
@@ -2028,15 +2048,15 @@ input:focus, textarea:focus {
       padding: .2rem 0;
       .flex-1;
       .em {
+        .txt-default;
         line-height: .8rem;
         font-size: .5rem;
-        color: #333;
         font-weight: 600;
       }
     }
   }
   .user-other {
-    background: #fff;
+    .bg-white;
     padding-top: 1.1rem;
     margin-top: -1.1rem;
     .order-main {
@@ -2048,8 +2068,8 @@ input:focus, textarea:focus {
           font-weight: 600;
         }
         .sub {
-          color: #777;
-          font-size: .24rem;
+          .font-small;
+          .txt-muted;
         }
       }
       .r {
@@ -2057,7 +2077,7 @@ input:focus, textarea:focus {
         padding: .2rem 0;
         a {
           .txt-r;
-          display: block;
+          .block;
           border-radius: .3rem;
           border: 1px solid #FA5054;
           color: #FA5054;
@@ -2069,8 +2089,8 @@ input:focus, textarea:focus {
     }
     .order-sub {
       .box;
-      border-top: 1px solid #ddd;
-      border-bottom: 1px solid #ddd;
+      .border-top;
+      .border-bottom;
       .item {
         .flex-1;
         .txt-c;
@@ -2079,7 +2099,7 @@ input:focus, textarea:focus {
           border-right: 1px solid #ddd;
         }
         .icon {
-          display: block;
+          .block;
           height: .6rem;
           width: .8rem;
           margin: 0 auto;
@@ -2088,10 +2108,10 @@ input:focus, textarea:focus {
     }
   }
   .other-line {
-    background: #fff;
+    .bg-white;
+    .border-bottom;
     padding: .2rem;
     line-height: .8rem;
-    border-bottom: 1px solid #ddd;
     .box;
     .l {
       .flex-1;
@@ -2167,15 +2187,14 @@ input:focus, textarea:focus {
     margin: .2rem 0;
   }
   .input-line {
+    .relative;
+    .border-bottom;
     height: 1rem;
-    border-bottom: 1px solid #ddd;
-    position: relative;
-    z-index: 1;
     input {
+      .width-full;
       border: 0 none;
       height: 1rem;
       padding: 0 .7rem 0 .2rem;
-      width: 100%;
     }
     .icon-clear {
       height: .42rem;
@@ -2191,8 +2210,8 @@ input:focus, textarea:focus {
     }
   }
   .form-line {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    .bg-white;
+    .border-bottom;
     padding: 0 .2rem;
     &.pic {
       .label {
@@ -2203,10 +2222,10 @@ input:focus, textarea:focus {
         padding: .15rem;
         .txt-r;
         .icon-user {
+          .img-cover;
+          .inline-block;
           background-image: url(../i/base/user.png);
-          background-size: cover;
           border-radius: 50%;
-          display: inline-block;
           height: 1.2rem;
           width: 1.2rem;
         }
@@ -2224,14 +2243,14 @@ input:focus, textarea:focus {
       .flex-1;
       height: 1rem;
       input {
+        .width-full;
         height: 1rem;
         border: 0 none;
-        width: 100%;
         .txt-r;
       }
     }
     .icon-right {
-      display: block;
+      .block;
       height: 1rem;
       width: .3rem;
       background-image: url(../i/base/icon-arrow-right.png);
@@ -2244,11 +2263,10 @@ input:focus, textarea:focus {
 
 .page-yhq {
   .head-bottom {
+    .img-cover;
+    .width-full;
     background-image: url(../i/base/head.jpg);
-    background-size: cover;
     height: 1rem;
-    width: 100%;
-    z-index: 1;
   }
   .yhq-list {
     margin: -1rem .2rem .2rem;
