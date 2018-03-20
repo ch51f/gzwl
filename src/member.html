@@ -27,7 +27,7 @@
 <body class="page page-member">
   <div class="home-head">
     <div class="title">我的</div>
-    <a class="right" href="javascript:;"><i class="icon-share"></i></a>
+    <a class="right share" href="javascript:;"><i class="icon-share"></i></a>
   </div>
   <div class="head-bottom"></div>
   <div class="user-info">
@@ -99,7 +99,7 @@
     </a>
   </div>
   
-  <div class="am-dimmer am-active"></div>
+  <div class="am-dimmer"></div>
   <div class="model-share">
     <div class="hd-line"></div>
     <div class="hd">分享至</div>
@@ -122,7 +122,7 @@
       </div>
     </div>
     <div class="ft">
-      <a href="javascript:;">取消分享</a>
+      <a href="javascript:;" class="cancel-share">取消分享</a>
     </div>
   </div>
 
@@ -138,6 +138,18 @@
 <script src="assets/js/amazeui.min.js"></script>
 <script>
   $(function() {
+    $(".share").on('click', function() {
+      $(".am-dimmer").addClass("am-active");
+      $(".model-share").show();
+    });
+    $(".cancel-share").on('click', function() {
+      $(".model-share").hide();
+      $(".am-dimmer").removeClass("am-active");
+    })
+    $(".am-dimmer").on('click', function() {
+      $(".model-share").hide();
+      $(".am-dimmer").removeClass("am-active");
+    })
   })
 </script>
 </body>

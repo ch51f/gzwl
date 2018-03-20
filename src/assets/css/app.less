@@ -279,6 +279,7 @@ input:focus, textarea:focus {
   }
 
   .section-status {
+    .relative;
     background-repeat: no-repeat;
     background-size: 6.9rem 6.6rem;
     background-position: 50% bottom;
@@ -295,6 +296,19 @@ input:focus, textarea:focus {
     }
     &.status-4 {
       background-image: url(../i/base/status-4.png);
+    }
+    .btn {
+      .block;
+      .txt-default;
+      .txt-c;
+      border: 1px solid #bbb;
+      border-radius: .1rem;
+      padding: .1rem 0;
+      width: 1.6rem;
+      position: absolute;
+      top: 6rem;
+      left: 50%;
+      margin-left: -.8rem;
     }
   }
 }
@@ -2129,19 +2143,20 @@ input:focus, textarea:focus {
   }
 
   .model-share {
+    display: none;
     .txt-c;
+    .bg-white;
+    .width-full;
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
     height: 4.5rem;
-    background: #fff;
     padding-top: 1.5rem;
     z-index: 1102;
     .hd-line {
+      .border-top;
       width: 5rem;
       height: 1px;
-      border-top: 1px solid #ddd;
       position: absolute;
       left: 50%;
       top: .75rem;
@@ -2149,7 +2164,7 @@ input:focus, textarea:focus {
       z-index: 1;
     }
     .hd {
-      background-color: #fff;
+      .bg-white;
       height: 1.5rem;
       position: absolute;
       left: 50%;
@@ -2166,17 +2181,32 @@ input:focus, textarea:focus {
         line-height: .8rem;
         .flex-1;
         .icon-share {
-          display: block;
-          height: 1.2rem;
+          .block;
+          .img-cover;
+          height: 1.08rem;
+          width: 1.08rem;
+          margin: 0 auto;
+          &.pyq {
+            background-image: url(../i/base/icon-pyq.png);
+          }
+          &.haoyou {
+            background-image: url(../i/base/icon-wx.png);
+          }
+          &.weibo {
+            background-image: url(../i/base/icon-wb.png);
+          }
+          &.qq {
+            background-image: url(../i/base/icon-qq.png);
+          }
         }
       }
     }
     .ft {
-      border-top: 1px solid #ddd;
+      .border-top;
       height: 1rem;
       line-height: 1rem;
       a {
-        color: #333;
+        .txt-default;
       }
     }
   }
@@ -2357,20 +2387,26 @@ input:focus, textarea:focus {
 
 .page-about {
   .head-bottom {
+    .width-full;
+    .img-cover;
     background-image: url(../i/base/head.jpg);
-    background-size: cover;
     height: 1rem;
-    width: 100%;
     z-index: 1;
   }
   .content {
+    .bg-white;
     margin: -1rem .2rem -.1rem;
-    background: #fff;
     box-shadow: 0px 2px 20px #F9A6AC;
     border-radius: .5rem .5rem 0 0;
     padding: .2rem;
     .hd {
       height: 2rem;
+      img {
+        .block;
+        height: 1.68rem;
+        width: 1.8rem;
+        margin: 0 auto;
+      }
     }
   }
 }
