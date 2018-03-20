@@ -1936,6 +1936,37 @@ input:focus, textarea:focus {
     .con {
       padding: .1rem;
       border-bottom: 2px solid #222;
+
+      .url-box {
+        .block;
+        .txt-default;
+        border: 1px solid #ddd;
+        padding: .2rem;
+        img {
+          .width-full;
+        }
+        .shop {
+          padding-top: .2rem;
+          .icon-user {
+            .inline-block;
+            .img-contain;
+            .vertical-middle;
+            height: .44rem;
+            width: .44rem;
+            background-image: url(../i/lyd/user.png);
+            margin-right: .1rem;
+          }
+          .icon-rz {
+            .inline-block;
+            .img-contain;
+            .vertical-middle;
+            height: .25rem;
+            width: .35rem;
+            background-image: url(../i/lyd/icon-rz.png);
+            margin-left: .1rem;
+          }
+        }
+      }
     }
     .ft {
       .relative;
@@ -2092,10 +2123,13 @@ input:focus, textarea:focus {
         a {
           .txt-r;
           .block;
+          background-image: url(../i/base/icon-eye-1.png);
+          background-size: .38rem .26rem;
+          background-position: .15rem 50%;
+          background-repeat: no-repeat;
           border-radius: .3rem;
           border: 1px solid #FA5054;
           color: #FA5054;
-          height: .5rem;
           line-height: .5rem;
           padding: 0 .2rem;
         }
@@ -2117,6 +2151,19 @@ input:focus, textarea:focus {
           height: .6rem;
           width: .8rem;
           margin: 0 auto;
+          background-size: .5rem .5rem;
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          &.icon-pay {
+            background-image: url(../i/base/icon-dfk.png);
+          }
+          &.icon-fh {
+            background-image: url(../i/base/icon-yfh.png);
+            
+          }
+          &.icon-pj {
+            background-image: url(../i/base/icon-pj.png);
+          }
         }
       }
     }
@@ -2129,7 +2176,19 @@ input:focus, textarea:focus {
     .box;
     .l {
       .flex-1;
-      padding-left: .4rem;
+      padding-left: .6rem;
+      background-size: .4rem .4rem;
+      background-position: 0 50%;
+      background-repeat: no-repeat;
+      &.phone {
+        background-image: url(../i/base/icon-line-phone.png);
+      }
+      &.wx {
+        background-image: url(../i/base/icon-line-wechat.png);
+      }
+      &.about {
+        background-image: url(../i/base/icon-line-file.png);
+      }
     }
     .r {
       .flex-1;
@@ -2254,7 +2313,7 @@ input:focus, textarea:focus {
         .icon-user {
           .img-cover;
           .inline-block;
-          background-image: url(../i/base/user.png);
+          background-image: url(../i/base/user-empty.png);
           border-radius: 50%;
           height: 1.2rem;
           width: 1.2rem;
