@@ -199,21 +199,30 @@
   </div>
   </div>
 
-  <a href="javascript:;" class="btn-apply">申请入驻</a>
+  <a href="./apply.html" class="btn-apply">申请入驻</a>
 
   <div class="bottom-bar">
     <a href="javascript:;" class="item active">
       <i class="icon icon-home"></i>
       首页
     </a>
-    <a href="javascript:;" class="item">
+    <a href="./moment.html" class="item">
       <i class="icon icon-find"></i>
       发现
     </a>
-    <a href="javascript:;" class="item">
+    <a href="./member.html" class="item">
       <i class="icon icon-my"></i>
       我的
     </a>
+  </div>
+
+  <div class="am-dimmer am-active"></div>
+  <div class="city-model">
+  	<div class="con">GPS定为显示您在昆明<br/>是否切换城市</div>
+  	<div class="ft">
+  		<a href="javascript:;" class="btn cancel">不切换</a>
+  		<a href="javascript:;" class="btn done btn-info">切换</a>
+  	</div>
   </div>
 
 <!--[if (gte IE 9)|!(IE)]><!-->
@@ -236,6 +245,16 @@
       'controlNav': true,
       'directionNav': false
     });
+
+    $(".city-model").on("click", '.cancel', function() {
+    	console.log("不切换城市");
+    	$(".city-model").hide();
+    	$(".am-dimmer").removeClass("am-active");
+    }).on("click", '.done', function() {
+    	console.log("切换城市");
+    	$(".city-model").hide();
+    	$(".am-dimmer").removeClass("am-active");
+    })
   })
 </script>
 </body>
