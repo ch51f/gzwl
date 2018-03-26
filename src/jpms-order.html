@@ -114,6 +114,9 @@
 <script src="assets/js/amazeui.min.js"></script>
 <script>
   $(function() {
+    $(".section-order-btns").on('click', '.top', function() {
+      $(this).find("i.check").toggleClass("active");
+    })
   })
 </script>
 </body>

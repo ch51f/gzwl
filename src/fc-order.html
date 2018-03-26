@@ -77,7 +77,7 @@
   </div>
   <div class="section-order-other">
     <div class="tt">增值服务</div>
-    <div class="item">
+    <div class="item item-no">
       <i class="check active"></i>
       <div class="hd">
         <div class="box">
@@ -89,9 +89,11 @@
           </div>
         </div>
       </div>
-      <div class="con">为您提供高品质、全方位、个性化的生活管家服务</div>
     </div>
     <div class="item">
+      <div class="con">为您提供高品质、全方位、个性化的生活管家服务</div>
+    </div>
+    <div class="item item-no">
       <i class="check"></i>
       <div class="hd">
         <div class="box">
@@ -101,67 +103,73 @@
           </div>
         </div>
       </div>
-      <div class="con">一键救援</div>
     </div>
     <div class="item">
+      <div class="con">一键救援</div>
+    </div>
+    <div class="item item-no">
       <i class="check"></i>
       <div class="hd">
         <div class="box">
           <div class="t flex-1">随车装备</div>
         </div>
       </div>
+    </div>
+    <div class="item">
       <div class="con">
         <div class="e-box">
           <div class="i">
             <img src="./assets/i/home/g-2.png" alt="">
             <p>
-              <label><input type="checkbox" /><i class="c active"></i>烧烤架</label>
+              <div><input type="checkbox" /><i class="c active"></i>烧烤架</div>
             </p>
             <p><span class="price">￥50</span>/副</p>
           </div>
           <div class="i">
             <img src="./assets/i/home/g-2.png" alt="">
             <p>
-              <label><input type="checkbox" /><i class="c"></i>烧烤架</label>
+              <div><input type="checkbox" /><i class="c"></i>烧烤架</div>
             </p>
             <p><span class="price">￥50</span>/副</p>
           </div>
           <div class="i">
             <img src="./assets/i/home/g-2.png" alt="">
             <p>
-              <label><input type="checkbox" /><i class="c"></i>烧烤架</label>
+              <div><input type="checkbox" /><i class="c"></i>烧烤架</div>
             </p>
             <p><span class="price">￥50</span>/副</p>
           </div>
           <div class="i">
             <img src="./assets/i/home/g-2.png" alt="">
             <p>
-              <label><input type="checkbox" /><i class="c"></i>烧烤架</label>
+              <div><input type="checkbox" /><i class="c"></i>烧烤架</div>
             </p>
             <p><span class="price">￥50</span>/副</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="item">
+    <div class="item item-no">
       <i class="check"></i>
       <div class="hd">
         <div class="box">
           <div class="t flex-1">贴心服务</div>
         </div>
       </div>
+    </div>
+    <div class="item">
       <div class="con">
         <div class="s-box">
           <div class="i">
-            <label class="l"><input type="checkbox"><i class="c"></i>还车帮我满油</label>
+            <div class="l"><input type="checkbox"><i class="c"></i>还车帮我满油</div>
             <div class="r"><span class="price">￥50</span>/次</div>
           </div>
           <div class="i">
-            <label class="l"><input type="checkbox"><i class="c"></i>还车帮我满油</label>
+            <div class="l"><input type="checkbox"><i class="c"></i>还车帮我满油</div>
             <div class="r"><span class="price">￥50</span>/次</div>
           </div>
           <div class="i">
-            <label class="l"><input type="checkbox"><i class="c"></i>还车帮我满油</label>
+            <div class="l"><input type="checkbox"><i class="c"></i>还车帮我满油</div>
             <div class="r"><span class="price">￥50</span>/次</div>
           </div>
         </div>
@@ -198,14 +206,14 @@
       <div class="box">
         <div class="info flex-1">
           应付金额：<span class="price">￥270</span>
-          <a class="d" href="javascript:;">服务明细</a>
+          <a class="d mingxi" href="javascript:;">服务明细</a>
         </div>
-        <a href="javascript:;" class="btn">提交订单</a>
+        <a href="javascript:;" class="btn pay">提交订单</a>
       </div>
     </div>
   </div>
 
-  <div class="am-dimmer am-active"></div>
+  <div class="am-dimmer"></div>
   <div class="mingxi-model">
     <div class="hd">费用明细</div>
     <div class="con">
@@ -231,7 +239,31 @@
       </div>
     </div>
     <div class="ft">
-      <a href="javascript:;" class="close"></a>
+      <a href="javascript:;" class="close close-mingxi"></a>
+    </div>
+  </div>
+  <div class="pay-model">
+    <div class="hd">
+      订单支付
+      <a href="javascript:;" class="close close-pay"></a>
+    </div>
+    <div class="con">
+      <div class="line">
+        <div class="label"><i class="icon-pay wechat"></i>微信支付</div>
+        <div class="input">
+        </div>
+        <div class="icon-checked active"></div>
+      </div>
+      <div class="sub">
+        <div class="tt">
+          <div class="l">实际应付</div>
+          <div class="r price">￥2999</div>
+        </div>
+        <div class="s">温馨提示：30分钟内未支付，订单将自动取消</div>
+      </div>
+    </div>
+    <div class="ft">
+      <a href="javascript:;" class="btn-color">确定支付</a>
     </div>
   </div>
 
@@ -248,6 +280,53 @@
 <script src="assets/js/amazeui.min.js"></script>
 <script>
   $(function() {
+    $(".mingxi").on('click', function() {
+      $(".am-dimmer").addClass("am-active");
+      $(".mingxi-model").show();
+    });
+    $(".close-mingxi").on('click', function() {
+      $(".mingxi-model").hide();
+      $(".am-dimmer").removeClass("am-active");
+    })
+    $(".am-dimmer").on('click', function() {
+      $(".mingxi-model").hide();
+      $(".am-dimmer").removeClass("am-active");
+    })
+
+    $(".pay").on('click', function() {
+      $(".am-dimmer").addClass("am-active");
+      $(".pay-model").show();
+    });
+    $(".close-pay").on('click', function() {
+      $(".pay-model").hide();
+      $(".am-dimmer").removeClass("am-active");
+    })
+    $(".am-dimmer").on('click', function() {
+      $(".pay-model").hide();
+      $(".am-dimmer").removeClass("am-active");
+    })
+
+    $(".section-order-btns").on('click', '.top', function() {
+      $(this).find("i.check").toggleClass("active");
+    })
+
+    $(".section-order-other").on("click", '.item', function(e) {
+      e.stopPropagation()
+      $(this).find("i.check").toggleClass("active");
+      console.log(1)
+    }).on("click", '.i', function(e) {
+      e.stopPropagation()
+      $(this).find("i.c").toggleClass("active");
+      console.log(2)
+    })
+
+    // $(".e-box").on("click", '.i', function() {
+    //   $(this).find("i.c").toggleClass("active");
+    // })
+
+    // $(".s-box").on("click", '.i', function() {
+    //   $(this).find("i.c").toggleClass("active");
+    // })
   })
 </script>
 </body>

@@ -77,7 +77,7 @@
   </div>
   <div class="section-order-other">
     <div class="tt">增值服务</div>
-    <div class="item">
+    <div class="item item-no">
       <i class="check active"></i>
       <div class="hd">
         <div class="box">
@@ -86,17 +86,21 @@
             <div class="box">
               <div class="flex-1"><span class="price">￥50</span>/天</div>
               <div class="num-box">
-                <a href="javascript:;" class="sub">-</a>
-                <input type="input" value="1" />
+                <a href="javascript:;" class="des">-</a>
+                <div class="input">
+                  <input type="text" value="1">              
+                </div>
                 <a href="javascript:;" class="add">+</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="con">为您提供高品质、全方位、个性化的生活管家服务</div>
     </div>
     <div class="item">
+      <div class="con">为您提供高品质、全方位、个性化的生活管家服务</div>
+    </div>
+    <div class="item item-no">
       <i class="check"></i>
       <div class="hd">
         <div class="box">
@@ -106,9 +110,11 @@
           </div>
         </div>
       </div>
-      <div class="con">提供当地特色原生态用餐、向您的味蕾发出诚挚的邀请代金券1张</div>
     </div>
     <div class="item">
+      <div class="con">提供当地特色原生态用餐、向您的味蕾发出诚挚的邀请代金券1张</div>
+    </div>
+    <div class="item item-no">
       <i class="check"></i>
       <div class="hd">
         <div class="box">
@@ -118,6 +124,8 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="item">
       <div class="con">为您提供高品质、全方位、个性化的生活管家服务</div>
     </div>
     <div class="item item-1">
@@ -165,6 +173,29 @@
 <script src="assets/js/amazeui.min.js"></script>
 <script>
   $(function() {
+    $(".section-order-btns").on('click', '.top', function() {
+      $(this).find("i.check").toggleClass("active");
+    })
+
+    $(".section-order-other").on("click", '.item', function(e) {
+      e.stopPropagation()
+      $(this).find("i.check").toggleClass("active");
+      console.log(1)
+    }).on("click", '.i', function(e) {
+      e.stopPropagation()
+      $(this).find("i.c").toggleClass("active");
+      console.log(2)
+    })
+
+    $(".num-box").on("click", '.add', function(e) {
+      e.stopPropagation()
+      var $v = $(this).prev().find("input");
+      $v.val(parseInt($v.val()) + 1);
+    }).on("click", '.des', function(e) {
+      e.stopPropagation()
+      var $v = $(this).next().find("input");
+      if($v.val() > 1) $v.val(parseInt($v.val()) - 1);
+    })
   })
 </script>
 </body>

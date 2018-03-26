@@ -29,7 +29,7 @@
     <div class="title">美食列表</div>
     <a class="left" href="javascript:;"><i class="icon-back"></i></a>
     <a class="right-1" href="javascript:;"><i class="icon-coll"></i></a>
-    <a class="right" href="javascript:;"><i class="icon-share"></i></a>
+    <a class="right share" href="javascript:;"><i class="icon-share"></i></a>
   </div>
   <div class="slide-wrapper"  data-am-flexslider>
     <ul class="am-slides">
@@ -38,9 +38,9 @@
     </ul>
   </div>
   <div class="good-filter am-cf filter_handle">
-    <div class="item" data-id="1" data-txt="地点">地点<i class="icon-down"></i></div>
-    <div class="item" data-id="2" data-txt="筛选">筛选<i class="icon-down"></i></div>
-    <div class="item" data-id="3" data-txt="智能排序">智能排序<i class="icon-down"></i></div>
+    <div class="item" data-id="1" data-txt="选择城市"><span class="txt">选择城市</span><i class="icon-down"></i></div>
+    <div class="item" data-id="2" data-txt="主题"><span class="txt">主题</span><i class="icon-down"></i></div>
+    <div class="item" data-id="3" data-txt="智能排序"><span class="txt">智能排序</span><i class="icon-down"></i></div>
   </div>
   <div class="food-list">
     <div class="item">
@@ -99,7 +99,7 @@
 
   <div class="am-dimmer"></div>
   <div class="model-filter">
-    <div class="good-filter am-cf">
+    <div class="good-filter">
       <div class="item" data-id="1">地点<i class="icon-down"></i></div>
       <div class="item" data-id="2">筛选<i class="icon-down"></i></div>
       <div class="item" data-id="3">智能排序<i class="icon-down"></i></div>
@@ -118,6 +118,31 @@
       <a href="javascript:;" class="item" data-id="3" data-key="2">评价最后</a>
       <a href="javascript:;" class="item" data-id="3" data-key="3">距离最近</a>
       <a href="javascript:;" class="item" data-id="3" data-key="4">有水电桩优先</a>
+    </div>
+  </div>
+  <div class="model-share">
+    <div class="hd-line"></div>
+    <div class="hd">分享至</div>
+    <div class="con">
+      <div class="item">
+        <i class="icon-share pyq"></i>
+        朋友圈
+      </div>
+      <div class="item">
+        <i class="icon-share haoyou"></i>
+        微信好友
+      </div>
+      <div class="item">
+        <i class="icon-share weibo"></i>
+        新浪微博
+      </div>
+      <div class="item">
+        <i class="icon-share qq"></i>
+        QQ
+      </div>
+    </div>
+    <div class="ft">
+      <a href="javascript:;" class="cancel-share">取消分享</a>
     </div>
   </div>
 
@@ -176,10 +201,10 @@
         var $e1 = $(this);
         if($e1.data('id') == $e.data('id')) {
           $e1.addClass('active');
-          $e1.text($e.text());
+          $e1.find('.txt').text($e.text());
         } else {
           $e1.removeClass('active');
-          $e1.text($e1.data("txt"));
+          $e1.find('.txt').text($e1.data("txt"));
 
         }
       })
@@ -198,6 +223,19 @@
       $(".model-filter .good-filter .item").removeClass("active");
       $(".model-filter .good-filter-list").removeClass("active");
     }
+
+    $(".share").on('click', function() {
+      $(".am-dimmer").addClass("am-active");
+      $(".model-share").show();
+    });
+    $(".cancel-share").on('click', function() {
+      $(".model-share").hide();
+      $(".am-dimmer").removeClass("am-active");
+    })
+    $(".am-dimmer").on('click', function() {
+      $(".model-share").hide();
+      $(".am-dimmer").removeClass("am-active");
+    })
   })
 </script>
 </body>

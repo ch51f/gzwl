@@ -37,7 +37,7 @@
   </div>
   <div class="input-line">
     <input type="text" placeholder="请输入">
-    <i class="icon-clear"></i>
+    <i class="clear-input icon-clear" ></i>
   </div>
 
 <!--[if (gte IE 9)|!(IE)]><!-->
@@ -52,6 +52,9 @@
 <script src="assets/js/amazeui.min.js"></script>
 <script>
   $(function() {
+    $(".clear-input").bind("click", function() {
+      $(this).prev().val("")
+    })
   })
 </script>
 </body>

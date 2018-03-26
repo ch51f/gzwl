@@ -29,7 +29,7 @@
     <div class="title">特色美食</div>
     <a class="left" href="javascript:;"><i class="icon-back"></i></a>
     <a class="right-1" href="javascript:;"><i class="icon-coll"></i></a>
-    <a class="right" href="javascript:;"><i class="icon-share"></i></a>
+    <a class="right share" href="javascript:;"><i class="icon-share"></i></a>
   </div>
 
   <div class="food-head">
@@ -139,6 +139,33 @@
     </div>
   </div>
 
+  <div class="am-dimmer"></div>
+  <div class="model-share">
+    <div class="hd-line"></div>
+    <div class="hd">分享至</div>
+    <div class="con">
+      <div class="item">
+        <i class="icon-share pyq"></i>
+        朋友圈
+      </div>
+      <div class="item">
+        <i class="icon-share haoyou"></i>
+        微信好友
+      </div>
+      <div class="item">
+        <i class="icon-share weibo"></i>
+        新浪微博
+      </div>
+      <div class="item">
+        <i class="icon-share qq"></i>
+        QQ
+      </div>
+    </div>
+    <div class="ft">
+      <a href="javascript:;" class="cancel-share">取消分享</a>
+    </div>
+  </div>
+
 <!--[if (gte IE 9)|!(IE)]><!-->
 <script src="assets/js/highView.js"></script>
 <script src="assets/js/jquery-2.1.1.min.js"></script>
@@ -151,6 +178,18 @@
 <script src="assets/js/amazeui.min.js"></script>
 <script>
   $(function() {
+    $(".share").on('click', function() {
+      $(".am-dimmer").addClass("am-active");
+      $(".model-share").show();
+    });
+    $(".cancel-share").on('click', function() {
+      $(".model-share").hide();
+      $(".am-dimmer").removeClass("am-active");
+    })
+    $(".am-dimmer").on('click', function() {
+      $(".model-share").hide();
+      $(".am-dimmer").removeClass("am-active");
+    })
   })
 </script>
 </body>

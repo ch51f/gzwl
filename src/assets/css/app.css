@@ -146,8 +146,6 @@ textarea:focus {
   display: flex;
   text-align: center;
   width: 1.8rem;
-  height: .6rem;
-  border: 1px solid #ddd;
 }
 .num-box .add,
 .num-box .des {
@@ -162,10 +160,10 @@ textarea:focus {
   flex: 1;
 }
 .num-box .input input {
+  text-align: center;
   display: block;
   height: .6rem;
-  text-align: center;
-  border: 0 none;
+  border: 1px solid #ddd;
   width: 100%;
 }
 .btn-color {
@@ -450,6 +448,158 @@ textarea:focus {
 .page .city-model .ft .btn.btn-info {
   color: #1AC61D;
 }
+.page .model-share {
+  display: none;
+  text-align: center;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 4.5rem;
+  padding-top: 1.5rem;
+  z-index: 1102;
+}
+.page .model-share .hd-line {
+  border-top: 1px solid #ddd;
+  width: 5rem;
+  height: 1px;
+  position: absolute;
+  left: 50%;
+  top: .75rem;
+  margin-left: -2.5rem;
+  z-index: 1;
+}
+.page .model-share .hd {
+  background-color: #fff;
+  height: 1.5rem;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  line-height: 1.5rem;
+  width: 3rem;
+  margin-left: -1.5rem;
+  z-index: 2;
+}
+.page .model-share .con {
+  height: 2rem;
+  display: flex;
+}
+.page .model-share .con .item {
+  line-height: .8rem;
+  flex: 1;
+}
+.page .model-share .con .item .icon-share {
+  display: block;
+  background-size: cover;
+  height: 1.08rem;
+  width: 1.08rem;
+  margin: 0 auto;
+}
+.page .model-share .con .item .icon-share.pyq {
+  background-image: url(../i/base/icon-pyq.png);
+}
+.page .model-share .con .item .icon-share.haoyou {
+  background-image: url(../i/base/icon-wx.png);
+}
+.page .model-share .con .item .icon-share.weibo {
+  background-image: url(../i/base/icon-wb.png);
+}
+.page .model-share .con .item .icon-share.qq {
+  background-image: url(../i/base/icon-qq.png);
+}
+.page .model-share .ft {
+  border-top: 1px solid #ddd;
+  height: 1rem;
+  line-height: 1rem;
+}
+.page .model-share .ft a {
+  color: #333;
+}
+.page .pay-model {
+  display: none;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1102;
+  height: 4.5rem;
+  width: 100%;
+}
+.page .pay-model .hd {
+  text-align: center;
+  height: 1rem;
+  line-height: 1rem;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.page .pay-model .hd .close {
+  position: absolute;
+  right: .2rem;
+  top: .3rem;
+  height: .36rem;
+  line-height: 1rem;
+  display: block;
+  width: .36rem;
+  background-image: url(../i/base/icon-close-1.png);
+  background-size: cover;
+}
+.page .pay-model .con {
+  margin-bottom: .3rem;
+}
+.page .pay-model .con .line {
+  padding: 0 .2rem;
+  display: flex;
+  line-height: 1rem;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.page .pay-model .con .line .label {
+  width: 2rem;
+}
+.page .pay-model .con .line .label .icon-pay {
+  display: inline-block;
+  vertical-align: middle;
+  background-size: cover;
+  background-image: url(../i/base/icon-wx.png);
+  height: .5rem;
+  width: .5rem;
+  margin-right: .2rem;
+}
+.page .pay-model .con .line .input {
+  flex: 1;
+}
+.page .pay-model .con .line .icon-checked {
+  width: .3rem;
+  height: .3rem;
+  background-image: url(../i/base/icon-checked-s.png);
+  background-size: cover;
+  margin-top: .38rem;
+}
+.page .pay-model .con .line .icon-checked.active {
+  background-image: url(../i/base/icon-checked-s-a.png);
+}
+.page .pay-model .con .sub {
+  padding: 0 .2rem;
+}
+.page .pay-model .con .sub .tt {
+  display: flex;
+}
+.page .pay-model .con .sub .tt .l {
+  width: 2rem;
+}
+.page .pay-model .con .sub .tt .r {
+  text-align: right;
+  flex: 1;
+}
+.page .pay-model .con .sub .s {
+  font-size: .24rem;
+  color: #777;
+}
+.page .pay-model .ft {
+  padding: 0 .2rem;
+}
 .page-home {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -471,6 +621,7 @@ textarea:focus {
 }
 .page-home .slide-wrapper img {
   border-radius: .3rem;
+  width: 100%;
 }
 .page-home .main-bar {
   display: flex;
@@ -947,6 +1098,7 @@ textarea:focus {
 }
 .page-lyd .slide-wrapper img {
   border-radius: .3rem;
+  width: 100%;
 }
 .page-lyd .good-filter {
   background-color: #fff;
@@ -1082,7 +1234,7 @@ textarea:focus {
 .page-lyd .model-filter .good-filter {
   border-bottom: 1px solid #ddd;
   width: 100%;
-  margin-bottom: 0;
+  margin: 0;
   border-radius: 0;
 }
 .page-lyd .model-filter .good-filter-list {
@@ -1130,6 +1282,7 @@ textarea:focus {
 }
 .page-detail .slide-wrapper img {
   border-radius: .3rem;
+  width: 100%;
 }
 .page-detail .detail-hd {
   background-color: #fff;
@@ -2020,6 +2173,13 @@ textarea:focus {
   z-index: 1;
   padding: .2rem .2rem .2rem .7rem;
 }
+.page-order .section-order-other .item.item-no {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.page-order .section-order-other .item.item-no + .item {
+  padding-top: 0;
+}
 .page-order .section-order-other .item.item-1 {
   padding-left: .2rem;
 }
@@ -2048,28 +2208,6 @@ textarea:focus {
   height: .6rem;
   width: 3rem;
 }
-.page-order .section-order-other .item .hd .label .num-box {
-  display: flex;
-  text-align: center;
-  height: .6rem;
-  line-height: .6rem;
-  margin-left: .2rem;
-  width: 1.8rem;
-}
-.page-order .section-order-other .item .hd .label .num-box .sub,
-.page-order .section-order-other .item .hd .label .num-box .add {
-  flex: 1;
-  display: block;
-  color: #333;
-  background: #EEE;
-  height: .6rem;
-}
-.page-order .section-order-other .item .hd .label .num-box input {
-  border: 1px solid #E5E5E5;
-  height: .6rem;
-  width: .6rem;
-  text-align: center;
-}
 .page-order .section-order-other .item .hd .label.label-r {
   padding-right: .3rem;
 }
@@ -2093,6 +2231,7 @@ textarea:focus {
   width: 100%;
   border: 1px solid #ddd;
   height: 2rem;
+  padding: .1rem;
 }
 .page-order .section-order-other .e-box {
   display: flex;
@@ -2195,6 +2334,7 @@ textarea:focus {
 }
 .page-order .mingxi-model {
   background-color: #fff;
+  display: none;
   border-radius: .2rem;
   position: fixed;
   top: 22%;
@@ -2555,6 +2695,7 @@ textarea:focus {
 }
 .page-find .slide-wrapper img {
   border-radius: .3rem;
+  width: 100%;
 }
 .page-find .find-tab {
   display: flex;
@@ -2939,74 +3080,6 @@ textarea:focus {
   background-position: right 50%;
   background-size: .14rem .24rem;
   background-repeat: no-repeat;
-}
-.page-member .model-share {
-  display: none;
-  text-align: center;
-  background-color: #fff;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 4.5rem;
-  padding-top: 1.5rem;
-  z-index: 1102;
-}
-.page-member .model-share .hd-line {
-  border-top: 1px solid #ddd;
-  width: 5rem;
-  height: 1px;
-  position: absolute;
-  left: 50%;
-  top: .75rem;
-  margin-left: -2.5rem;
-  z-index: 1;
-}
-.page-member .model-share .hd {
-  background-color: #fff;
-  height: 1.5rem;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  line-height: 1.5rem;
-  width: 3rem;
-  margin-left: -1.5rem;
-  z-index: 2;
-}
-.page-member .model-share .con {
-  height: 2rem;
-  display: flex;
-}
-.page-member .model-share .con .item {
-  line-height: .8rem;
-  flex: 1;
-}
-.page-member .model-share .con .item .icon-share {
-  display: block;
-  background-size: cover;
-  height: 1.08rem;
-  width: 1.08rem;
-  margin: 0 auto;
-}
-.page-member .model-share .con .item .icon-share.pyq {
-  background-image: url(../i/base/icon-pyq.png);
-}
-.page-member .model-share .con .item .icon-share.haoyou {
-  background-image: url(../i/base/icon-wx.png);
-}
-.page-member .model-share .con .item .icon-share.weibo {
-  background-image: url(../i/base/icon-wb.png);
-}
-.page-member .model-share .con .item .icon-share.qq {
-  background-image: url(../i/base/icon-qq.png);
-}
-.page-member .model-share .ft {
-  border-top: 1px solid #ddd;
-  height: 1rem;
-  line-height: 1rem;
-}
-.page-member .model-share .ft a {
-  color: #333;
 }
 .page-member-edit .form-box {
   margin: .2rem 0;
@@ -3653,30 +3726,9 @@ textarea:focus {
   width: 100%;
   text-align: right;
 }
-.page-food-order .form .con .line .num-box {
-  display: flex;
-  text-align: center;
-  width: 1.8rem;
-  border: 1px solid #ddd;
-}
-.page-food-order .form .con .line .num-box .add,
-.page-food-order .form .con .line .num-box .des {
-  color: #333;
-  display: block;
-  height: .6rem;
-  width: .6rem;
-  background: #ddd;
-  line-height: .6rem;
-}
-.page-food-order .form .con .line .num-box .input {
-  flex: 1;
-}
 .page-food-order .form .con .line .num-box .input input {
-  display: block;
-  height: .6rem;
   text-align: center;
-  border: 0 none;
-  width: 100%;
+  border: 1px solid #ddd;
 }
 .page-food-order .form .con .line .icon-right {
   margin-top: .24rem;
@@ -3719,89 +3771,6 @@ textarea:focus {
 .page-food-order .order-bottom .btn:focus,
 .page-food-order .order-bottom .btn:hover {
   color: #fff;
-}
-.page-food-order .pay-model {
-  background: #fff;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 1102;
-  height: 4.5rem;
-  width: 100%;
-}
-.page-food-order .pay-model .hd {
-  text-align: center;
-  height: 1rem;
-  line-height: 1rem;
-  position: relative;
-  z-index: 1;
-  width: 100%;
-}
-.page-food-order .pay-model .hd .close {
-  position: absolute;
-  right: .2rem;
-  top: .3rem;
-  height: .36rem;
-  line-height: 1rem;
-  display: block;
-  width: .36rem;
-  background-image: url(../i/base/icon-close-1.png);
-  background-size: cover;
-}
-.page-food-order .pay-model .con {
-  margin-bottom: .3rem;
-}
-.page-food-order .pay-model .con .line {
-  padding: 0 .2rem;
-  display: flex;
-  line-height: 1rem;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-}
-.page-food-order .pay-model .con .line .label {
-  width: 2rem;
-}
-.page-food-order .pay-model .con .line .label .icon-pay {
-  display: inline-block;
-  vertical-align: middle;
-  background-size: cover;
-  background-image: url(../i/base/icon-wx.png);
-  height: .5rem;
-  width: .5rem;
-  margin-right: .2rem;
-}
-.page-food-order .pay-model .con .line .input {
-  flex: 1;
-}
-.page-food-order .pay-model .con .line .icon-checked {
-  width: .3rem;
-  height: .3rem;
-  background-image: url(../i/base/icon-checked-s.png);
-  background-size: cover;
-  margin-top: .38rem;
-}
-.page-food-order .pay-model .con .line .icon-checked.active {
-  background-image: url(../i/base/icon-checked-s-a.png);
-}
-.page-food-order .pay-model .con .sub {
-  padding: 0 .2rem;
-}
-.page-food-order .pay-model .con .sub .tt {
-  display: flex;
-}
-.page-food-order .pay-model .con .sub .tt .l {
-  width: 2rem;
-}
-.page-food-order .pay-model .con .sub .tt .r {
-  text-align: right;
-  flex: 1;
-}
-.page-food-order .pay-model .con .sub .s {
-  font-size: .24rem;
-  color: #777;
-}
-.page-food-order .pay-model .ft {
-  padding: 0 .2rem;
 }
 .page-my-order .nav {
   display: flex;
