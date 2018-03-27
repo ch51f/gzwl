@@ -30,6 +30,9 @@ input:focus,
 textarea:focus {
   outline: 0 none;
 }
+img {
+  width: 100%;
+}
 .txt-l {
   text-align: left;
 }
@@ -663,37 +666,25 @@ textarea:focus {
   background-image: url(../i/base/m-6.png);
 }
 .page-home .banner {
-  position: relative;
-  z-index: 1;
-  margin: 0 .3rem .2rem;
-  height: 2.6rem;
+  display: flex;
+  margin: 0 .3rem 0;
+}
+.page-home .banner .item {
+  flex: 1;
+  padding: .2rem .1rem;
 }
 .page-home .banner .banner-1 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 2.6rem;
-  width: 3.4rem;
-  overflow: hidden;
-  z-index: 1;
+  display: block;
+  width: 100%;
 }
 .page-home .banner .banner-2 {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 1.25rem;
-  width: 3.4rem;
-  overflow: hidden;
-  z-index: 1;
+  display: block;
+  width: 100%;
+  margin-bottom: .1rem;
 }
 .page-home .banner .banner-3 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 1.25rem;
-  width: 3.4rem;
-  overflow: hidden;
-  z-index: 1;
+  display: block;
+  width: 100%;
 }
 .page-home .section-type-1 {
   margin: 0 .2rem .3rem;
@@ -1166,12 +1157,15 @@ textarea:focus {
 }
 .page-lyd .good-list .item .con .info .user {
   display: inline-block;
-  background-size: contain;
   vertical-align: middle;
   height: .44rem;
   width: .44rem;
-  background-image: url(../i/lyd/user.png);
   margin-right: .1rem;
+  margin-bottom: .1rem;
+}
+.page-lyd .good-list .item .con .info .user img {
+  height: .44rem;
+  width: .44rem;
 }
 .page-lyd .good-list .item .con .info .icon-rz {
   display: inline-block;
@@ -1309,6 +1303,7 @@ textarea:focus {
 .page-detail .detail-hd .tags .item {
   flex: 1;
   text-align: center;
+  font-size: .24rem;
   height: .5rem;
   line-height: .5rem;
 }
@@ -1319,15 +1314,19 @@ textarea:focus {
   width: .45rem;
   background-repeat: no-repeat;
   margin-right: .15rem;
+  background-size: .9rem 4.5rem;
 }
 .page-detail .detail-hd .tags .item .icon-divice.icon-1 {
   background-image: url(../i/base/icon-tag-1.png);
+  background-size: cover;
 }
 .page-detail .detail-hd .tags .item .icon-divice.icon-2 {
   background-image: url(../i/base/icon-tag-2.png);
+  background-size: cover;
 }
 .page-detail .detail-hd .tags .item .icon-divice.icon-3 {
   background-image: url(../i/base/icon-tag-3.png);
+  background-size: cover;
 }
 .page-detail .detail-hd .tags .item .icon-divice.icon-4 {
   background-image: url(../i/base/icons-divice.png);
@@ -1511,16 +1510,22 @@ textarea:focus {
   display: flex;
   flex-flow: row wrap;
   padding: .2rem 0;
-  height: 1.4rem;
 }
 .page-detail .detail-con .section-ydtg .con .item {
-  width: 31.3%;
+  background-size: cover;
+  font-size: .24rem;
+  width: 2.1rem;
+  height: 1.05rem;
+  padding: .2rem;
+  text-align: center;
+  line-height: .35rem;
   margin: 0 1%;
+  background-image: url(../i/base/tezheng.png);
+  background-size: 2.1rem 1.05rem;
+  color: #fff;
 }
-.page-detail .detail-con .section-ydtg .con .item img {
-  background: #f1f1f1;
-  width: 100%;
-  height: 1rem;
+.page-detail .detail-con .section-ydtg .con .item p {
+  margin: 0;
 }
 .page-detail .detail-con .section-shop .hd {
   position: relative;
@@ -1536,7 +1541,6 @@ textarea:focus {
   position: absolute;
   left: .2rem;
   top: .2rem;
-  background-image: url(../i/base/user.png);
   border-radius: 50%;
   height: .8rem;
   width: .8rem;
@@ -1884,6 +1888,7 @@ textarea:focus {
   z-index: 1;
   padding: 0 .1rem 0 1.2rem;
   margin-bottom: .2rem;
+  min-height: 1rem;
 }
 .page-order .section-order-info .hd .img {
   position: absolute;
@@ -2105,7 +2110,6 @@ textarea:focus {
   margin-top: .15rem;
   height: .38rem;
   width: .38rem;
-  background-image: url(../i/base/icon-u.png);
 }
 .page-order .section-order-contact .line-l .label.user .tt {
   padding-left: .2rem;
@@ -2289,6 +2293,9 @@ textarea:focus {
 .page-order .section-order-other .s-box .i .r {
   text-align: right;
   width: 2rem;
+}
+.page-order .section-order-other .num-box {
+  margin-left: .1rem;
 }
 .page-order .section-order-btns {
   background-color: #fff;
@@ -2502,13 +2509,12 @@ textarea:focus {
 .page-pay .pay-box .ft {
   margin-bottom: .2rem;
 }
-.page-pay .pay-box .ft .icon-qrcode {
+.page-pay .pay-box .ft .qrcode {
   display: block;
   background-size: cover;
   background: #444;
   height: 1.68rem;
   width: 1.68rem;
-  background-image: url(../i/base/ewm.png);
   margin: 0 auto;
 }
 .page-pay .pay-box .ft p {
@@ -2838,7 +2844,6 @@ textarea:focus {
   vertical-align: middle;
   height: .44rem;
   width: .44rem;
-  background-image: url(../i/lyd/user.png);
   margin-right: .1rem;
 }
 .page-find-detail .detail-box .con .url-box .shop .icon-rz {
@@ -3125,7 +3130,6 @@ textarea:focus {
 .page-member-edit .form-line.pic .input .icon-user {
   background-size: cover;
   display: inline-block;
-  background-image: url(../i/base/user-empty.png);
   border-radius: 50%;
   height: 1.2rem;
   width: 1.2rem;
@@ -3440,6 +3444,7 @@ textarea:focus {
   z-index: 1;
 }
 .page-food-detail .food-head .sub .item {
+  font-size: .24rem;
   flex: 1;
   text-align: center;
 }
@@ -3450,15 +3455,19 @@ textarea:focus {
   width: .45rem;
   background-repeat: no-repeat;
   margin-right: .15rem;
+  background-size: .9rem 4.5rem;
 }
 .page-food-detail .food-head .sub .item .icon-divice.icon-1 {
   background-image: url(../i/base/icon-tag-1.png);
+  background-size: cover;
 }
 .page-food-detail .food-head .sub .item .icon-divice.icon-2 {
   background-image: url(../i/base/icon-tag-2.png);
+  background-size: cover;
 }
 .page-food-detail .food-head .sub .item .icon-divice.icon-3 {
   background-image: url(../i/base/icon-tag-3.png);
+  background-size: cover;
 }
 .page-food-detail .food-head .sub .item .icon-divice.icon-4 {
   background-image: url(../i/base/icons-divice.png);
@@ -3983,6 +3992,24 @@ textarea:focus {
   flex: 1;
   text-align: center;
 }
+.page-order-detail .order-info .contact-box .item .icon-connect {
+  display: inline-block;
+  vertical-align: middle;
+  height: .5rem;
+  width: .5rem;
+  margin-right: .2rem;
+  background-size: .5rem .5rem;
+  background-image: url(../i/base/icon-order-message.png);
+}
+.page-order-detail .order-info .contact-box .item .icon-phone {
+  display: inline-block;
+  vertical-align: middle;
+  height: .5rem;
+  width: .5rem;
+  margin-right: .2rem;
+  background-size: .5rem .5rem;
+  background-image: url(../i/base/icon-order-phone.png);
+}
 .page-order-detail .order-info .contact-box .item + .item {
   border-left: 1px solid #ddd;
 }
@@ -4494,4 +4521,96 @@ textarea:focus {
 }
 .page-shop .list .item .good .con .price {
   color: #333;
+}
+.page-xieyi {
+  background-color: #fff;
+}
+.page-xieyi .head {
+  height: 5rem;
+  background-image: url(../i/base/xieyi-hd.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.page-xieyi .content {
+  padding: 0 .4rem 1rem;
+}
+.page-xieyi .content h2 {
+  margin: 0 0 .4rem;
+}
+.page-xieyi .content h3 {
+  margin: .3rem 0;
+}
+.page-xieyi .content p {
+  margin-bottom: .1rem;
+}
+.page-login {
+  background-color: #fff;
+}
+.page-login .head {
+  text-align: center;
+  font-size: .36rem;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+.page-login .form {
+  margin: 0 1rem .5rem;
+}
+.page-login .form .line {
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  padding: .2rem 0;
+}
+.page-login .form .line .no {
+  padding-right: .2rem;
+  border-right: 1px solid #ddd;
+  color: #999;
+  line-height: .4rem;
+}
+.page-login .form .line .mobile {
+  flex: 1;
+  line-height: .4rem;
+  padding: 0 .2rem;
+}
+.page-login .form .line .mobile input {
+  border: 0 none;
+  line-height: .4rem;
+}
+.page-login .form .line .code {
+  flex: 1;
+  line-height: .4rem;
+}
+.page-login .form .line .code input {
+  border: 0 none;
+  line-height: .4rem;
+}
+.page-login .form .line .send {
+  width: 1.8rem;
+  padding-left: .2rem;
+  text-align: right;
+}
+.page-login .form .tip {
+  color: #999;
+  font-size: .24rem;
+  text-align: center;
+  padding: .2rem 0;
+}
+.page-login .btn.btn-color {
+  margin: .4rem;
+  width: auto;
+  border-radius: .5rem;
+}
+.page-login .btn.disabled {
+  background: #ddd;
+}
+.page-login .xieyi {
+  font-size: .24rem;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 2rem;
+  color: #999;
+  text-align: center;
+}
+.page-login .xieyi a {
+  color: #FED757;
 }

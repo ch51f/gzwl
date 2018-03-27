@@ -14,6 +14,10 @@ input:focus, textarea:focus {
   outline: 0 none;
 }
 
+img {
+  width: 100%;
+}
+
 .txt-l {text-align: left;}
 .txt-c {text-align: center;}
 .txt-r {text-align: right;}
@@ -610,32 +614,24 @@ input:focus, textarea:focus {
   }
 
   .banner {
-    .relative;
-    margin: 0 .3rem .2rem;
-    height: 2.6rem;
+    .box;
+    margin: 0 .3rem 0;
+    .item {
+      .flex-1;
+      padding: .2rem .1rem;
+    }
     .banner-1 {
-      position: absolute;
-      left: 0; top: 0;
-      height: 2.6rem;
-      width: 3.4rem;
-      overflow: hidden;
-      z-index: 1;
+      .block;
+      .width-full;
     }
     .banner-2 {
-      position: absolute;
-      right: 0; top: 0;
-      height: 1.25rem;
-      width: 3.4rem;
-      overflow: hidden;
-      z-index: 1;
+      .block;
+      .width-full;
+      margin-bottom: .1rem;
     }
     .banner-3 {
-      position: absolute;
-      right: 0; bottom: 0;
-      height: 1.25rem;
-      width: 3.4rem;
-      overflow: hidden;
-      z-index: 1;
+      .block;
+      .width-full;
     }
   }
 
@@ -1122,12 +1118,15 @@ input:focus, textarea:focus {
           line-height: .44rem;
           .user {
             .inline-block;
-            .img-contain;
             .vertical-middle;
             height: .44rem;
             width: .44rem;
-            background-image: url(../i/lyd/user.png);
             margin-right: .1rem;
+            margin-bottom: .1rem;
+            img {
+              height: .44rem;
+              width: .44rem;
+            }
           }
           .icon-rz {
             .inline-block;
@@ -1268,6 +1267,7 @@ input:focus, textarea:focus {
       .item {
         .flex-1;
         .txt-c;
+        .font-small;
         height: .5rem;
         line-height: .5rem;
         .icon-divice {
@@ -1277,14 +1277,18 @@ input:focus, textarea:focus {
           width: .45rem;
           background-repeat: no-repeat;
           margin-right: .15rem;
+          background-size: .9rem 4.5rem;
           &.icon-1 {
             background-image: url(../i/base/icon-tag-1.png);
+            background-size: cover;
           }
           &.icon-2 {
             background-image: url(../i/base/icon-tag-2.png);
+            background-size: cover;
           }
           &.icon-3 {
             background-image: url(../i/base/icon-tag-3.png);
+            background-size: cover;
           }
           &.icon-4 {
             background-image: url(../i/base/icons-divice.png);
@@ -1471,14 +1475,20 @@ input:focus, textarea:focus {
         .box;
         .box-row;
         padding: .2rem 0;
-        height: 1.4rem;
         .item {
-          width: 31.3%;
+          .img-cover;
+          .font-small;
+          width: 2.1rem;
+          height: 1.05rem;
+          padding: .2rem;
+          .txt-c;
+          line-height: .35rem;
           margin: 0 1%;
-          img {
-            background: #f1f1f1;
-            .width-full;
-            height: 1rem;
+          background-image: url(../i/base/tezheng.png);
+          background-size: 2.1rem 1.05rem;
+          .txt-white;
+          p {
+            margin: 0;
           }
         }
       }
@@ -1496,7 +1506,6 @@ input:focus, textarea:focus {
           position: absolute;
           left: .2rem;
           top: .2rem;
-          background-image: url(../i/base/user.png);
           border-radius: 50%;
           height: .8rem;
           width: .8rem;
@@ -1855,6 +1864,7 @@ input:focus, textarea:focus {
       .relative;
       padding: 0 .1rem 0 1.2rem;
       margin-bottom: .2rem;
+      min-height: 1rem;
       .img {
         position: absolute;
         left: 0; top: 0;
@@ -2073,7 +2083,6 @@ input:focus, textarea:focus {
             margin-top: .15rem;
             height: .38rem;
             width: .38rem;
-            background-image: url(../i/base/icon-u.png);
           }
           .tt {
             padding-left: .2rem;
@@ -2266,6 +2275,9 @@ input:focus, textarea:focus {
     }
     .bg-white;
     margin-bottom: .2rem;
+    .num-box {
+      margin-left: .1rem;
+    }
   }
   .section-order-btns {
     .bg-white;
@@ -2487,14 +2499,12 @@ input:focus, textarea:focus {
     }
     .ft {
       margin-bottom: .2rem;
-      .icon-qrcode {
+      .qrcode {
         .block;
         .img-cover;
         background: #444;
         height: 1.68rem;
         width: 1.68rem;
-        background-image: url(../i/base/ewm.png);
-
         margin: 0 auto;
       }
       p {
@@ -2845,7 +2855,6 @@ input:focus, textarea:focus {
             .vertical-middle;
             height: .44rem;
             width: .44rem;
-            background-image: url(../i/lyd/user.png);
             margin-right: .1rem;
           }
           .icon-rz {
@@ -3136,7 +3145,7 @@ input:focus, textarea:focus {
         .icon-user {
           .img-cover;
           .inline-block;
-          background-image: url(../i/base/user-empty.png);
+          
           border-radius: 50%;
           height: 1.2rem;
           width: 1.2rem;
@@ -3468,6 +3477,7 @@ input:focus, textarea:focus {
       line-height: 1rem;
       z-index: 1;
       .item {
+        .font-small;
         .flex-1;
         .txt-c;
         .icon-divice {
@@ -3477,14 +3487,18 @@ input:focus, textarea:focus {
           width: .45rem;
           background-repeat: no-repeat;
           margin-right: .15rem;
+          background-size: .9rem 4.5rem;
           &.icon-1 {
             background-image: url(../i/base/icon-tag-1.png);
+            background-size: cover;
           }
           &.icon-2 {
             background-image: url(../i/base/icon-tag-2.png);
+            background-size: cover;
           }
           &.icon-3 {
             background-image: url(../i/base/icon-tag-3.png);
+            background-size: cover;
           }
           &.icon-4 {
             background-image: url(../i/base/icons-divice.png);
@@ -4028,6 +4042,24 @@ input:focus, textarea:focus {
       .item {
         .flex-1;
         .txt-c;
+        .icon-connect {
+          .inline-block;
+          .vertical-middle;
+          height: .5rem;
+          width: .5rem;
+          margin-right: .2rem;
+          background-size: .5rem .5rem;
+          background-image: url(../i/base/icon-order-message.png);
+        }
+        .icon-phone {
+          .inline-block;
+          .vertical-middle;
+          height: .5rem;
+          width: .5rem;
+          margin-right: .2rem;
+          background-size: .5rem .5rem;
+          background-image: url(../i/base/icon-order-phone.png);
+        }
       }
       .item+.item {
         border-left: 1px solid #ddd;
@@ -4569,6 +4601,102 @@ input:focus, textarea:focus {
           }
         }
       }
+    }
+  }
+}
+
+.page-xieyi {
+  .bg-white;
+  .head {
+    height: 5rem;
+    background-image: url(../i/base/xieyi-hd.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  .content {
+    padding: 0 .4rem 1rem;
+    h2 {
+      margin: 0 0 .4rem;
+    }
+    h3 {
+      margin: .3rem 0;
+    }
+    p {
+      margin-bottom: .1rem;
+    }
+  }
+}
+
+.page-login {
+  .bg-white;
+  .head {
+    .txt-c;
+    .font-biger;
+    font-weight: 600;
+    padding: 1rem 0;
+  }
+  .form {
+    margin: 0 1rem .5rem;
+    .line {
+      .border-bottom;
+      .box;
+      padding: .2rem 0;
+      .no {
+        padding-right: .2rem;
+        border-right: 1px solid #ddd;
+        .txt-muted;
+        line-height: .4rem;
+      }
+      .mobile {
+        .flex-1;
+        line-height: .4rem;
+        padding: 0 .2rem;
+        input {
+          border: 0 none;
+            line-height: .4rem;
+        }
+      }
+      .code {
+        .flex-1;
+        line-height: .4rem;
+        input {
+          border: 0 none;
+            line-height: .4rem;
+        }
+      }
+      .send {
+        width: 1.8rem;
+        padding-left: .2rem;
+        .txt-r;
+      }
+    }
+    .tip {
+      .txt-muted;
+      .font-small;
+      .txt-c;
+      padding: .2rem 0;
+    }
+  }
+  .btn {
+    &.btn-color {
+      margin: .4rem;
+      width: auto;
+      border-radius: .5rem;
+    }
+    &.disabled {
+      background: #ddd;
+    }
+  }
+  .xieyi {
+    .font-small;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 2rem;
+    .txt-muted;
+    .txt-c;
+    a {
+      color: #FED757;
     }
   }
 }
