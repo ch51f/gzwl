@@ -2142,6 +2142,18 @@ img {
           line-height: .9rem;
         }
       }
+      .input-1 {
+        padding: .2rem 0;
+        p {
+          line-height: .5rem;
+          margin-bottom: 0;
+        }
+        input {
+          .width-full;
+          border: 0 none;
+          line-height: .5rem;
+        } 
+      }
     }
   }
   .section-order-other {
@@ -3843,16 +3855,38 @@ img {
     background: #fff;
     margin-bottom: .2rem;
     .item {
+      &.active {
+        a {
+          border-bottom: 1px solid #fd4e79;
+        }
+      }
       .flex-1;
       .txt-c;
       a {
+          display: inline-block;
         color: #333;
+        padding-bottom: .1rem;
       }
       .icon-order {
         display: block;
-        height: 1rem;
-        width: 1rem;
-        margin: 0 auto;
+        height: .5rem;
+        width: .5rem;
+        margin: .25rem auto;
+        background-image: url(../i/base/icon-order-type.png);
+        background-size: 2rem .5rem;
+        background-repeat:no-repeat;
+        &.icon-order-1 {
+          background-position: 0 50%;
+        }
+        &.icon-order-2 {
+          background-position: -.5rem 50%;
+        }
+        &.icon-order-3 {
+          background-position: -1rem 50%;
+        }
+        &.icon-order-4 {
+          background-position: -1.5rem 50%;
+        }
       }
     }
   }
