@@ -232,6 +232,7 @@ img {
       .block;
       .img-contain;
       background-image: url(../i/base/icon-coll.png);
+      background-repeat: no-repeat;
       height: .34rem;
       width: .34rem;
     }
@@ -250,6 +251,21 @@ img {
       background-image: url(../i/base/icon-pic.png);
       height: .34rem;
       width: .34rem;
+    }
+  }
+
+  .slide-wrapper {
+    .relative;
+    border-radius: .3rem;
+    z-index: 99;
+    margin: 0 .15rem .4rem;
+    overflow: hidden;
+    .am-control-nav {
+      display: none;
+    }
+    img {
+      border-radius: .3rem;
+      .width-full;
     }
   }
 
@@ -558,22 +574,6 @@ img {
     height: 3.2rem;
   }
 
-  .slide-wrapper {
-    .relative;
-    border-radius: .3rem;
-    z-index: 99;
-    height: 3.6rem;
-    margin: 0 .2rem .4rem;
-    overflow: hidden;
-    .am-control-nav {
-      display: none;
-    }
-    img {
-      border-radius: .3rem;
-      .width-full;
-    }
-  }
-
   .main-bar {
     .box;
     .box-row;
@@ -596,25 +596,6 @@ img {
         img {
           .width-full;
         }
-        // &.m-1 {
-        //   background-image: url(../i/base/m-1.png);
-        // }
-        // &.m-2 {
-        //   background-image: url(../i/base/m-2.png);
-        // }
-        // &.m-3 {
-        //   background-image: url(../i/base/m-3.png);
-        // }
-        // &.m-4 {
-        //   background-image: url(../i/base/m-4.png);
-        // }
-        // &.m-5 {
-        //   background-image: url(../i/base/m-5.png);
-        // }
-        // &.m-6 {
-        //   background-image: url(../i/base/m-6.png);
-        // }
-
       }
     }
   }
@@ -646,10 +627,10 @@ img {
 
   .banner {
     .box;
-    margin: 0 .3rem 0;
+    margin: 0 .15rem 0;
     .item {
       .flex-1;
-      padding: .2rem .1rem;
+      padding: .1rem;
     }
     .banner-1 {
       .block;
@@ -1072,20 +1053,6 @@ img {
     height: 3.2rem;
   }
 
-  .slide-wrapper {
-    .relative;
-    z-index: 99;
-    height: 3.6rem;
-    margin: 0 .2rem .4rem;
-    overflow: hidden;
-    .am-control-nav {
-      display: none;
-    }
-    img {
-      border-radius: .3rem;
-      .width-full;
-    }
-  }
 
   .good-filter {
     .bg-white;
@@ -1127,7 +1094,7 @@ img {
       .hd {
         .block;
         .width-full;
-        height: 3.rem;
+        padding: .1rem;
         img {
           .width-full;
         }
@@ -1263,20 +1230,6 @@ img {
     height: 3.2rem;
   }
 
-  .slide-wrapper {
-    .relative;
-    z-index: 99;
-    height: 3.6rem;
-    margin: 0 .2rem .4rem;
-    overflow: hidden;
-    .am-control-nav {
-      display: none;
-    }
-    img {
-      border-radius: .3rem;
-      .width-full;
-    }
-  }
 
   .detail-hd {
     .bg-white;
@@ -1530,7 +1483,7 @@ img {
       .hd {
         .relative;
         background: #F5FAFE;
-        padding: .2rem .2rem .2rem 1.2rem;
+        padding: .2rem .2rem .2rem 1.3rem;
         height: 1.2rem;
         line-height: .8rem;
         .img-show {
@@ -1540,8 +1493,8 @@ img {
           left: .2rem;
           top: .2rem;
           border-radius: 50%;
-          height: .8rem;
-          width: .8rem;
+          height: .94rem;
+          width: .94rem;
         }
         .icon-rz {
           .inline-block;
@@ -1556,18 +1509,18 @@ img {
       }
       .con { 
         .shop-nav {
-          height: .62rem;
           line-height: .6rem;
           ul {
             .bg-white;
-            height: .62rem;
+            .box;
+            height: 1.02rem;
             list-style: none;
             padding: 0;
-            overflow: hidden;
             li {
               .border-bottom;
-              float: left;
-              padding: 0 .3rem;
+              .flex-1;
+              .txt-c;
+              padding: .2rem .3rem;
               a {
                 .txt-default;
                 .block;
@@ -2267,7 +2220,6 @@ img {
         margin-bottom: .2rem;
         img {
           .block;
-          width: 90%;
           margin: 0 auto .1rem;
         }
         input {
@@ -2737,21 +2689,6 @@ img {
     height: 3.2rem;
   }
 
-  .slide-wrapper {
-    .relative;
-    border-radius: .3rem;
-    z-index: 99;
-    height: 3.6rem;
-    margin: 0 .2rem .4rem;
-    overflow: hidden;
-    .am-control-nav {
-      display: none;
-    }
-    img {
-      border-radius: .3rem;
-      .width-full;
-    }
-  }
 
   .find-tab {
     .box;
