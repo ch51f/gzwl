@@ -339,8 +339,9 @@ img {
   position: relative;
   z-index: 1;
   border-radius: .3rem;
+  box-shadow: 1px 3px #FAE6DF;
   z-index: 99;
-  margin: 0 .15rem .4rem;
+  margin: 0 .15rem .2rem;
   overflow: hidden;
 }
 .page .slide-wrapper .am-control-nav {
@@ -1158,7 +1159,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   border-radius: .2rem;
-  margin: 0 .2rem .3rem;
+  margin: 0 .2rem .2rem;
   padding: .2rem .2rem;
 }
 .page-lyd .good-filter .item {
@@ -1191,8 +1192,9 @@ img {
   background-color: #fff;
   display: block;
   color: #333;
+  border: 1px solid #eee;
   box-shadow: 0px 1px 1px #ddd;
-  margin-bottom: .4rem;
+  margin-bottom: .2rem;
 }
 .page-lyd .good-list .item .hd {
   display: block;
@@ -1209,10 +1211,21 @@ img {
 .page-lyd .good-list .item .con .tt {
   display: block;
   font-size: .32rem;
+  padding-left: .1rem;
+  font-size: .24rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 4.5rem;
   line-height: .6rem;
 }
 .page-lyd .good-list .item .con .price {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
   display: block;
+  padding-right: .1rem;
   line-height: .6rem;
 }
 .page-lyd .good-list .item .con .info {
