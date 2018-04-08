@@ -1975,7 +1975,10 @@ img {
     margin-bottom: .2rem;
     position: relative;
     z-index: 100;
-    padding: .3rem .2rem;
+    padding: .3rem .2rem 0;
+    &.no-pt {
+      padding-top: 0;
+    }
     .hd {
       .border-bottom;
       .box;
@@ -2012,6 +2015,26 @@ img {
           .flex-1;
           .txt-r;
           line-height: 1rem;
+        }
+        .quick-box {
+          .box; 
+          width: 3rem;
+          font-size: .22rem; 
+          line-height: .25rem; 
+          padding-top: .2rem; 
+          .item {
+            .txt-c; 
+            display: block;
+            color: #333;
+            border: 1px solid #ddd; 
+            padding: .05rem .1rem; 
+            height: .6rem;
+            margin: 0 .1rem; 
+            &.active {
+              border-color: #F43444;
+              color:#F43444;
+            }
+          } 
         }
         .num-box {
           margin-top: .2rem;
@@ -2075,6 +2098,7 @@ img {
           line-height: .35rem;
           .icon-user {
             .img-cover;
+            background-image: url(../i/base/icon-u.png);
             .inline-block;
             .vertical-middle;
             margin-top: .15rem;
@@ -2108,6 +2132,12 @@ img {
     .bg-white;
     margin-bottom: .2rem;
     padding:0 .2rem 0;
+    .h4 {
+      font-weight: 400;
+      padding: .2rem 0;
+      .border-bottom;
+      margin-bottom: .1rem;
+    }
     .line {
       line-height: .9rem;
       &+.line {
@@ -2146,6 +2176,7 @@ img {
     }
   }
   .section-order-other {
+    padding-top: .2rem;
     .tt {
       border-left: 3px solid #FD4E79;
       height: .3rem;
@@ -2231,6 +2262,7 @@ img {
         margin-bottom: .2rem;
         img {
           .block;
+          width: 1.2rem;
           margin: 0 auto .1rem;
         }
         input {
@@ -2290,6 +2322,7 @@ img {
   .section-order-btns {
     .bg-white;
     .relative;
+    .font-small;
     .top {
       background: #f6f6f6;
       padding: .2rem .2rem .4rem .7rem;
@@ -2808,6 +2841,7 @@ img {
       padding: .2rem;
     }
     .btn-color {
+      width: auto;
       margin: .2rem;
     }
   }
@@ -3191,7 +3225,7 @@ img {
       position: relative;
       z-index: 1;
       display: block;
-      margin-bottom: .4rem;
+      margin-bottom: .2rem;
       box-shadow: 0px 2px 5px #ddd;
       color: #666;
       .con {
@@ -4136,6 +4170,9 @@ img {
 }
 .page-moment {
   padding-bottom: 1rem;
+  &.no-pb {
+    padding-bottom: 0;
+  }
   .home-head {
     .right {
       .block;
