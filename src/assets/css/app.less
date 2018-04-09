@@ -1148,6 +1148,12 @@ img {
             margin-left: .1rem;
           }
         }
+        .distance {
+          .txt-r;
+          .txt-muted;
+          .flex-1;
+          padding-right: .1rem;
+        }
       }
     }
   }
@@ -2323,6 +2329,13 @@ img {
     .bg-white;
     .relative;
     .font-small;
+    &.pos-b {
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+    }
     .top {
       background: #f6f6f6;
       padding: .2rem .2rem .4rem .7rem;
@@ -2696,6 +2709,9 @@ img {
             background-repeat: no-repeat;
             &.active {
               background-image: url(../i/base/star-active.png);
+            }
+            &.half {
+              background-image: url(../i/base/star-half.png);
             }
           }
         }
