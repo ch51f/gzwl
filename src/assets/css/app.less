@@ -1271,11 +1271,10 @@ img {
       .width-full;
       .relative;
       .box;
-      padding: .2rem .4rem;
-      height: .9rem;
+      padding: .2rem .2rem;
+      // height: .9rem;
       .item {
         .flex-1;
-        .txt-c;
         .font-small;
         height: .5rem;
         line-height: .5rem;
@@ -1285,8 +1284,8 @@ img {
           height: .45rem;
           width: .45rem;
           background-repeat: no-repeat;
-          margin-right: .15rem;
-          background-size: .9rem 4.5rem;
+          margin-right: .05rem;
+          background-size: .9rem 7.2rem;
           &.icon-1 {
             background-image: url(../i/base/icon-tag-1.png);
             background-size: cover;
@@ -1374,6 +1373,58 @@ img {
           &.icon-22 {
             background-image: url(../i/base/icons-divice.png);
             background-position: 0 -4.05rem;
+          }
+          &.icon-23 {
+            background-image: url(../i/base/icons-divice.png);
+            background-position: -.45rem -4.05rem;
+          }
+          &.icon-24 {
+            background-image: url(../i/base/icons-divice.png);
+            background-position: 0 -4.5rem;
+          }
+          &.icon-25 {
+            background-image: url(../i/base/icons-divice.png);
+            background-position: -.45rem -4.5rem;
+          }
+          &.icon-26 {
+            background-image: url(../i/base/icons-divice.png);
+            background-position: 0 -4.95rem;
+          }
+          &.icon-27 {
+            background-image: url(../i/base/icons-divice.png);
+            background-position: -.45rem -4.95rem;
+          }
+          &.icon-28 {
+            background-image: url(../i/base/icons-divice.png);
+            background-position: 0 -5.4rem;
+          }
+          &.icon-29 {
+            background-image: url(../i/base/icons-divice.png);
+            background-position: -.45rem -5.4rem;
+          }
+          &.icon-30 {
+            background-image: url(../i/base/icons-divice.png);
+            background-position: 0 -5.85rem;
+          }
+          &.icon-31 {
+            background-image: url(../i/base/icons-divice.png);
+            background-position: -.45rem -5.85rem;
+          }
+          &.icon-32 {
+            background-image: url(../i/base/icons-divice.png);
+            background-position: 0 -6.3rem;
+          }
+          &.icon-33 {
+            background-image: url(../i/base/icons-divice.png);
+            background-position: -.45rem -6.3rem;
+          }
+          &.icon-34 {
+            background-image: url(../i/base/icons-divice.png);
+            background-position: 0 -6.75rem;
+          }
+          &.icon-35 {
+            background-image: url(../i/base/icons-divice.png);
+            background-position: -.45rem -6.75rem;
           }
         }
       }
@@ -2227,14 +2278,15 @@ img {
         }
       }
       .hd {
-        height: .6rem;
-        line-height: .6rem;
+        padding: .1rem 0;
+        line-height: .4rem;
+        min-height: .8rem;
         .t {
           .txt-default;
         }
         .label {
           .txt-r;
-          height: .6rem;
+          height: .4rem;
           width: 3rem;
           &.label-r {
             padding-right: .3rem;
@@ -2329,6 +2381,7 @@ img {
     margin-bottom: .2rem;
     .num-box {
       margin-left: .1rem;
+      margin-top: -.1rem;
     }
   }
   .section-order-btns {
@@ -2436,6 +2489,88 @@ img {
         left: 50%;
         margin-left: -.28rem;
         background-image: url(../i/base/icon-close-2.png);
+      }
+    }
+  }
+
+  .ydxz-model {
+    .bg-white;
+    display: none;
+    border-radius: .2rem;
+    position: fixed;
+    top: 22%;
+    left: 50%;
+    width: 6.2rem;
+    margin-left: -3.1rem;
+    z-index: 1120;
+    .hd {
+      border-radius: .2rem .2rem 0 0;
+      .txt-c;
+      .txt-white;
+      background-color: #FD4F58;
+      padding: .2rem 0;
+    }
+    .con {
+      .font-small;
+      padding: .15rem;
+      max-height: 6rem;
+      overflow-y: scroll;
+      p {
+        text-indent: 2em;
+      }
+      
+    }
+    .ft {
+      position: absolute;
+      bottom: -.3rem;
+      left: 0;
+      width: 100%;
+      .close {
+        .block;
+        .img-cover;
+        height: .56rem;
+        width: .56rem;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -.28rem;
+        background-image: url(../i/base/icon-close-2.png);
+      }
+    }
+  }
+
+  .pic-model {
+    display: none;
+    border-radius: .2rem;
+    position: fixed;
+    top: 22%;
+    left: 50%;
+    width: 5.8rem;
+    margin-left: -2.9rem;
+    z-index: 1120;
+    .ft {
+      height: 1rem;
+      position: relative;
+      z-index: 1;
+      .close {
+        .block;
+        .img-cover;
+        height: .56rem;
+        width: .56rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -.28rem 0 0 -.28rem;
+        background-image: url(../i/base/icon-close-2.png);
+      }
+    }
+    .con {
+      .bg-white;
+      border-radius: .3rem;
+      height: 5.8rem;
+      padding: .5rem;
+      img {
+        .width-full;
       }
     }
   }
