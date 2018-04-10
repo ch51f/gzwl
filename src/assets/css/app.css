@@ -160,6 +160,12 @@ img {
   height: .3rem;
   background-image: url(../i/base/star-val.png);
 }
+.star-val-box .star-half {
+  background-size: cover;
+  width: .3rem;
+  height: .3rem;
+  background-image: url(../i/base/star-val-half.png);
+}
 .num-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -778,7 +784,7 @@ img {
   padding-top: .15rem;
 }
 .page-home .section-type-1 .con-wrap .con {
-  width: 16.7rem;
+  white-space: nowrap;
 }
 .page-home .section-type-1 .con-wrap .con .item {
   background-color: #fff;
