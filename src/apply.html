@@ -22,6 +22,7 @@
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"> 
 
   <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/mobileSelect/css/mobileSelect.css">
   <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body class="page page-apply">
@@ -42,9 +43,9 @@
         <div class="line">
           <div class="label">地址</div>
           <div class="input">
-            <input type="text" placeholder="请选择" readonly="true">
-            <i class="icon-right"></i>       
+            <input type="text" placeholder="请选择" readonly="true">     
           </div>
+          <i class="icon-right"></i>  
         </div>
         <div class="line">
           <div class="label">面积</div>
@@ -54,10 +55,10 @@
         </div>
         <div class="line">
           <div class="label">风格</div>
-          <div class="input">
-            <input type="text" placeholder="请选择" readonly="true">
-            <i class="icon-right"></i>       
+          <div class="input" id="fengge">
+            <input type="text" placeholder="请选择" readonly="true">    
           </div>
+          <i class="icon-right"></i>   
         </div>
       </div>
       <div class="base-box"> 
@@ -133,9 +134,25 @@
     </div>
   </div>
 <script src="assets/js/highView.js"></script>
+<script src="assets/mobileSelect/js/mobileSelect.js"></script>
 <script src="assets/js/jquery-2.1.1.min.js"></script>
 <script src="assets/js/amazeui.min.js"></script>
 <script>
+  var mobileSelectFengge = new MobileSelect({
+    trigger: '#fengge',
+    title: '选择风格',
+    wheels: [
+      {data: [
+        {id: 1, value: '风格1'},
+        {id: 2, value: '风格2'},
+        {id: 3, value: '风格3'},
+        {id: 4, value: '风格4'},
+      ]}
+    ],
+    callback: function(indexArr, data) {
+      console.log(data);
+    }
+  })
   $(function() {
     $("#divice-box").on('click', '.item', function() {
       var $el = $(this);

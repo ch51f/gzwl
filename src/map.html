@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>地址选择</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="icon" type="image/png" href="assets/i/favicon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="地址选择"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+  <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <meta name="msapplication-tap-highlight" content="no"> 
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"> 
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/sub.css">
+</head>
+<body class="page page-map">
+  <div class="home-head">
+    <div class="title">地址选择</div>
+    <a class="left" href="javascript:;"><i class="icon-back"></i></a>
+    <a class="right-txt getAdd" href="javascript:;">完成</a>
+  </div>
+  <div class="bmap-wrap" id="map">
+  </div>
+
+<script src="http://api.map.baidu.com/api?v=2.0&ak=mSmA1dw3yM6cbpumKvDSTnn3eDBoG2i5"></script>
+<script src="assets/js/jquery-2.1.1.min.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+<script>
+  $(function() {
+    var $wrap = $(".bmap-wrap");
+
+    init();
+    // 初始化界面
+    function init() {
+      var h = window.innerHeight - $('.home-head').height();
+      $wrap.height(h);
+    }
+
+    $(window).resize(function() {
+      init();
+    })
+
+    var map = new BMap.Map("map");
+    map.centerAndZoom(new BMap.Point(102.702268, 24.961634), 25);
+    map.setCurrentCity("昆明");
+    var gc = new BMap.Geocoder(), addComp, point;
+
+    var addEvent = function(type, func) {
+      map.addEventListener(type, func);
+    }
+
+    var removeEvent = function(type, func) {
+      map.removeEventListener(type, func);
+    }
+    var func_click = function(e) {
+      var marker = new BMap.Marker(e.point)
+      map.clearOverlays();   
+      map.addOverlay(marker);
+      point = e.point;
+
+      gc.getLocation(point, function (rs) {   
+        addComp = rs.addressComponents; 
+      })
+    }
+
+
+    addEvent("click", func_click);
+    $('.getAdd').click(function(e) {
+      if(!point) {
+        alert("请选择地址");
+      }
+      console.log(point, addComp)
+    })
+  })
+</script>
+</body>

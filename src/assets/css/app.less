@@ -13,6 +13,9 @@ address, blockquote, dl, fieldset, figure, hr, ol, p, pre, ul {
 input:focus, textarea:focus {
   outline: 0 none;
 }
+textarea {
+  resize: none;
+}
 
 img {
   width: 100%;
@@ -894,30 +897,36 @@ img {
         .line {
           .box;
           .border-bottom;
-          line-height: 1.1rem;
-          padding: 0 .3rem;
+          .relative;
+          padding: .3rem .3rem;
           .label {
+            height: .4rem;
+            line-height: .4rem;
             width: 2rem;
           }
           .input {
             .flex-1;
-            .relative;
+            .txt-r;
+            height: .4rem;
+            line-height: .4rem;
+            padding: 0 .3rem;
             input {
               .txt-r;
               .width-full;
+              .block;
+              height: .4rem;
               border: 0 none;
-              padding: 0 .3rem;
             }
-            i.icon-right {
-              .img-cover;
-              background-image: url(../i/base/arrow-r.png);
-              position: absolute;
-              right: 0;
-              top: 50%;
-              height: .25rem;
-              width: .25rem;
-              margin-top: -.08rem;
-            }
+          }
+          i.icon-right {
+            .img-cover; 
+            background-image: url(../i/base/arrow-r.png); 
+            position: absolute; 
+            right: .3rem; 
+            top: 50%; 
+            height: .25rem; 
+            width: .25rem; 
+            margin-top: -.1rem; 
           }
         }
       }
