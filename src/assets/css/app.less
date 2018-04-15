@@ -191,6 +191,7 @@ img {
       .txt-l;
       .txt-white;
       height: .34rem;
+      line-height: .34rem;
       width: 1.4rem;
       position: absolute;
       top: .3rem;
@@ -252,7 +253,7 @@ img {
       background-image: url(../i/base/icon-arrow-bottom-white.png);
       height: .34rem;
       width: .34rem;
-      margin-left: .15rem;
+      margin-left: .05rem;
     }
     .icon-pic {
       .block;
@@ -1067,6 +1068,9 @@ img {
   padding-top: 1rem;
   .home-head {
     height: 3.2rem;
+    .left-addr {
+      left: .7rem;
+    }
   }
 
 
@@ -1214,6 +1218,8 @@ img {
 
   .model-filter {
     .width-full;
+    max-height: 100%;
+    overflow: auto;
     position: fixed;
     left: 0; top: 0;
     z-index: 1200;
@@ -2289,6 +2295,9 @@ img {
       padding: .2rem .2rem .2rem .7rem;
       &.item-1 {
         padding-left: .2rem;
+        .hd {
+          min-height: auto;
+        }
       }
       .check {
         .block;
@@ -2340,6 +2349,9 @@ img {
           height: 2rem;
           padding: .1rem;
         }
+      }
+      .tips {
+        .font-small; 
       }
     }
     .e-box {
@@ -3894,7 +3906,7 @@ img {
     }
     .con {
       .item {
-        padding: .2rem;
+        padding: .2rem .2rem 0;
         border-bottom: 1px solid #ddd;
         .box; 
         .user {
@@ -3923,6 +3935,7 @@ img {
           }
           .desc {
             padding: .1rem 0;
+            line-height: .35rem;
           }
           .imgs {
             padding: .1rem 0;
@@ -4395,7 +4408,7 @@ img {
       color: #333;
       background-color: #fff;
       margin-bottom: .2rem;
-      padding: .2rem;
+      padding: .2rem .2rem 0;
       .hd {
         .box;
         margin-bottom: .2rem;
@@ -4627,7 +4640,7 @@ img {
       color: #333;
       background-color: #fff;
       margin-bottom: .2rem;
-      padding: .2rem;
+      padding: .2rem .2rem 0;
       .hd {
         .box;
         margin-bottom: .2rem;
@@ -4766,6 +4779,7 @@ img {
           }
           .date {
             color: #999;
+            .font-small;
           }
         }
       }
@@ -4803,7 +4817,7 @@ img {
       .txt-muted;
       line-height: 1rem;
       &.active {
-        .txt-default;
+        .txt-primary;
       }
     }
   }

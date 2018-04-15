@@ -22,12 +22,14 @@
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"> 
 
   <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/mobileSelect/css/mobileSelect.css">
   <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body class="page page-lyd">
   <div class="home-head">
     <div class="title">露营地</div>
     <a class="left" href="javascript:;"><i class="icon-back"></i></a>
+    <a class="left-addr"  href="javascript:;"><span id="city">昆明</span><i class="icon-addr"></i></a>
     <a class="right" href="javascript:;"><i class="icon-search"></i></a>
   </div>
   <div class="slide-wrapper"  data-am-flexslider>
@@ -37,7 +39,7 @@
     </ul>
   </div>
   <div class="good-filter am-cf filter_handle">
-    <div class="item" data-id="1" data-txt="选择城市"><span class="txt">选择城市</span><i class="icon-down"></i></div>
+<!--     <div class="item" data-id="1" data-txt="选择城市"><span class="txt">选择城市</span><i class="icon-down"></i></div> -->
     <div class="item" data-id="2" data-txt="主题"><span class="txt">主题</span><i class="icon-down"></i></div>
     <div class="item" data-id="3" data-txt="智能排序"><span class="txt">智能排序</span><i class="icon-down"></i></div>
   </div>
@@ -110,15 +112,28 @@
   <div class="am-dimmer"></div>
   <div class="model-filter">
     <div class="good-filter am-cf">
-      <div class="item" data-id="1">选择城市<i class="icon-down"></i></div>
+<!--       <div class="item" data-id="1">选择城市<i class="icon-down"></i></div> -->
       <div class="item" data-id="2">主题<i class="icon-down"></i></div>
       <div class="item" data-id="3">智能排序<i class="icon-down"></i></div>
     </div>
-    <div class="good-filter-list" data-id="1">
+<!--     <div class="good-filter-list" data-id="1">
       <a href="javascript:;" class="item" data-id="1" data-key="1">昆明</a>
       <a href="javascript:;" class="item" data-id="1" data-key="2">大理</a>
       <a href="javascript:;" class="item" data-id="1" data-key="3">普洱</a>
-    </div>
+      <a href="javascript:;" class="item" data-id="1" data-key="3">普洱</a>
+      <a href="javascript:;" class="item" data-id="1" data-key="3">普洱</a>
+      <a href="javascript:;" class="item" data-id="1" data-key="3">普洱</a>
+      <a href="javascript:;" class="item" data-id="1" data-key="3">普洱</a>
+      <a href="javascript:;" class="item" data-id="1" data-key="3">普洱</a>
+      <a href="javascript:;" class="item" data-id="1" data-key="3">普洱</a>
+      <a href="javascript:;" class="item" data-id="1" data-key="3">普洱</a>
+      <a href="javascript:;" class="item" data-id="1" data-key="3">普洱</a>
+      <a href="javascript:;" class="item" data-id="1" data-key="3">普洱</a>
+      <a href="javascript:;" class="item" data-id="1" data-key="3">普洱</a>
+      <a href="javascript:;" class="item" data-id="1" data-key="3">普洱</a>
+      <a href="javascript:;" class="item" data-id="1" data-key="3">普洱</a>
+      <a href="javascript:;" class="item" data-id="1" data-key="3">普洱</a>
+    </div> -->
     <div class="good-filter-list"  data-id="2">
       <a href="javascript:;" class="item" data-id="2" data-key="1">海边度假</a>
       <a href="javascript:;" class="item" data-id="2" data-key="2">田园风光</a>
@@ -132,9 +147,25 @@
   </div>
 
 <script src="assets/js/highView.js"></script>
+<script src="assets/mobileSelect/js/mobileSelect.js"></script>
 <script src="assets/js/jquery-2.1.1.min.js"></script>
 <script src="assets/js/amazeui.min.js"></script>
 <script>
+  var mobileSelectFengge = new MobileSelect({
+    trigger: '#city',
+    title: '选择城市',
+    wheels: [
+      {data: [
+        {id: 1, value: '昆明'},
+        {id: 2, value: '大理'},
+        {id: 3, value: '普洱'},
+        {id: 4, value: '丽江'},
+      ]}
+    ],
+    callback: function(indexArr, data) {
+      console.log(data);
+    }
+  })
   $(function() {
     $('.slide-wrapper').flexslider({
       'controlNav': false,
