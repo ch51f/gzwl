@@ -575,6 +575,22 @@ img {
       padding: 0 .2rem;
     }
   }
+
+  .model-img-slide {
+    // display: none;
+    visibility: hidden;
+    .txt-c;
+    .bg-white;
+    .width-full;
+    position: fixed;
+    top: 20%;
+    left: 0;
+    z-index: 1102;
+    img {
+      .block;
+      // width: 100%;
+    }
+  }
 }
 
 .page-home {
@@ -1068,8 +1084,51 @@ img {
   padding-top: 1rem;
   .home-head {
     height: 3.2rem;
-    .left-addr {
+    .left+.left-addr {
       left: .7rem;
+    }
+  }
+
+  .search-box {
+    .bg-white;
+    .relative;
+    margin: .1rem .2rem;
+    padding: .2rem .7rem;
+    height: 1rem;
+    .icon-search {
+      height: .4rem;
+      width: .4rem;
+      position: absolute;
+      left: .2rem;
+      top: .3rem;
+      background-image: url(../i/base/icon-search.png);
+      background-position: 50% 50%;
+      background-size: .32rem .32rem;
+      background-repeat: no-repeat;
+      z-index: 2;
+    }
+    .icon-close {
+      height: .42rem;
+      width: .42rem;
+      position: absolute;
+      top: .28rem;
+      right: .2rem;
+      background-image: url(../i/base/icon-close.png);
+      background-position: 50% 50%;
+      background-size: .32rem .32rem;
+      background-repeat: no-repeat;
+      z-index: 2;
+    }
+    .search-input {
+      .width-full;
+      height: .6rem;
+      line-height: .6rem;
+      border: 0 none;
+      outline: 0 none;
+      &:focus {
+        border: 0 none;
+        outline: 0 none;
+      }
     }
   }
 
@@ -3700,7 +3759,6 @@ img {
       .item {
         .font-small;
         .flex-1;
-        .txt-c;
         .icon-divice {
           .inline-block;
           .vertical-middle;
@@ -3708,7 +3766,7 @@ img {
           width: .45rem;
           background-repeat: no-repeat;
           margin-right: .15rem;
-          background-size: .9rem 4.5rem;
+          background-size: .9rem 7.2rem;
           &.icon-1 {
             background-image: url(../i/base/icon-tag-1.png);
             background-size: cover;
@@ -3900,7 +3958,11 @@ img {
     background: #fff;
     margin-bottom: .2rem;
     .hd {
-      padding: .2rem .2rem .2rem .8rem;
+      background-image: url(../i/base/icon-msg-1.png);
+      background-size: .3rem .28rem;
+      background-position: .2rem 55%;
+      background-repeat: no-repeat;
+      padding: .2rem .2rem .2rem .6rem;
       font-weight: 600;
       border-bottom: 1px solid #ddd;
     }
@@ -3949,6 +4011,13 @@ img {
           }
         }
       }
+    }
+    .empty {
+      background-image: url(../i/base/eva-empty.png);
+      background-size: 4.6rem 3.2rem;
+      background-position: 50% 1rem;
+      background-repeat: no-repeat;
+      height: 6rem;
     }
   }
 }

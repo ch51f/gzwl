@@ -34,7 +34,7 @@
 
   <div class="food-head">
     <div class="hd">
-      <div class="l">
+      <div class="l show-imgs">
         <img src="./assets/i/home/g-2.png">
       </div>
       <div class="r">
@@ -52,8 +52,8 @@
     </div>
     <div class="sub">
       <div class="item"><i class="icon-divice icon-21"></i>营业至22:30</div>
-      <div class="item"><i class="icon-divice icon-5"></i>WIFI</div>
-      <div class="item"><i class="icon-divice icon-15"></i>停车</div>
+      <div class="item"></div>
+      <div class="item"></div>
       <i class="icon-right"></i>
     </div>
     <div class="address">
@@ -139,6 +139,12 @@
     </div>
   </div>
 
+
+  <div class="food-msg">
+    <div class="hd">美食点评家门都在说</div>
+    <div class="empty"></div>
+  </div>
+
   <div class="am-dimmer"></div>
   <div class="model-share">
     <div class="hd-line"></div>
@@ -165,12 +171,29 @@
       <a href="javascript:;" class="cancel-share">取消分享</a>
     </div>
   </div>
+  <div class="model-img-slide">
+    <div class="slide-box" data-am-flexslider>
+      <ul class="am-slides">
+        <li><img src="./assets/i/home/g-2.png"></li>
+        <li><img src="./assets/i/home/g-3.png"></li>
+      </ul>
+    </div>
+  </div>
 
 <script src="assets/js/highView.js"></script>
 <script src="assets/js/jquery-2.1.1.min.js"></script>
 <script src="assets/js/amazeui.min.js"></script>
 <script>
   $(function() {
+    $(".model-img-slide").width($("body").width()).height($("body").width());
+    setTimeout(function() {
+      $(".model-img-slide").css({visibility: 'visible'}).hide();
+    }, 100);
+
+    $(".show-imgs").on('click', function() {
+      $(".am-dimmer").addClass("am-active");
+      $(".model-img-slide").show();
+    })
     $(".share").on('click', function() {
       $(".am-dimmer").addClass("am-active");
       $(".model-share").show();
@@ -180,6 +203,7 @@
       $(".am-dimmer").removeClass("am-active");
     })
     $(".am-dimmer").on('click', function() {
+      $(".model-img-slide").hide();
       $(".model-share").hide();
       $(".am-dimmer").removeClass("am-active");
     })

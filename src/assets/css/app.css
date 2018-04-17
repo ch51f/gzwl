@@ -630,6 +630,19 @@ img {
 .page .pay-model .ft {
   padding: 0 .2rem;
 }
+.page .model-img-slide {
+  visibility: hidden;
+  text-align: center;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 20%;
+  left: 0;
+  z-index: 1102;
+}
+.page .model-img-slide img {
+  display: block;
+}
 .page-home {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1105,8 +1118,51 @@ img {
 .page-lyd .home-head {
   height: 3.2rem;
 }
-.page-lyd .home-head .left-addr {
+.page-lyd .home-head .left + .left-addr {
   left: .7rem;
+}
+.page-lyd .search-box {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  margin: .1rem .2rem;
+  padding: .2rem .7rem;
+  height: 1rem;
+}
+.page-lyd .search-box .icon-search {
+  height: .4rem;
+  width: .4rem;
+  position: absolute;
+  left: .2rem;
+  top: .3rem;
+  background-image: url(../i/base/icon-search.png);
+  background-position: 50% 50%;
+  background-size: .32rem .32rem;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.page-lyd .search-box .icon-close {
+  height: .42rem;
+  width: .42rem;
+  position: absolute;
+  top: .28rem;
+  right: .2rem;
+  background-image: url(../i/base/icon-close.png);
+  background-position: 50% 50%;
+  background-size: .32rem .32rem;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.page-lyd .search-box .search-input {
+  width: 100%;
+  height: .6rem;
+  line-height: .6rem;
+  border: 0 none;
+  outline: 0 none;
+}
+.page-lyd .search-box .search-input:focus {
+  border: 0 none;
+  outline: 0 none;
 }
 .page-lyd .good-filter {
   background-color: #fff;
@@ -3662,7 +3718,6 @@ img {
 .page-food-detail .food-head .sub .item {
   font-size: .24rem;
   flex: 1;
-  text-align: center;
 }
 .page-food-detail .food-head .sub .item .icon-divice {
   display: inline-block;
@@ -3671,7 +3726,7 @@ img {
   width: .45rem;
   background-repeat: no-repeat;
   margin-right: .15rem;
-  background-size: .9rem 4.5rem;
+  background-size: .9rem 7.2rem;
 }
 .page-food-detail .food-head .sub .item .icon-divice.icon-1 {
   background-image: url(../i/base/icon-tag-1.png);
@@ -3860,7 +3915,11 @@ img {
   margin-bottom: .2rem;
 }
 .page-food-detail .food-msg .hd {
-  padding: .2rem .2rem .2rem .8rem;
+  background-image: url(../i/base/icon-msg-1.png);
+  background-size: .3rem .28rem;
+  background-position: .2rem 55%;
+  background-repeat: no-repeat;
+  padding: .2rem .2rem .2rem .6rem;
   font-weight: 600;
   border-bottom: 1px solid #ddd;
 }
@@ -3907,6 +3966,13 @@ img {
   margin: 0 .1rem .1rem 0;
   width: .8rem;
   background: #ddd;
+}
+.page-food-detail .food-msg .empty {
+  background-image: url(../i/base/eva-empty.png);
+  background-size: 4.6rem 3.2rem;
+  background-position: 50% 1rem;
+  background-repeat: no-repeat;
+  height: 6rem;
 }
 .page-food-order {
   padding-bottom: 1rem;
