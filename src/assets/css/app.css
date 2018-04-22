@@ -418,7 +418,7 @@ img {
   background-size: 6.9rem 6.6rem;
   background-position: 50% bottom;
   height: 6.6rem;
-  widows: 6.9rem;
+  width: 6.9rem;
 }
 .page .section-status.status-1 {
   background-image: url(../i/base/status-1.png);
@@ -643,6 +643,67 @@ img {
 .page .model-img-slide img {
   display: block;
 }
+.page .model-map {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+}
+.page .model-map .hd {
+  color: #fff;
+  width: 100%;
+  background-size: cover;
+  height: 1rem;
+  background-image: url(../i/base/head.jpg);
+  position: relative;
+  z-index: 10000;
+}
+.page .model-map .hd .title {
+  font-size: .36rem;
+  text-align: center;
+  padding: .2rem;
+  line-height: .6rem;
+}
+.page .model-map .hd .left {
+  display: block;
+  height: .34rem;
+  width: .34rem;
+  position: absolute;
+  top: .3rem;
+  left: .2rem;
+  z-index: 2;
+}
+.page .model-map .hd .icon-back {
+  display: block;
+  background-size: contain;
+  background-image: url(../i/base/back.png);
+  height: .34rem;
+  width: .34rem;
+}
+.page .model-map .hd .right-txt {
+  display: block;
+  text-align: right;
+  color: #fff;
+  height: .34rem;
+  line-height: .34rem;
+  width: 1rem;
+  position: absolute;
+  top: .3rem;
+  right: .2rem;
+  z-index: 2;
+}
+.page .model-map .bmap-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+}
 .page-home {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -722,7 +783,7 @@ img {
   width: 100%;
 }
 .page-home .section-type-1 {
-  margin: 0 .2rem .3rem;
+  margin: 0 .2rem .2rem;
 }
 .page-home .section-type-1 .hd {
   position: relative;
@@ -1276,6 +1337,15 @@ img {
   flex: 1;
   padding-right: .1rem;
 }
+.page-lyd .good-list .empty {
+  background-repeat: no-repeat;
+  background-size: 6.9rem 6.6rem;
+  background-position: 50% bottom;
+  padding-top: 6.9rem;
+  width: 6.9rem;
+  margin: 0 auto;
+  background-image: url(../i/base/status-2.png);
+}
 .page-lyd .food-list {
   background-color: #fff;
   border-radius: .3rem .3rem 0 0;
@@ -1314,6 +1384,15 @@ img {
   border-radius: .1rem;
   background: #F1F1F1;
   padding: .02rem .1rem;
+}
+.page-lyd .food-list .empty {
+  background-repeat: no-repeat;
+  background-size: 6.9rem 6.6rem;
+  background-position: 50% bottom;
+  padding-top: 6.9rem;
+  width: 6.9rem;
+  margin: 0 auto;
+  background-image: url(../i/base/status-2.png);
 }
 .page-lyd .model-filter {
   width: 100%;
@@ -1811,6 +1890,15 @@ img {
   background-color: #FC5060;
   height: .6rem;
   line-height: .6rem;
+}
+.page-detail .detail-con .section-shop .room-list .empty {
+  background-repeat: no-repeat;
+  background-size: 6.9rem 6.6rem;
+  background-position: 50% bottom;
+  padding-top: 6.9rem;
+  width: 6.9rem;
+  margin: 0 auto;
+  background-image: url(../i/base/status-2.png);
 }
 .page-detail .detail-con .section-shop .detail-info {
   background-color: #fff;
@@ -3269,6 +3357,13 @@ img {
 .page-find-detail .detail-feedback .list .item .con .date {
   color: #999;
 }
+.page-find-detail .detail-feedback .list .empty {
+  background-image: url(../i/base/eva-empty.png);
+  background-size: 4.6rem 3.2rem;
+  background-position: 50% 1rem;
+  background-repeat: no-repeat;
+  height: 6rem;
+}
 .page-member {
   padding-bottom: 1rem;
 }
@@ -3674,6 +3769,15 @@ img {
   background-image: url(../i/base/icon-eye.png);
   background-size: cover;
   vertical-align: middle;
+}
+.page-zgl .list .empty {
+  background-repeat: no-repeat;
+  background-size: 6.9rem 6.6rem;
+  background-position: 50% bottom;
+  padding-top: 6.9rem;
+  width: 6.9rem;
+  margin: 0 auto;
+  background-image: url(../i/base/status-2.png);
 }
 .page-food-detail .detail-bottom {
   position: fixed;
@@ -4340,6 +4444,15 @@ img {
   background-color: #FE4D81;
   border-color: #FE4D81;
 }
+.page-my-order .list .empty {
+  background-repeat: no-repeat;
+  background-size: 6.9rem 6.6rem;
+  background-position: 50% bottom;
+  padding-top: 6.9rem;
+  width: 6.9rem;
+  margin: 0 auto;
+  background-image: url(../i/base/status-4.png);
+}
 .page-order-detail .order-hd {
   background: #fff;
   margin-bottom: .2rem;
@@ -4643,6 +4756,15 @@ img {
   background-size: cover;
   vertical-align: middle;
 }
+.page-moment .moment-list .empty {
+  background-repeat: no-repeat;
+  background-size: 6.9rem 6.6rem;
+  background-position: 50% bottom;
+  padding-top: 6.9rem;
+  width: 6.9rem;
+  margin: 0 auto;
+  background-image: url(../i/base/status-2.png);
+}
 .page-moment .moment-list-1 .item {
   display: block;
   border-bottom: 1px solid #ddd;
@@ -4684,6 +4806,15 @@ img {
 .page-moment .moment-list-1 .item .con .ft .date {
   text-align: right;
   width: 1.5rem;
+}
+.page-moment .moment-list-1 .empty {
+  background-repeat: no-repeat;
+  background-size: 6.9rem 6.6rem;
+  background-position: 50% bottom;
+  padding-top: 6.9rem;
+  width: 6.9rem;
+  margin: 0 auto;
+  background-image: url(../i/base/status-2.png);
 }
 .page-moment .form {
   background-color: #fff;
@@ -4917,6 +5048,13 @@ img {
   color: #999;
   font-size: .24rem;
 }
+.page-moment .moment-msg .list .empty {
+  background-image: url(../i/base/eva-empty.png);
+  background-size: 4.6rem 3.2rem;
+  background-position: 50% 1rem;
+  background-repeat: no-repeat;
+  height: 6rem;
+}
 .page-shop .shop-hd {
   display: flex;
   background-color: #FFB8C8;
@@ -4979,6 +5117,15 @@ img {
 }
 .page-shop .list .item .good .con .price {
   color: #333;
+}
+.page-shop .list .empty {
+  background-repeat: no-repeat;
+  background-size: 6.9rem 6.6rem;
+  background-position: 50% bottom;
+  padding-top: 6.9rem;
+  width: 6.9rem;
+  margin: 0 auto;
+  background-image: url(../i/base/status-2.png);
 }
 .page-xieyi {
   background-color: #fff;
